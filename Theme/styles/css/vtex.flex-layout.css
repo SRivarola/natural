@@ -52,6 +52,114 @@
   justify-content: space-evenly;
 }
 
+
+.flexRow--pedigree {
+  display:flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background-color: #fec30a;
+  padding: 20px;
+}
+
+.flexRow--dogwalker {
+  display:flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  background-color: #4d89ce;
+  padding: 20px;
+}
+
+.flexRowContent--pedigree {
+  display:flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.flexCol--leftImpar {
+/* padding:10px; */
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexColChild--leftImpar {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexCol--rightImpar {
+/* background-color:#EEE; */
+  height:auto;
+
+}
+/*
+.flexColChild--rightImpar {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}*/
+
+.flexCol--leftPar {
+/* padding:10px; */
+  height: auto;
+}
+
+/*.flexColChild--leftPar {
+}*/
+
+.flexCol--rightPar {
+/* background-color:#EEE; */
+
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+  
+.flexColChild--rightPar {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexCol--leftdw {
+  /* padding:10px; */
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.flexColChild--leftdw {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.flexCol--rightdw {
+  /* padding:10px; */
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.flexColChild--rightdw {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  }
+
+
 /* ================================ Medicados =============================== */
 
 .flexRow--producto-medicado-layout {
@@ -1302,8 +1410,4 @@
   .flexRowContent--container-stores .stretchChildrenWidth:first-child {
     width: 50% !important;
   }
-}
-
-.flexColChild--sliderCustom{
-  margin-top: 30px;
 }

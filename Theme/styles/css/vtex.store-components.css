@@ -943,6 +943,54 @@
     max-width: 100%;
   }
   
+
+  /*    LANDINGS     */
+  .imageElementLink--top-gallery-banner-03 {
+    display: flex;
+    justify-content: center;
+    background-color: #3e7ec5;    
+  }
+
+  .imageElementLink--top-gallery-banner-DW {
+    display: flex;
+    justify-content: center;
+    background-color: #4d89ce; 
+  }
+
+  .imageElementLink--dw {
+    display: flex;
+    justify-content: center;
+    background-color: #4d89ce; 
+    width: 100%;
+  }
+
+
+  .imageElementLink--top-gallery-banner-04 {
+    display: flex;
+    justify-content: center;
+    background-color: #fec30a; 
+  }
+  .imageElement--top-gallery-banner-04 {
+    display: flex;
+    justify-content: center;
+    background-color: #fec30a; 
+    padding: 20px;
+  }
+
+  .imageElementLink--banner-p02 {
+    display: flex;
+    justify-content: center;
+    background-color: #fec30a; 
+    width: 100%;
+  }
+  .imageElement--banner-p02 {
+    display: flex;
+    justify-content: center;
+    background-color: #fec30a; 
+    padding: 20px;
+    width: 100%;
+  }
+
   /* BRANDS (TOP GALLERY) */
   
   .imageElement--brands-top-gallery-banner:hover,
@@ -952,7 +1000,7 @@
     filter: opacity(0.8);
     cursor: pointer;
   }
-  
+
   .imageElement--category-banner {
     max-height: 160px;
     object-fit: cover;

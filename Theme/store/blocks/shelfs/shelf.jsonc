@@ -154,6 +154,45 @@
       }
     }
   },
+  "flex-layout.row#shelf-04": {
+    "props": {
+      "blockClass": ["shelf-04", "shelfWithBackground-04", "shelf-slider-04"]
+    },
+    "children": ["flex-layout.col#shelf-04"]
+  },
+
+  "flex-layout.col#shelf-04": {
+    "props": {
+      "blockClass": ["shelfbg"],
+      "preventVerticalStretch": true
+    },
+
+    "children": [
+      "list-context.product-list#shelf-products-04"
+    ]
+  },
+
+  "list-context.product-list#shelf-products-04": {
+    "props": {
+      "collection": "137"
+      //"categoryId": "4"
+    },
+    "blocks": ["product-summary.shelf#shelf-product"],
+    "children": ["slider-layout#shelf-products-slide-04"]
+  },
+
+  "slider-layout#shelf-products-slide-04": {
+    "props": {
+      "blockClass": ["shelf-04", "shelf-slider-04"],
+      "infinite": false,
+      "fullWidth": false,
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 1
+      }
+    }
+  },
 
   //prateleiras home
   "flex-layout.row#futbol": {

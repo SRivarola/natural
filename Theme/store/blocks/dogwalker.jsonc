@@ -1,0 +1,185 @@
+{
+
+  "store.custom#dogwalker": {
+    "blocks": [  
+      "responsive-layout.desktop#dogwalker",
+      "responsive-layout.tablet#dogwalker",
+      "responsive-layout.phone#dogwalker"
+    ]
+  },
+
+  "responsive-layout.desktop#dogwalker": {
+    "title":"Diseño Desktop",
+    "children": [
+      "flex-layout.row#dogwalker1",
+      "flex-layout.row#dogwalker2",
+      "flex-layout.row#dogwalker3",
+      "flex-layout.row#dogwalker4",
+      "flex-layout.row#shelf-01",
+      "flex-layout.row#dogwalker5",
+      "flex-layout.row#dogwalker6"
+    ]
+  },
+
+  "responsive-layout.tablet#dogwalker": {
+    "title":"Diseño Tablet",
+    "children": [
+      "flex-layout.row#dogwalker1",
+      "flex-layout.row#dogwalker2",
+      "flex-layout.row#dogwalker3",
+      "flex-layout.row#dogwalker4",
+      "flex-layout.row#shelf-01",
+      "flex-layout.row#dogwalker5",
+      "flex-layout.row#dogwalker6"
+    ]
+  },
+
+  "responsive-layout.phone#dogwalker": {
+    "title":"Diseño Mobile",
+    "children": [
+      "flex-layout.row#dogwalker1",
+      "flex-layout.row#dogwalker2m",
+      "flex-layout.row#dogwalker3m",
+      "flex-layout.row#shelf-01",
+      "flex-layout.row#dogwalker4m",
+      "flex-layout.row#dogwalker5m"
+    ]
+  },
+
+
+
+  "flex-layout.row#dogwalker1": {
+    "props":{
+      "width": "90%",
+      "blockClass": "dogwalker"
+    },
+    "title":"Banner Central",
+    "children": ["flex-layout.col#top-gallery-banner-DW"]
+  },
+  "flex-layout.row#dogwalker2": {
+    "props":{
+      "width":"90%",
+      "blockClass": "dogwalker"
+    },
+    "title":"Par Uno",
+    "children": ["flex-layout.col#leftdw", "flex-layout.col#rightdw"]
+  },
+
+  "flex-layout.row#dogwalker3": {
+    "props":{
+      "width":"90%",
+      "blockClass": "dogwalker"
+    },
+    "title":"Par Dos",
+    "children": ["flex-layout.col#leftdw", "flex-layout.col#rightdw"]
+  },
+
+  "flex-layout.row#dogwalker4": {
+    "props":{
+      "width":"90%",
+      "blockClass": "dogwalker"
+    },
+    "title":"Par Tres",
+    "children": ["flex-layout.col#leftdw", "flex-layout.col#rightdw"]
+  },
+
+  "flex-layout.row#dogwalker5": {
+    "props":{
+      "width":"90%",
+      "blockClass": "dogwalker"
+    },
+    "title":"Par Cuatro",
+    "children": ["flex-layout.col#leftdw", "flex-layout.col#rightdw"]
+  },
+
+  "flex-layout.row#dogwalker6": {
+    "props":{
+      "width": "90%",
+      "blockClass": "dogwalker"
+    },
+    "title":"Pie Central",
+    "children": ["flex-layout.col#top-gallery-banner-DW"]
+  },
+
+
+  "flex-layout.col#top-gallery-banner-DW": {
+    "children": ["image#top-gallery-banner-DW"]
+  },
+
+  "image#top-gallery-banner-DW": {
+    "props": {
+      "blockClass": "top-gallery-banner-DW",
+      "title": "Banner Central",
+      "src": "assets/imgs/desktop/colchonetas.jpg",
+      "link": {
+        "url": "/",
+        "attributeTitle": "Natural Life Colchonetas"
+      }
+    }
+  },
+
+  "flex-layout.row#dogwalker2m": {
+    "props":{
+      "blockClass": "dogwalker"
+    },
+    "title":"Uno",
+    "children": ["flex-layout.col#leftdw"]
+  },
+
+  "flex-layout.row#dogwalker3m": {
+    "props":{
+      "blockClass": "dogwalker"
+    },
+    "title":"Dos",
+    "children": ["flex-layout.col#leftdw"]
+  },
+
+  "flex-layout.row#dogwalker4m": {
+    "props":{
+      "blockClass": "dogwalker"
+    },
+    "title":"Tres",
+    "children": ["flex-layout.col#leftdw"]
+  },
+
+  "flex-layout.row#dogwalker5m": {
+    "props":{
+      "blockClass": "dogwalker"
+    },
+    "title":"Pie Central",
+    "children": ["flex-layout.col#top-gallery-banner-DW"]
+  },
+
+
+  "flex-layout.col#leftdw": {
+    "props":{
+      "width": "100%",
+      "blockClass": "dogwalker"
+    },
+    "children": ["image#dw"]
+  },
+  "flex-layout.col#rightdw": {
+    "props":{
+      "width": "100%",
+      "blockClass": "dogwalker"
+    },
+    "children": ["image#dw"]
+  },
+
+  "image#dw": {
+    "props": {
+      "blockClass": "dogwalker",
+      "title": "Imagen",
+      "src": "assets/imgs/desktop/colchonetas.jpg",
+      "link": {
+        "url": "/",
+        "attributeTitle": "Natural Life Colchonetas"
+      }
+    }
+  }
+
+
+
+
+
+}
