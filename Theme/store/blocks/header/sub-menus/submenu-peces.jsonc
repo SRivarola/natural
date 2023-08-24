@@ -1,0 +1,252 @@
+{
+  "vtex.menu@2.x:submenu#peces": {
+    "children": ["flex-layout.row#peces", "image#peces"],
+    "props": {
+      "blockClass": "submenu"
+    }
+  },
+
+  "flex-layout.row#peces": {
+    "props": {
+      "blockClass": "categories-wrapper",
+      "colSizing": "auto",
+      "colGap": 3
+    },
+
+    "children": [
+      "vtex.menu@2.x:menu#column-peces-1",
+      "vtex.menu@2.x:menu#column-peces-2",
+      "vtex.menu@2.x:menu#column-peces-3"
+    ]
+  },
+
+  /* BANNER MENU */
+  "image#peces": {
+    "props": {
+      "blockClass": "submenu-banner",
+      "src": "assets/imgs/natural-megamenu-estandar.jpg",
+      "link": true
+    }
+  },
+
+  /* LOCALES COLUMN */
+  "vtex.menu@2.x:menu#column-peces-1": {
+    "props": {
+      "blockClass": "categories"
+    },
+    "children": [
+      "menu-item#peces-alimento",
+      "vtex.menu@2.x:menu#submenu-peces-alimento"
+    ]
+  },
+  "vtex.menu@2.x:menu#submenu-peces-alimento": {
+    "props": {
+      "blockClass": "custom-dropdown-submenu",
+      "items": [
+        {
+          "id": "agua-fria",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/peces/alimento/agua-fria",
+            "noFollow": false,
+            "text": "Agua fria",
+            "tagTitle": "Agua fria"
+          }
+        },
+        {
+            "id": "agua-tropical",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "/peces/alimento/agua-tropical",
+              "noFollow": false,
+              "text": "Agua tropical",
+              "tagTitle": "Agua tropical"
+            }
+          },
+          {
+            "id": "marinos",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "/peces/alimento/marinos",
+              "noFollow": false,
+              "text": "Marinos",
+              "tagTitle": "Marinos"
+            }
+          }
+        ]
+    }
+  },
+
+  "menu-item#peces-alimento": {
+    "props": {
+      "blockClass": "category",
+      "id": "alimento",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "alimento",
+        "tagTitle": "alimento",
+        "type": "internal",
+        "href": "/peces/alimento",
+        "noFollow": false
+      }
+    }
+  },
+
+  /* INTERNACIONALES COLUMN */
+  "vtex.menu@2.x:menu#column-peces-2": {
+    "props": {
+      "blockClass": "categories"
+    },
+    "children": [
+      "menu-item#peces-pecera-acuarios-alimento",
+      "vtex.menu@2.x:menu#submenu-peces-pecera-acuarios-alimento"
+    ]
+  },
+  "vtex.menu@2.x:menu#submenu-peces-pecera-acuarios-alimento": {
+    "props": {
+      "blockClass": "custom-dropdown-submenu",
+      "items": [
+        {
+          "id": "accesorios",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/peces/pecera---acuarios---accesorios/accesorios",
+            "noFollow": false,
+            "text": "Accesorios",
+            "tagTitle": "Accesorios"
+          }
+        },
+        {
+            "id": "clima",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "/peces/pecera---acuarios---accesorios/calefaccion---Iluminacion---filtrado---aireado",
+              "noFollow": false,
+              "text": "Calefacción - Iluminación - Filtrado - Aireado",
+              "tagTitle": "Calefacción - Iluminación - Filtrado - Aireado"
+            }
+        },
+        {
+            "id": "decoracion",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "/peces/pecera---acuarios---accesorios/decoraciones---cuidado-del-agua",
+              "noFollow": false,
+              "text": "Decoraciones - Cuidado del Agua",
+              "tagTitle": "Decoraciones - Cuidado del Agua"
+            }
+        },
+        {
+            "id": "acuarios",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "/peces/pecera---acuarios---accesorios/peceras---acuarios---sustratos",
+              "noFollow": false,
+              "text": "Peceras - Acuarios - Sustratos",
+              "tagTitle": "Peceras - Acuarios - Sustratos"
+            }
+        },
+        {
+            "id": "sustratos",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "/peces/pecera---acuarios---accesorios/sustratos",
+              "noFollow": false,
+              "text": "Sustratos",
+              "tagTitle": "Sustratos"
+            }
+        }
+      ]
+    }
+  },
+  "menu-item#peces-pecera-acuarios-alimento": {
+    "props": {
+      "blockClass": "category",
+      "id": "peces-pecera-acuarios-accesorios",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Pecera - Acuarios - Accesorios",
+        "tagTitle": "pecera-acuarios-accesorios",
+        "type": "internal",
+        "href": "/peces/pecera---acuarios---accesorios",
+        "noFollow": false
+      }
+    }
+  },
+
+  // SELLECCIONES MENU
+  "vtex.menu@2.x:menu#column-peces-3": {
+    "props": {
+      "blockClass": "categories"
+    },
+    "children": [
+      "menu-item#peces-salud",
+      "vtex.menu@2.x:menu#submenu-peces-salud"
+    ]
+  },
+  "vtex.menu@2.x:menu#submenu-peces-salud": {
+    "props": {
+      "blockClass": "custom-dropdown-submenu",
+      "items": [
+        {
+          "id": "salud",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/peces/salud/salud",
+            "noFollow": false,
+            "text": "Salud",
+            "tagTitle": "Salud"
+          }
+        }
+      ]
+    }
+  },
+
+  "menu-item#peces-salud": {
+    "props": {
+      "blockClass": "category",
+      "id": "salud",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Salud",
+        "tagTitle": "Salud",
+        "type": "internal",
+        "href": "/peces/salud",
+        "noFollow": false
+      }
+    }
+  }
+}

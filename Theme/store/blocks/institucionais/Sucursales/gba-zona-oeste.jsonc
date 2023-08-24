@@ -1,0 +1,4695 @@
+{
+    /* GBA - ZONA OESTE - LOCAL 1 */
+    "flex-layout.row#gba-oeste-local-1-wrapper": {
+        "props": {
+            "title": "Local 1",
+            "blockClass": ["stores-title-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "disposition-layout#gba-oeste-local-1-wrapper"
+        ]
+    },
+    "disposition-layout#gba-oeste-local-1-wrapper": {
+        "title": "Local 1",
+        "children": [
+            "flex-layout.row#gba-oeste-local-1-image-wrapper",
+            "flex-layout.row#gba-oeste-local-1-content-wrapper"
+          ],
+          "props": {
+            "disposition": [
+              {
+                "order": 1
+              },
+              {
+                "order": 2
+              }
+            ]
+          }
+    },
+    "flex-layout.row#gba-oeste-local-1-image-wrapper": {
+        "title": "Imagen Local 1",
+        "props": {
+            "blockClass": ["local-image-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "image#gba-oeste-local-1-image"
+        ]
+    },
+    "image#gba-oeste-local-1-image": {
+        "props": {
+          "blockClass": ["local-image"],
+          "src": "assets/imgs/natural-life-sucursal.jpg",
+          "title": "Local"
+        }
+    },
+    "flex-layout.row#gba-oeste-local-1-content-wrapper": {
+        "title": "Info Local 1",
+        "props": {
+            "blockClass": ["local-content-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+            "rich-text#gba-oeste-local-1-title",
+            "rich-text#gba-oeste-local-1-address",
+            "rich-text#gba-oeste-local-1-info",
+            "flex-layout.row#gba-oeste-local-1-phone",
+            "flex-layout.row#gba-oeste-local-1-services"
+        ]
+    },
+    "rich-text#gba-oeste-local-1-title": {
+        "title": "Titulo",
+        "props": {
+            "blockClass": ["local-title"],
+            "text": "ITUZAINGÓ Centro",
+            "width": "grow"
+        }
+    },
+    "rich-text#gba-oeste-local-1-address": {
+        "title": "Dirección",
+        "props": {
+            "blockClass": ["local-address"],
+            "text": "Las Heras 145",
+            "width": "grow"
+        }
+    },
+    "rich-text#gba-oeste-local-1-info": {
+        "title": "Información adicional",
+        "props": {
+            "blockClass": ["local-info"],
+            "text": "Abierta de lunes a sábados de 8:30 a 20:30 hs.",
+            "width": "grow"
+        }
+    },
+    "flex-layout.row#gba-oeste-local-1-phone": {
+        "title": "Teléfonos",
+        "props": {
+          "colSizing": "auto",
+          "blockClass": "local-phone",
+          "preserveLayoutOnMobile": true
+        },
+    
+        "children": [
+            "toggle-layout#gba-oeste-local-1-telephone",
+            "toggle-layout#gba-oeste-local-1-whatsapp"
+        ]
+    },
+    "toggle-layout#gba-oeste-local-1-telephone": {
+        "children": [
+            "link#gba-oeste-local-1-telephone"
+          ]
+    },
+    "toggle-layout#gba-oeste-local-1-whatsapp": {
+        "children": [
+            "link#gba-oeste-local-1-whatsapp"
+          ]
+    },
+    "link#gba-oeste-local-1-telephone": {
+        "title": "Teléfono de linea",
+        "props": {
+          "label": "0810-999-6288",
+          "href": "tel:0810-999-6288",
+          "target": "_blank",
+          "blockClass": ["local-telephone"]
+        }
+      },
+      "link#gba-oeste-local-1-whatsapp": {
+        "title": "Whatsapp",
+        "props": {
+          "label": "11 5984 5785",
+          "href": "https://wa.me/1159845785",
+          "target": "_blank",
+          "blockClass": ["local-whatsapp"]
+        }
+    },
+    "flex-layout.row#gba-oeste-local-1-services": {
+        "title": "Servicios",
+        "props": {
+          "colSizing": "auto",
+          "blockClass": "local-services",
+          "preserveLayoutOnMobile": true
+        },
+    
+        "children": [
+            "image#gba-oeste-local-1-service-1",
+            "image#gba-oeste-local-1-service-2",
+            "image#gba-oeste-local-1-service-3",
+            "image#gba-oeste-local-1-service-4",
+            "image#gba-oeste-local-1-service-5",
+            "image#gba-oeste-local-1-service-6",
+            "image#gba-oeste-local-1-service-7",
+            "image#gba-oeste-local-1-service-8",
+            "image#gba-oeste-local-1-service-9",
+            "image#gba-oeste-local-1-service-10"
+        ]
+    },
+
+    "image#gba-oeste-local-1-service-1": {
+        "title": "Servicio 01",
+        "props": {
+          "blockClass": ["local-services"],
+          "src": "assets/svgs/natural-life-icon-local-consultorio.svg",
+          "title": "Consultorios"
+        }
+    },
+    "image#gba-oeste-local-1-service-2": {
+        "title": "Servicio 02",
+        "props": {
+          "blockClass": ["local-services"],
+          "src": "assets/svgs/natural-life-icon-local-envios.svg",
+          "title": "Envios"
+        }
+    },
+    "image#gba-oeste-local-1-service-3": {
+        "title": "Servicio 03",
+        "props": {
+          "blockClass": ["local-services"],
+          "src": "assets/svgs/natural-life-icon-local-estacionamiento.svg",
+          "title": "Estacionamiento"
+        }
+    },
+    "image#gba-oeste-local-1-service-4": {
+        "title": "Servicio 04",
+        "props": {
+          "blockClass": ["local-services"],
+          "src": "assets/svgs/natural-life-icon-local-peluqueria.svg",
+          "title": "Peluqueria"
+        }
+    },
+    "image#gba-oeste-local-1-service-5": {
+        "title": "Servicio 05",
+        "props": {
+          "blockClass": ["local-services"],
+          "src": "assets/svgs/natural-life-icon-local-mascotas.svg",
+          "title": "Mascotas"
+        }
+    },
+
+    "image#gba-oeste-local-1-service-6": {
+        "title": "Servicio 06",
+        "props": {
+          "blockClass": ["local-services"],
+          "src": "",
+          "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-1-service-7": {
+        "title": "Servicio 07",
+        "props": {
+          "blockClass": ["local-services"],
+          "src": "",
+          "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-1-service-8": {
+        "title": "Servicio 08",
+        "props": {
+          "blockClass": ["local-services"],
+          "src": "",
+          "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-1-service-9": {
+        "title": "Servicio 09",
+        "props": {
+          "blockClass": ["local-services"],
+          "src": "",
+          "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-1-service-10": {
+        "title": "Servicio 10",
+        "props": {
+          "blockClass": ["local-services"],
+          "src": "",
+          "title": ""
+        }
+    },
+
+    /* GBA - ZONA OESTE - LOCAL 2 */
+    "flex-layout.row#gba-oeste-local-2-wrapper": {
+        "props": {
+            "title": "Local 2",
+            "blockClass": ["stores-title-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "disposition-layout#gba-oeste-local-2-wrapper"
+        ]
+    },
+    "disposition-layout#gba-oeste-local-2-wrapper": {
+        "title": "Local 2",
+        "children": [
+            "flex-layout.row#gba-oeste-local-2-image-wrapper",
+            "flex-layout.row#gba-oeste-local-2-content-wrapper"
+        ],
+        "props": {
+            "disposition": [
+            {
+                "order": 1
+            },
+            {
+                "order": 2
+            }
+            ]
+        }
+    },
+    "flex-layout.row#gba-oeste-local-2-image-wrapper": {
+        "title": "Imagen Local 2",
+        "props": {
+            "blockClass": ["local-image-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "image#gba-oeste-local-2-image"
+        ]
+    },
+    "image#gba-oeste-local-2-image": {
+        "props": {
+        "blockClass": ["local-image"],
+        "src": "assets/imgs/natural-life-sucursal.jpg",
+        "title": "Consultorios"
+        }
+    },
+    "flex-layout.row#gba-oeste-local-2-content-wrapper": {
+        "title": "Info Local 2",
+        "props": {
+            "blockClass": ["local-content-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+            "rich-text#gba-oeste-local-2-title",
+            "rich-text#gba-oeste-local-2-address",
+            "rich-text#gba-oeste-local-2-info",
+            "flex-layout.row#gba-oeste-local-2-phone",
+            "flex-layout.row#gba-oeste-local-2-services"
+        ]
+    },
+    "rich-text#gba-oeste-local-2-title": {
+        "title": "Titulo",
+        "props": {
+            "blockClass": ["local-title"],
+            "text": "ITUZAINGÓ Centro",
+            "width": "grow"
+        }
+    },
+    "rich-text#gba-oeste-local-2-address": {
+        "title": "Dirección",
+        "props": {
+            "blockClass": ["local-address"],
+            "text": "Las Heras 145",
+            "width": "grow"
+        }
+    },
+    "rich-text#gba-oeste-local-2-info": {
+        "title": "Información adicional",
+        "props": {
+            "blockClass": ["local-info"],
+            "text": "Abierta de lunes a sábados de 8:30 a 20:30 hs.",
+            "width": "grow"
+        }
+    },
+    "flex-layout.row#gba-oeste-local-2-phone": {
+        "title": "Teléfonos",
+        "props": {
+          "colSizing": "auto",
+          "blockClass": "local-phone",
+          "preserveLayoutOnMobile": true
+        },
+    
+        "children": [
+            "toggle-layout#gba-oeste-local-2-telephone",
+            "toggle-layout#gba-oeste-local-2-whatsapp"
+        ]
+    },
+    "toggle-layout#gba-oeste-local-2-telephone": {
+        "children": [
+            "link#gba-oeste-local-2-telephone"
+          ]
+    },
+    "toggle-layout#gba-oeste-local-2-whatsapp": {
+        "children": [
+            "link#gba-oeste-local-2-whatsapp"
+          ]
+    },
+    "link#gba-oeste-local-2-telephone": {
+        "title": "Teléfono de linea",
+        "props": {
+        "label": "0810-999-6288",
+        "href": "tel:0810-999-6288",
+        "target": "_blank",
+        "blockClass": ["local-telephone"]
+        }
+    },
+    "link#gba-oeste-local-2-whatsapp": {
+        "title": "Whatsapp",
+        "props": {
+        "label": "11 5984 5785",
+        "href": "https://wa.me/1159845785",
+        "target": "_blank",
+        "blockClass": ["local-whatsapp"]
+        }
+    },
+    "flex-layout.row#gba-oeste-local-2-services": {
+        "title": "Servicios",
+        "props": {
+        "colSizing": "auto",
+        "blockClass": "local-services",
+        "preserveLayoutOnMobile": true
+        },
+
+        "children": [
+            "image#gba-oeste-local-2-service-1",
+            "image#gba-oeste-local-2-service-2",
+            "image#gba-oeste-local-2-service-3",
+            "image#gba-oeste-local-2-service-4",
+            "image#gba-oeste-local-2-service-5",
+            "image#gba-oeste-local-2-service-6",
+            "image#gba-oeste-local-2-service-7",
+            "image#gba-oeste-local-2-service-8",
+            "image#gba-oeste-local-2-service-9",
+            "image#gba-oeste-local-2-service-10"
+        ]
+    },
+
+    "image#gba-oeste-local-2-service-1": {
+        "title": "Servicio 01",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-consultorio.svg",
+        "title": "Consultorios"
+        }
+    },
+    "image#gba-oeste-local-2-service-2": {
+        "title": "Servicio 02",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-envios.svg",
+        "title": "Envios"
+        }
+    },
+    "image#gba-oeste-local-2-service-3": {
+        "title": "Servicio 03",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-estacionamiento.svg",
+        "title": "Estacionamiento"
+        }
+    },
+    "image#gba-oeste-local-2-service-4": {
+        "title": "Servicio 04",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-peluqueria.svg",
+        "title": "Peluqueria"
+        }
+    },
+    "image#gba-oeste-local-2-service-5": {
+        "title": "Servicio 05",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-mascotas.svg",
+        "title": "Mascotas"
+        }
+    },
+
+    "image#gba-oeste-local-2-service-6": {
+        "title": "Servicio 06",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-2-service-7": {
+        "title": "Servicio 07",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-2-service-8": {
+        "title": "Servicio 08",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-2-service-9": {
+        "title": "Servicio 09",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-2-service-10": {
+        "title": "Servicio 10",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+    /* GBA - ZONA OESTE - LOCAL 3 */
+    "flex-layout.row#gba-oeste-local-3-wrapper": {
+        "props": {
+            "title": "Local 3",
+            "blockClass": ["stores-title-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "disposition-layout#gba-oeste-local-3-wrapper"
+        ]
+    },
+    "disposition-layout#gba-oeste-local-3-wrapper": {
+        "title": "Local 3",
+        "children": [
+            "flex-layout.row#gba-oeste-local-3-image-wrapper",
+            "flex-layout.row#gba-oeste-local-3-content-wrapper"
+        ],
+        "props": {
+            "disposition": [
+            {
+                "order": 1
+            },
+            {
+                "order": 2
+            }
+            ]
+        }
+    },
+    "flex-layout.row#gba-oeste-local-3-image-wrapper": {
+        "title": "Imagen Local 3",
+        "props": {
+            "blockClass": ["local-image-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "image#gba-oeste-local-3-image"
+        ]
+    },
+    "image#gba-oeste-local-3-image": {
+        "props": {
+        "blockClass": ["local-image"],
+        "src": "assets/imgs/natural-life-sucursal.jpg",
+        "title": "Consultorios"
+        }
+    },
+    "flex-layout.row#gba-oeste-local-3-content-wrapper": {
+        "title": "Info Local 3",
+        "props": {
+            "blockClass": ["local-content-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+            "rich-text#gba-oeste-local-3-title",
+            "rich-text#gba-oeste-local-3-address",
+            "rich-text#gba-oeste-local-3-info",
+            "flex-layout.row#gba-oeste-local-3-phone",
+            "flex-layout.row#gba-oeste-local-3-services"
+        ]
+    },
+    "rich-text#gba-oeste-local-3-title": {
+        "title": "Titulo",
+        "props": {
+            "blockClass": ["local-title"],
+            "text": "ITUZAINGÓ Centro",
+            "width": "grow"
+        }
+    },
+    "rich-text#gba-oeste-local-3-address": {
+        "title": "Dirección",
+        "props": {
+            "blockClass": ["local-address"],
+            "text": "Las Heras 145",
+            "width": "grow"
+        }
+    },
+    "rich-text#gba-oeste-local-3-info": {
+        "title": "Información adicional",
+        "props": {
+            "blockClass": ["local-info"],
+            "text": "Abierta de lunes a sábados de 8:30 a 20:30 hs.",
+            "width": "grow"
+        }
+    },
+    "flex-layout.row#gba-oeste-local-3-phone": {
+        "title": "Teléfonos",
+        "props": {
+          "colSizing": "auto",
+          "blockClass": "local-phone",
+          "preserveLayoutOnMobile": true
+        },
+    
+        "children": [
+            "toggle-layout#gba-oeste-local-3-telephone",
+            "toggle-layout#gba-oeste-local-3-whatsapp"
+        ]
+    },
+    "toggle-layout#gba-oeste-local-3-telephone": {
+        "children": [
+            "link#gba-oeste-local-3-telephone"
+          ]
+    },
+    "toggle-layout#gba-oeste-local-3-whatsapp": {
+        "children": [
+            "link#gba-oeste-local-3-whatsapp"
+          ]
+    },
+    "link#gba-oeste-local-3-telephone": {
+        "title": "Teléfono de linea",
+        "props": {
+        "label": "0810-999-6288",
+        "href": "tel:0810-999-6288",
+        "target": "_blank",
+        "blockClass": ["local-telephone"]
+        }
+    },
+    "link#gba-oeste-local-3-whatsapp": {
+        "title": "Whatsapp",
+        "props": {
+        "label": "11 5984 5785",
+        "href": "https://wa.me/1159845785",
+        "target": "_blank",
+        "blockClass": ["local-whatsapp"]
+        }
+    },
+    "flex-layout.row#gba-oeste-local-3-services": {
+        "title": "Servicios",
+        "props": {
+        "colSizing": "auto",
+        "blockClass": "local-services",
+        "preserveLayoutOnMobile": true
+        },
+
+        "children": [
+            "image#gba-oeste-local-3-service-1",
+            "image#gba-oeste-local-3-service-2",
+            "image#gba-oeste-local-3-service-3",
+            "image#gba-oeste-local-3-service-4",
+            "image#gba-oeste-local-3-service-5",
+            "image#gba-oeste-local-3-service-6",
+            "image#gba-oeste-local-3-service-7",
+            "image#gba-oeste-local-3-service-8",
+            "image#gba-oeste-local-3-service-9",
+            "image#gba-oeste-local-3-service-10"
+        ]
+    },
+
+    "image#gba-oeste-local-3-service-1": {
+        "title": "Servicio 01",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-consultorio.svg",
+        "title": "Consultorios"
+        }
+    },
+    "image#gba-oeste-local-3-service-2": {
+        "title": "Servicio 02",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-envios.svg",
+        "title": "Envios"
+        }
+    },
+    "image#gba-oeste-local-3-service-3": {
+        "title": "Servicio 03",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-estacionamiento.svg",
+        "title": "Estacionamiento"
+        }
+    },
+    "image#gba-oeste-local-3-service-4": {
+        "title": "Servicio 04",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-peluqueria.svg",
+        "title": "Peluqueria"
+        }
+    },
+    "image#gba-oeste-local-3-service-5": {
+        "title": "Servicio 05",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-mascotas.svg",
+        "title": "Mascotas"
+        }
+    },
+
+    "image#gba-oeste-local-3-service-6": {
+        "title": "Servicio 06",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-3-service-7": {
+        "title": "Servicio 07",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-3-service-8": {
+        "title": "Servicio 08",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-3-service-9": {
+        "title": "Servicio 09",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-3-service-10": {
+        "title": "Servicio 10",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    /* GBA - ZONA OESTE - LOCAL 4 */
+    "flex-layout.row#gba-oeste-local-4-wrapper": {
+        "props": {
+            "title": "Local 4",
+            "blockClass": ["stores-title-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "disposition-layout#gba-oeste-local-4-wrapper"
+        ]
+    },
+    "disposition-layout#gba-oeste-local-4-wrapper": {
+        "title": "Local 4",
+        "children": [
+            "flex-layout.row#gba-oeste-local-4-image-wrapper",
+            "flex-layout.row#gba-oeste-local-4-content-wrapper"
+        ],
+        "props": {
+            "disposition": [
+            {
+                "order": 1
+            },
+            {
+                "order": 2
+            }
+            ]
+        }
+    },
+    "flex-layout.row#gba-oeste-local-4-image-wrapper": {
+        "title": "Imagen Local 4",
+        "props": {
+            "blockClass": ["local-image-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "image#gba-oeste-local-4-image"
+        ]
+    },
+    "image#gba-oeste-local-4-image": {
+        "props": {
+        "blockClass": ["local-image"],
+        "src": "assets/imgs/natural-life-sucursal.jpg",
+        "title": "Consultorios"
+        }
+    },
+    "flex-layout.row#gba-oeste-local-4-content-wrapper": {
+        "title": "Info Local 4",
+        "props": {
+            "blockClass": ["local-content-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+            "rich-text#gba-oeste-local-4-title",
+            "rich-text#gba-oeste-local-4-address",
+            "rich-text#gba-oeste-local-4-info",
+            "flex-layout.row#gba-oeste-local-4-phone",
+            "flex-layout.row#gba-oeste-local-4-services"
+        ]
+    },
+    "rich-text#gba-oeste-local-4-title": {
+        "title": "Titulo",
+        "props": {
+            "blockClass": ["local-title"],
+            "text": "ITUZAINGÓ Centro",
+            "width": "grow"
+        }
+    },
+    "rich-text#gba-oeste-local-4-address": {
+        "title": "Dirección",
+        "props": {
+            "blockClass": ["local-address"],
+            "text": "Las Heras 145",
+            "width": "grow"
+        }
+    },
+    "rich-text#gba-oeste-local-4-info": {
+        "title": "Información adicional",
+        "props": {
+            "blockClass": ["local-info"],
+            "text": "Abierta de lunes a sábados de 8:30 a 20:30 hs.",
+            "width": "grow"
+        }
+    },
+    "flex-layout.row#gba-oeste-local-4-phone": {
+        "title": "Teléfonos",
+        "props": {
+          "colSizing": "auto",
+          "blockClass": "local-phone",
+          "preserveLayoutOnMobile": true
+        },
+    
+        "children": [
+            "toggle-layout#gba-oeste-local-4-telephone",
+            "toggle-layout#gba-oeste-local-4-whatsapp"
+        ]
+    },
+    "toggle-layout#gba-oeste-local-4-telephone": {
+        "children": [
+            "link#gba-oeste-local-4-telephone"
+          ]
+    },
+    "toggle-layout#gba-oeste-local-4-whatsapp": {
+        "children": [
+            "link#gba-oeste-local-4-whatsapp"
+          ]
+    },
+    "link#gba-oeste-local-4-telephone": {
+        "title": "Teléfono de linea",
+        "props": {
+        "label": "0810-999-6288",
+        "href": "tel:0810-999-6288",
+        "target": "_blank",
+        "blockClass": ["local-telephone"]
+        }
+    },
+    "link#gba-oeste-local-4-whatsapp": {
+        "title": "Whatsapp",
+        "props": {
+        "label": "11 5984 5785",
+        "href": "https://wa.me/1159845785",
+        "target": "_blank",
+        "blockClass": ["local-whatsapp"]
+        }
+    },
+    "flex-layout.row#gba-oeste-local-4-services": {
+        "title": "Servicios",
+        "props": {
+        "colSizing": "auto",
+        "blockClass": "local-services",
+        "preserveLayoutOnMobile": true
+        },
+
+        "children": [
+            "image#gba-oeste-local-4-service-1",
+            "image#gba-oeste-local-4-service-2",
+            "image#gba-oeste-local-4-service-3",
+            "image#gba-oeste-local-4-service-4",
+            "image#gba-oeste-local-4-service-5",
+            "image#gba-oeste-local-4-service-6",
+            "image#gba-oeste-local-4-service-7",
+            "image#gba-oeste-local-4-service-8",
+            "image#gba-oeste-local-4-service-9",
+            "image#gba-oeste-local-4-service-10"
+        ]
+    },
+
+    "image#gba-oeste-local-4-service-1": {
+        "title": "Servicio 01",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-consultorio.svg",
+        "title": "Consultorios"
+        }
+    },
+    "image#gba-oeste-local-4-service-2": {
+        "title": "Servicio 02",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-envios.svg",
+        "title": "Envios"
+        }
+    },
+    "image#gba-oeste-local-4-service-3": {
+        "title": "Servicio 03",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-estacionamiento.svg",
+        "title": "Estacionamiento"
+        }
+    },
+    "image#gba-oeste-local-4-service-4": {
+        "title": "Servicio 04",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-peluqueria.svg",
+        "title": "Peluqueria"
+        }
+    },
+    "image#gba-oeste-local-4-service-5": {
+        "title": "Servicio 05",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-mascotas.svg",
+        "title": "Mascotas"
+        }
+    },
+
+    "image#gba-oeste-local-4-service-6": {
+        "title": "Servicio 06",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-4-service-7": {
+        "title": "Servicio 07",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-4-service-8": {
+        "title": "Servicio 08",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-4-service-9": {
+        "title": "Servicio 09",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-4-service-10": {
+        "title": "Servicio 10",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    /* GBA - ZONA OESTE - LOCAL 5 */
+    "flex-layout.row#gba-oeste-local-5-wrapper": {
+        "props": {
+            "title": "Local 5",
+            "blockClass": ["stores-title-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "disposition-layout#gba-oeste-local-5-wrapper"
+        ]
+    },
+    "disposition-layout#gba-oeste-local-5-wrapper": {
+        "title": "Local 5",
+        "children": [
+            "flex-layout.row#gba-oeste-local-5-image-wrapper",
+            "flex-layout.row#gba-oeste-local-5-content-wrapper"
+        ],
+        "props": {
+            "disposition": [
+            {
+                "order": 1
+            },
+            {
+                "order": 2
+            }
+            ]
+        }
+    },
+    "flex-layout.row#gba-oeste-local-5-image-wrapper": {
+        "title": "Imagen Local 5",
+        "props": {
+            "blockClass": ["local-image-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "image#gba-oeste-local-5-image"
+        ]
+    },
+    "image#gba-oeste-local-5-image": {
+        "props": {
+        "blockClass": ["local-image"],
+        "src": "assets/imgs/natural-life-sucursal.jpg",
+        "title": "Consultorios"
+        }
+    },
+    "flex-layout.row#gba-oeste-local-5-content-wrapper": {
+        "title": "Info Local 5",
+        "props": {
+            "blockClass": ["local-content-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+            "rich-text#gba-oeste-local-5-title",
+            "rich-text#gba-oeste-local-5-address",
+            "rich-text#gba-oeste-local-5-info",
+            "flex-layout.row#gba-oeste-local-5-phone",
+            "flex-layout.row#gba-oeste-local-5-services"
+        ]
+    },
+    "rich-text#gba-oeste-local-5-title": {
+        "title": "Titulo",
+        "props": {
+            "blockClass": ["local-title"],
+            "text": "ITUZAINGÓ Centro",
+            "width": "grow"
+        }
+    },
+    "rich-text#gba-oeste-local-5-address": {
+        "title": "Dirección",
+        "props": {
+            "blockClass": ["local-address"],
+            "text": "Las Heras 145",
+            "width": "grow"
+        }
+    },
+    "rich-text#gba-oeste-local-5-info": {
+        "title": "Información adicional",
+        "props": {
+            "blockClass": ["local-info"],
+            "text": "Abierta de lunes a sábados de 8:30 a 20:30 hs.",
+            "width": "grow"
+        }
+    },
+    "flex-layout.row#gba-oeste-local-5-phone": {
+        "title": "Teléfonos",
+        "props": {
+          "colSizing": "auto",
+          "blockClass": "local-phone",
+          "preserveLayoutOnMobile": true
+        },
+    
+        "children": [
+            "toggle-layout#gba-oeste-local-5-telephone",
+            "toggle-layout#gba-oeste-local-5-whatsapp"
+        ]
+    },
+    "toggle-layout#gba-oeste-local-5-telephone": {
+        "children": [
+            "link#gba-oeste-local-5-telephone"
+          ]
+    },
+    "toggle-layout#gba-oeste-local-5-whatsapp": {
+        "children": [
+            "link#gba-oeste-local-5-whatsapp"
+          ]
+    },
+    "link#gba-oeste-local-5-telephone": {
+        "title": "Teléfono de linea",
+        "props": {
+        "label": "0810-999-6288",
+        "href": "tel:0810-999-6288",
+        "target": "_blank",
+        "blockClass": ["local-telephone"]
+        }
+    },
+    "link#gba-oeste-local-5-whatsapp": {
+        "title": "Whatsapp",
+        "props": {
+        "label": "11 5984 5785",
+        "href": "https://wa.me/1159845785",
+        "target": "_blank",
+        "blockClass": ["local-whatsapp"]
+        }
+    },
+    "flex-layout.row#gba-oeste-local-5-services": {
+        "title": "Servicios",
+        "props": {
+        "colSizing": "auto",
+        "blockClass": "local-services",
+        "preserveLayoutOnMobile": true
+        },
+
+        "children": [
+            "image#gba-oeste-local-5-service-1",
+            "image#gba-oeste-local-5-service-2",
+            "image#gba-oeste-local-5-service-3",
+            "image#gba-oeste-local-5-service-4",
+            "image#gba-oeste-local-5-service-5",
+            "image#gba-oeste-local-5-service-6",
+            "image#gba-oeste-local-5-service-7",
+            "image#gba-oeste-local-5-service-8",
+            "image#gba-oeste-local-5-service-9",
+            "image#gba-oeste-local-5-service-10"
+        ]
+    },
+
+    "image#gba-oeste-local-5-service-1": {
+        "title": "Servicio 01",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-consultorio.svg",
+        "title": "Consultorios"
+        }
+    },
+    "image#gba-oeste-local-5-service-2": {
+        "title": "Servicio 02",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-envios.svg",
+        "title": "Envios"
+        }
+    },
+    "image#gba-oeste-local-5-service-3": {
+        "title": "Servicio 03",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-estacionamiento.svg",
+        "title": "Estacionamiento"
+        }
+    },
+    "image#gba-oeste-local-5-service-4": {
+        "title": "Servicio 04",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-peluqueria.svg",
+        "title": "Peluqueria"
+        }
+    },
+    "image#gba-oeste-local-5-service-5": {
+        "title": "Servicio 05",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-mascotas.svg",
+        "title": "Mascotas"
+        }
+    },
+
+    "image#gba-oeste-local-5-service-6": {
+        "title": "Servicio 06",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-5-service-7": {
+        "title": "Servicio 07",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-5-service-8": {
+        "title": "Servicio 08",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-5-service-9": {
+        "title": "Servicio 09",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-5-service-10": {
+        "title": "Servicio 10",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    /* GBA - ZONA OESTE - LOCAL 6 */
+    "flex-layout.row#gba-oeste-local-6-wrapper": {
+        "props": {
+            "title": "Local 6",
+            "blockClass": ["stores-title-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "disposition-layout#gba-oeste-local-6-wrapper"
+        ]
+    },
+    "disposition-layout#gba-oeste-local-6-wrapper": {
+        "title": "Local 6",
+        "children": [
+            "flex-layout.row#gba-oeste-local-6-image-wrapper",
+            "flex-layout.row#gba-oeste-local-6-content-wrapper"
+        ],
+        "props": {
+            "disposition": [
+            {
+                "order": 1
+            },
+            {
+                "order": 2
+            }
+            ]
+        }
+    },
+    "flex-layout.row#gba-oeste-local-6-image-wrapper": {
+        "title": "Imagen Local 6",
+        "props": {
+            "blockClass": ["local-image-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "image#gba-oeste-local-6-image"
+        ]
+    },
+    "image#gba-oeste-local-6-image": {
+        "props": {
+        "blockClass": ["local-image"],
+        "src": "assets/imgs/natural-life-sucursal.jpg",
+        "title": "Consultorios"
+        }
+    },
+    "flex-layout.row#gba-oeste-local-6-content-wrapper": {
+        "title": "Info Local 6",
+        "props": {
+            "blockClass": ["local-content-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+            "rich-text#gba-oeste-local-6-title",
+            "rich-text#gba-oeste-local-6-address",
+            "rich-text#gba-oeste-local-6-info",
+            "flex-layout.row#gba-oeste-local-6-phone",
+            "flex-layout.row#gba-oeste-local-6-services"
+        ]
+    },
+    "rich-text#gba-oeste-local-6-title": {
+        "title": "Titulo",
+        "props": {
+            "blockClass": ["local-title"],
+            "text": "ITUZAINGÓ Centro",
+            "width": "grow"
+        }
+    },
+    "rich-text#gba-oeste-local-6-address": {
+        "title": "Dirección",
+        "props": {
+            "blockClass": ["local-address"],
+            "text": "Las Heras 145",
+            "width": "grow"
+        }
+    },
+    "rich-text#gba-oeste-local-6-info": {
+        "title": "Información adicional",
+        "props": {
+            "blockClass": ["local-info"],
+            "text": "Abierta de lunes a sábados de 8:30 a 20:30 hs.",
+            "width": "grow"
+        }
+    },
+    "flex-layout.row#gba-oeste-local-6-phone": {
+        "title": "Teléfonos",
+        "props": {
+          "colSizing": "auto",
+          "blockClass": "local-phone",
+          "preserveLayoutOnMobile": true
+        },
+    
+        "children": [
+            "toggle-layout#gba-oeste-local-6-telephone",
+            "toggle-layout#gba-oeste-local-6-whatsapp"
+        ]
+    },
+    "toggle-layout#gba-oeste-local-6-telephone": {
+        "children": [
+            "link#gba-oeste-local-6-telephone"
+          ]
+    },
+    "toggle-layout#gba-oeste-local-6-whatsapp": {
+        "children": [
+            "link#gba-oeste-local-6-whatsapp"
+          ]
+    },
+    "link#gba-oeste-local-6-telephone": {
+        "title": "Teléfono de linea",
+        "props": {
+        "label": "0810-999-6288",
+        "href": "tel:0810-999-6288",
+        "target": "_blank",
+        "blockClass": ["local-telephone"]
+        }
+    },
+    "link#gba-oeste-local-6-whatsapp": {
+        "title": "Whatsapp",
+        "props": {
+        "label": "11 5984 5785",
+        "href": "https://wa.me/1159845785",
+        "target": "_blank",
+        "blockClass": ["local-whatsapp"]
+        }
+    },
+    "flex-layout.row#gba-oeste-local-6-services": {
+        "title": "Servicios",
+        "props": {
+        "colSizing": "auto",
+        "blockClass": "local-services",
+        "preserveLayoutOnMobile": true
+        },
+
+        "children": [
+            "image#gba-oeste-local-6-service-1",
+            "image#gba-oeste-local-6-service-2",
+            "image#gba-oeste-local-6-service-3",
+            "image#gba-oeste-local-6-service-4",
+            "image#gba-oeste-local-6-service-5",
+            "image#gba-oeste-local-6-service-6",
+            "image#gba-oeste-local-6-service-7",
+            "image#gba-oeste-local-6-service-8",
+            "image#gba-oeste-local-6-service-9",
+            "image#gba-oeste-local-6-service-10"
+        ]
+    },
+
+    "image#gba-oeste-local-6-service-1": {
+        "title": "Servicio 01",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-consultorio.svg",
+        "title": "Consultorios"
+        }
+    },
+    "image#gba-oeste-local-6-service-2": {
+        "title": "Servicio 02",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-envios.svg",
+        "title": "Envios"
+        }
+    },
+    "image#gba-oeste-local-6-service-3": {
+        "title": "Servicio 03",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-estacionamiento.svg",
+        "title": "Estacionamiento"
+        }
+    },
+    "image#gba-oeste-local-6-service-4": {
+        "title": "Servicio 04",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-peluqueria.svg",
+        "title": "Peluqueria"
+        }
+    },
+    "image#gba-oeste-local-6-service-5": {
+        "title": "Servicio 05",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-mascotas.svg",
+        "title": "Mascotas"
+        }
+    },
+
+    "image#gba-oeste-local-6-service-6": {
+        "title": "Servicio 06",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-6-service-7": {
+        "title": "Servicio 07",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-6-service-8": {
+        "title": "Servicio 08",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-6-service-9": {
+        "title": "Servicio 09",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-6-service-10": {
+        "title": "Servicio 10",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+    /* GBA - ZONA OESTE - LOCAL 7 */
+    "flex-layout.row#gba-oeste-local-7-wrapper": {
+        "props": {
+            "title": "Local 7",
+            "blockClass": ["stores-title-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "disposition-layout#gba-oeste-local-7-wrapper"
+        ]
+    },
+    "disposition-layout#gba-oeste-local-7-wrapper": {
+        "title": "Local 7",
+        "children": [
+            "flex-layout.row#gba-oeste-local-7-image-wrapper",
+            "flex-layout.row#gba-oeste-local-7-content-wrapper"
+        ],
+        "props": {
+            "disposition": [
+            {
+                "order": 1
+            },
+            {
+                "order": 2
+            }
+            ]
+        }
+    },
+    "flex-layout.row#gba-oeste-local-7-image-wrapper": {
+        "title": "Imagen Local 7",
+        "props": {
+            "blockClass": ["local-image-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "image#gba-oeste-local-7-image"
+        ]
+    },
+    "image#gba-oeste-local-7-image": {
+        "props": {
+        "blockClass": ["local-image"],
+        "src": "assets/imgs/natural-life-sucursal.jpg",
+        "title": "Consultorios"
+        }
+    },
+    "flex-layout.row#gba-oeste-local-7-content-wrapper": {
+        "title": "Info Local 7",
+        "props": {
+            "blockClass": ["local-content-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+            "rich-text#gba-oeste-local-7-title",
+            "rich-text#gba-oeste-local-7-address",
+            "rich-text#gba-oeste-local-7-info",
+            "flex-layout.row#gba-oeste-local-7-phone",
+            "flex-layout.row#gba-oeste-local-7-services"
+        ]
+    },
+    "rich-text#gba-oeste-local-7-title": {
+        "title": "Titulo",
+        "props": {
+            "blockClass": ["local-title"],
+            "text": "ITUZAINGÓ Centro",
+            "width": "grow"
+        }
+    },
+    "rich-text#gba-oeste-local-7-address": {
+        "title": "Dirección",
+        "props": {
+            "blockClass": ["local-address"],
+            "text": "Las Heras 145",
+            "width": "grow"
+        }
+    },
+    "rich-text#gba-oeste-local-7-info": {
+        "title": "Información adicional",
+        "props": {
+            "blockClass": ["local-info"],
+            "text": "Abierta de lunes a sábados de 8:30 a 20:30 hs.",
+            "width": "grow"
+        }
+    },
+    "flex-layout.row#gba-oeste-local-7-phone": {
+        "title": "Teléfonos",
+        "props": {
+          "colSizing": "auto",
+          "blockClass": "local-phone",
+          "preserveLayoutOnMobile": true
+        },
+    
+        "children": [
+            "toggle-layout#gba-oeste-local-7-telephone",
+            "toggle-layout#gba-oeste-local-7-whatsapp"
+        ]
+    },
+    "toggle-layout#gba-oeste-local-7-telephone": {
+        "children": [
+            "link#gba-oeste-local-7-telephone"
+          ]
+    },
+    "toggle-layout#gba-oeste-local-7-whatsapp": {
+        "children": [
+            "link#gba-oeste-local-7-whatsapp"
+          ]
+    },
+    "link#gba-oeste-local-7-telephone": {
+        "title": "Teléfono de linea",
+        "props": {
+        "label": "0810-999-6288",
+        "href": "tel:0810-999-6288",
+        "target": "_blank",
+        "blockClass": ["local-telephone"]
+        }
+    },
+    "link#gba-oeste-local-7-whatsapp": {
+        "title": "Whatsapp",
+        "props": {
+        "label": "11 5984 5785",
+        "href": "https://wa.me/1159845785",
+        "target": "_blank",
+        "blockClass": ["local-whatsapp"]
+        }
+    },
+    "flex-layout.row#gba-oeste-local-7-services": {
+        "title": "Servicios",
+        "props": {
+        "colSizing": "auto",
+        "blockClass": "local-services",
+        "preserveLayoutOnMobile": true
+        },
+
+        "children": [
+            "image#gba-oeste-local-7-service-1",
+            "image#gba-oeste-local-7-service-2",
+            "image#gba-oeste-local-7-service-3",
+            "image#gba-oeste-local-7-service-4",
+            "image#gba-oeste-local-7-service-5",
+            "image#gba-oeste-local-7-service-6",
+            "image#gba-oeste-local-7-service-7",
+            "image#gba-oeste-local-7-service-8",
+            "image#gba-oeste-local-7-service-9",
+            "image#gba-oeste-local-7-service-10"
+        ]
+    },
+
+    "image#gba-oeste-local-7-service-1": {
+        "title": "Servicio 01",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-consultorio.svg",
+        "title": "Consultorios"
+        }
+    },
+    "image#gba-oeste-local-7-service-2": {
+        "title": "Servicio 02",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-envios.svg",
+        "title": "Envios"
+        }
+    },
+    "image#gba-oeste-local-7-service-3": {
+        "title": "Servicio 03",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-estacionamiento.svg",
+        "title": "Estacionamiento"
+        }
+    },
+    "image#gba-oeste-local-7-service-4": {
+        "title": "Servicio 04",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-peluqueria.svg",
+        "title": "Peluqueria"
+        }
+    },
+    "image#gba-oeste-local-7-service-5": {
+        "title": "Servicio 05",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-mascotas.svg",
+        "title": "Mascotas"
+        }
+    },
+
+    "image#gba-oeste-local-7-service-6": {
+        "title": "Servicio 06",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-7-service-7": {
+        "title": "Servicio 07",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-7-service-8": {
+        "title": "Servicio 08",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-7-service-9": {
+        "title": "Servicio 09",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-7-service-10": {
+        "title": "Servicio 10",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    /* GBA - ZONA OESTE - LOCAL 8 */
+    "flex-layout.row#gba-oeste-local-8-wrapper": {
+        "props": {
+            "title": "Local 8",
+            "blockClass": ["stores-title-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "disposition-layout#gba-oeste-local-8-wrapper"
+        ]
+    },
+    "disposition-layout#gba-oeste-local-8-wrapper": {
+        "title": "Local 8",
+        "children": [
+            "flex-layout.row#gba-oeste-local-8-image-wrapper",
+            "flex-layout.row#gba-oeste-local-8-content-wrapper"
+        ],
+        "props": {
+            "disposition": [
+            {
+                "order": 1
+            },
+            {
+                "order": 2
+            }
+            ]
+        }
+    },
+    "flex-layout.row#gba-oeste-local-8-image-wrapper": {
+        "title": "Imagen Local 8",
+        "props": {
+            "blockClass": ["local-image-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "image#gba-oeste-local-8-image"
+        ]
+    },
+    "image#gba-oeste-local-8-image": {
+        "props": {
+        "blockClass": ["local-image"],
+        "src": "assets/imgs/natural-life-sucursal.jpg",
+        "title": "Consultorios"
+        }
+    },
+    "flex-layout.row#gba-oeste-local-8-content-wrapper": {
+        "title": "Info Local 8",
+        "props": {
+            "blockClass": ["local-content-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+            "rich-text#gba-oeste-local-8-title",
+            "rich-text#gba-oeste-local-8-address",
+            "rich-text#gba-oeste-local-8-info",
+            "flex-layout.row#gba-oeste-local-8-phone",
+            "flex-layout.row#gba-oeste-local-8-services"
+        ]
+    },
+    "rich-text#gba-oeste-local-8-title": {
+        "title": "Titulo",
+        "props": {
+            "blockClass": ["local-title"],
+            "text": "ITUZAINGÓ Centro",
+            "width": "grow"
+        }
+    },
+    "rich-text#gba-oeste-local-8-address": {
+        "title": "Dirección",
+        "props": {
+            "blockClass": ["local-address"],
+            "text": "Las Heras 145",
+            "width": "grow"
+        }
+    },
+    "rich-text#gba-oeste-local-8-info": {
+        "title": "Información adicional",
+        "props": {
+            "blockClass": ["local-info"],
+            "text": "Abierta de lunes a sábados de 8:30 a 20:30 hs.",
+            "width": "grow"
+        }
+    },
+    "flex-layout.row#gba-oeste-local-8-phone": {
+        "title": "Teléfonos",
+        "props": {
+          "colSizing": "auto",
+          "blockClass": "local-phone",
+          "preserveLayoutOnMobile": true
+        },
+    
+        "children": [
+            "toggle-layout#gba-oeste-local-8-telephone",
+            "toggle-layout#gba-oeste-local-8-whatsapp"
+        ]
+    },
+    "toggle-layout#gba-oeste-local-8-telephone": {
+        "children": [
+            "link#gba-oeste-local-8-telephone"
+          ]
+    },
+    "toggle-layout#gba-oeste-local-8-whatsapp": {
+        "children": [
+            "link#gba-oeste-local-8-whatsapp"
+          ]
+    },
+    "link#gba-oeste-local-8-telephone": {
+        "title": "Teléfono de linea",
+        "props": {
+        "label": "0810-999-6288",
+        "href": "tel:0810-999-6288",
+        "target": "_blank",
+        "blockClass": ["local-telephone"]
+        }
+    },
+    "link#gba-oeste-local-8-whatsapp": {
+        "title": "Whatsapp",
+        "props": {
+        "label": "11 5984 5785",
+        "href": "https://wa.me/1159845785",
+        "target": "_blank",
+        "blockClass": ["local-whatsapp"]
+        }
+    },
+    "flex-layout.row#gba-oeste-local-8-services": {
+        "title": "Servicios",
+        "props": {
+        "colSizing": "auto",
+        "blockClass": "local-services",
+        "preserveLayoutOnMobile": true
+        },
+
+        "children": [
+            "image#gba-oeste-local-8-service-1",
+            "image#gba-oeste-local-8-service-2",
+            "image#gba-oeste-local-8-service-3",
+            "image#gba-oeste-local-8-service-4",
+            "image#gba-oeste-local-8-service-5",
+            "image#gba-oeste-local-8-service-6",
+            "image#gba-oeste-local-8-service-7",
+            "image#gba-oeste-local-8-service-8",
+            "image#gba-oeste-local-8-service-9",
+            "image#gba-oeste-local-8-service-10"
+        ]
+    },
+
+    "image#gba-oeste-local-8-service-1": {
+        "title": "Servicio 01",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-consultorio.svg",
+        "title": "Consultorios"
+        }
+    },
+    "image#gba-oeste-local-8-service-2": {
+        "title": "Servicio 02",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-envios.svg",
+        "title": "Envios"
+        }
+    },
+    "image#gba-oeste-local-8-service-3": {
+        "title": "Servicio 03",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-estacionamiento.svg",
+        "title": "Estacionamiento"
+        }
+    },
+    "image#gba-oeste-local-8-service-4": {
+        "title": "Servicio 04",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-peluqueria.svg",
+        "title": "Peluqueria"
+        }
+    },
+    "image#gba-oeste-local-8-service-5": {
+        "title": "Servicio 05",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-mascotas.svg",
+        "title": "Mascotas"
+        }
+    },
+
+    "image#gba-oeste-local-8-service-6": {
+        "title": "Servicio 06",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-8-service-7": {
+        "title": "Servicio 07",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-8-service-8": {
+        "title": "Servicio 08",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-8-service-9": {
+        "title": "Servicio 09",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-8-service-10": {
+        "title": "Servicio 10",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    /* GBA - ZONA OESTE - LOCAL 9 */
+    "flex-layout.row#gba-oeste-local-9-wrapper": {
+        "props": {
+            "title": "Local 9",
+            "blockClass": ["stores-title-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "disposition-layout#gba-oeste-local-9-wrapper"
+        ]
+    },
+    "disposition-layout#gba-oeste-local-9-wrapper": {
+        "title": "Local 9",
+        "children": [
+            "flex-layout.row#gba-oeste-local-9-image-wrapper",
+            "flex-layout.row#gba-oeste-local-9-content-wrapper"
+        ],
+        "props": {
+            "disposition": [
+            {
+                "order": 1
+            },
+            {
+                "order": 2
+            }
+            ]
+        }
+    },
+    "flex-layout.row#gba-oeste-local-9-image-wrapper": {
+        "title": "Imagen Local 9",
+        "props": {
+            "blockClass": ["local-image-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "image#gba-oeste-local-9-image"
+        ]
+    },
+    "image#gba-oeste-local-9-image": {
+        "props": {
+        "blockClass": ["local-image"],
+        "src": "assets/imgs/natural-life-sucursal.jpg",
+        "title": "Consultorios"
+        }
+    },
+    "flex-layout.row#gba-oeste-local-9-content-wrapper": {
+        "title": "Info Local 9",
+        "props": {
+            "blockClass": ["local-content-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+            "rich-text#gba-oeste-local-9-title",
+            "rich-text#gba-oeste-local-9-address",
+            "rich-text#gba-oeste-local-9-info",
+            "flex-layout.row#gba-oeste-local-9-phone",
+            "flex-layout.row#gba-oeste-local-9-services"
+        ]
+    },
+    "rich-text#gba-oeste-local-9-title": {
+        "title": "Titulo",
+        "props": {
+            "blockClass": ["local-title"],
+            "text": "ITUZAINGÓ Centro",
+            "width": "grow"
+        }
+    },
+    "rich-text#gba-oeste-local-9-address": {
+        "title": "Dirección",
+        "props": {
+            "blockClass": ["local-address"],
+            "text": "Las Heras 145",
+            "width": "grow"
+        }
+    },
+    "rich-text#gba-oeste-local-9-info": {
+        "title": "Información adicional",
+        "props": {
+            "blockClass": ["local-info"],
+            "text": "Abierta de lunes a sábados de 8:30 a 20:30 hs.",
+            "width": "grow"
+        }
+    },
+    "flex-layout.row#gba-oeste-local-9-phone": {
+        "title": "Teléfonos",
+        "props": {
+          "colSizing": "auto",
+          "blockClass": "local-phone",
+          "preserveLayoutOnMobile": true
+        },
+    
+        "children": [
+            "toggle-layout#gba-oeste-local-9-telephone",
+            "toggle-layout#gba-oeste-local-9-whatsapp"
+        ]
+    },
+    "toggle-layout#gba-oeste-local-9-telephone": {
+        "children": [
+            "link#gba-oeste-local-9-telephone"
+          ]
+    },
+    "toggle-layout#gba-oeste-local-9-whatsapp": {
+        "children": [
+            "link#gba-oeste-local-9-whatsapp"
+          ]
+    },
+    "link#gba-oeste-local-9-telephone": {
+        "title": "Teléfono de linea",
+        "props": {
+        "label": "0810-999-6288",
+        "href": "tel:0810-999-6288",
+        "target": "_blank",
+        "blockClass": ["local-telephone"]
+        }
+    },
+    "link#gba-oeste-local-9-whatsapp": {
+        "title": "Whatsapp",
+        "props": {
+        "label": "11 5984 5785",
+        "href": "https://wa.me/1159845785",
+        "target": "_blank",
+        "blockClass": ["local-whatsapp"]
+        }
+    },
+    "flex-layout.row#gba-oeste-local-9-services": {
+        "title": "Servicios",
+        "props": {
+        "colSizing": "auto",
+        "blockClass": "local-services",
+        "preserveLayoutOnMobile": true
+        },
+
+        "children": [
+            "image#gba-oeste-local-9-service-1",
+            "image#gba-oeste-local-9-service-2",
+            "image#gba-oeste-local-9-service-3",
+            "image#gba-oeste-local-9-service-4",
+            "image#gba-oeste-local-9-service-5",
+            "image#gba-oeste-local-9-service-6",
+            "image#gba-oeste-local-9-service-7",
+            "image#gba-oeste-local-9-service-8",
+            "image#gba-oeste-local-9-service-9",
+            "image#gba-oeste-local-9-service-10"
+        ]
+    },
+
+    "image#gba-oeste-local-9-service-1": {
+        "title": "Servicio 01",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-consultorio.svg",
+        "title": "Consultorios"
+        }
+    },
+    "image#gba-oeste-local-9-service-2": {
+        "title": "Servicio 02",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-envios.svg",
+        "title": "Envios"
+        }
+    },
+    "image#gba-oeste-local-9-service-3": {
+        "title": "Servicio 03",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-estacionamiento.svg",
+        "title": "Estacionamiento"
+        }
+    },
+    "image#gba-oeste-local-9-service-4": {
+        "title": "Servicio 04",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-peluqueria.svg",
+        "title": "Peluqueria"
+        }
+    },
+    "image#gba-oeste-local-9-service-5": {
+        "title": "Servicio 05",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-mascotas.svg",
+        "title": "Mascotas"
+        }
+    },
+
+    "image#gba-oeste-local-9-service-6": {
+        "title": "Servicio 06",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-9-service-7": {
+        "title": "Servicio 07",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-9-service-8": {
+        "title": "Servicio 08",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-9-service-9": {
+        "title": "Servicio 09",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-9-service-10": {
+        "title": "Servicio 10",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    /* GBA - ZONA OESTE - LOCAL 10 */
+    "flex-layout.row#gba-oeste-local-10-wrapper": {
+        "props": {
+            "title": "Local 10",
+            "blockClass": ["stores-title-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "disposition-layout#gba-oeste-local-10-wrapper"
+        ]
+    },
+    "disposition-layout#gba-oeste-local-10-wrapper": {
+        "title": "Local 10",
+        "children": [
+            "flex-layout.row#gba-oeste-local-10-image-wrapper",
+            "flex-layout.row#gba-oeste-local-10-content-wrapper"
+        ],
+        "props": {
+            "disposition": [
+            {
+                "order": 1
+            },
+            {
+                "order": 2
+            }
+            ]
+        }
+    },
+    "flex-layout.row#gba-oeste-local-10-image-wrapper": {
+        "title": "Imagen Local 10",
+        "props": {
+            "blockClass": ["local-image-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "image#gba-oeste-local-10-image"
+        ]
+    },
+    "image#gba-oeste-local-10-image": {
+        "props": {
+        "blockClass": ["local-image"],
+        "src": "assets/imgs/natural-life-sucursal.jpg",
+        "title": "Consultorios"
+        }
+    },
+    "flex-layout.row#gba-oeste-local-10-content-wrapper": {
+        "title": "Info Local 10",
+        "props": {
+            "blockClass": ["local-content-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+            "rich-text#gba-oeste-local-10-title",
+            "rich-text#gba-oeste-local-10-address",
+            "rich-text#gba-oeste-local-10-info",
+            "flex-layout.row#gba-oeste-local-10-phone",
+            "flex-layout.row#gba-oeste-local-10-services"
+        ]
+    },
+    "rich-text#gba-oeste-local-10-title": {
+        "title": "Titulo",
+        "props": {
+            "blockClass": ["local-title"],
+            "text": "ITUZAINGÓ Centro",
+            "width": "grow"
+        }
+    },
+    "rich-text#gba-oeste-local-10-address": {
+        "title": "Dirección",
+        "props": {
+            "blockClass": ["local-address"],
+            "text": "Las Heras 145",
+            "width": "grow"
+        }
+    },
+    "rich-text#gba-oeste-local-10-info": {
+        "title": "Información adicional",
+        "props": {
+            "blockClass": ["local-info"],
+            "text": "Abierta de lunes a sábados de 8:30 a 20:30 hs.",
+            "width": "grow"
+        }
+    },
+    "flex-layout.row#gba-oeste-local-10-phone": {
+        "title": "Teléfonos",
+        "props": {
+          "colSizing": "auto",
+          "blockClass": "local-phone",
+          "preserveLayoutOnMobile": true
+        },
+    
+        "children": [
+            "toggle-layout#gba-oeste-local-10-telephone",
+            "toggle-layout#gba-oeste-local-10-whatsapp"
+        ]
+    },
+    "toggle-layout#gba-oeste-local-10-telephone": {
+        "children": [
+            "link#gba-oeste-local-10-telephone"
+          ]
+    },
+    "toggle-layout#gba-oeste-local-10-whatsapp": {
+        "children": [
+            "link#gba-oeste-local-10-whatsapp"
+          ]
+    },
+    "link#gba-oeste-local-10-telephone": {
+        "title": "Teléfono de linea",
+        "props": {
+        "label": "0810-999-6288",
+        "href": "tel:0810-999-6288",
+        "target": "_blank",
+        "blockClass": ["local-telephone"]
+        }
+    },
+    "link#gba-oeste-local-10-whatsapp": {
+        "title": "Whatsapp",
+        "props": {
+        "label": "11 5984 5785",
+        "href": "https://wa.me/1159845785",
+        "target": "_blank",
+        "blockClass": ["local-whatsapp"]
+        }
+    },
+    "flex-layout.row#gba-oeste-local-10-services": {
+        "title": "Servicios",
+        "props": {
+        "colSizing": "auto",
+        "blockClass": "local-services",
+        "preserveLayoutOnMobile": true
+        },
+
+        "children": [
+            "image#gba-oeste-local-10-service-1",
+            "image#gba-oeste-local-10-service-2",
+            "image#gba-oeste-local-10-service-3",
+            "image#gba-oeste-local-10-service-4",
+            "image#gba-oeste-local-10-service-5",
+            "image#gba-oeste-local-10-service-6",
+            "image#gba-oeste-local-10-service-7",
+            "image#gba-oeste-local-10-service-8",
+            "image#gba-oeste-local-10-service-9",
+            "image#gba-oeste-local-10-service-10"
+        ]
+    },
+
+    "image#gba-oeste-local-10-service-1": {
+        "title": "Servicio 01",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-consultorio.svg",
+        "title": "Consultorios"
+        }
+    },
+    "image#gba-oeste-local-10-service-2": {
+        "title": "Servicio 02",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-envios.svg",
+        "title": "Envios"
+        }
+    },
+    "image#gba-oeste-local-10-service-3": {
+        "title": "Servicio 03",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-estacionamiento.svg",
+        "title": "Estacionamiento"
+        }
+    },
+    "image#gba-oeste-local-10-service-4": {
+        "title": "Servicio 04",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-peluqueria.svg",
+        "title": "Peluqueria"
+        }
+    },
+    "image#gba-oeste-local-10-service-5": {
+        "title": "Servicio 05",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-mascotas.svg",
+        "title": "Mascotas"
+        }
+    },
+
+    "image#gba-oeste-local-10-service-6": {
+        "title": "Servicio 06",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-10-service-7": {
+        "title": "Servicio 07",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-10-service-8": {
+        "title": "Servicio 08",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-10-service-9": {
+        "title": "Servicio 09",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-10-service-10": {
+        "title": "Servicio 10",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+    /* GBA - ZONA OESTE - LOCAL 11 */
+    "flex-layout.row#gba-oeste-local-11-wrapper": {
+        "props": {
+            "title": "Local 11",
+            "blockClass": ["stores-title-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "disposition-layout#gba-oeste-local-11-wrapper"
+        ]
+    },
+    "disposition-layout#gba-oeste-local-11-wrapper": {
+        "title": "Local 11",
+        "children": [
+            "flex-layout.row#gba-oeste-local-11-image-wrapper",
+            "flex-layout.row#gba-oeste-local-11-content-wrapper"
+        ],
+        "props": {
+            "disposition": [
+            {
+                "order": 1
+            },
+            {
+                "order": 2
+            }
+            ]
+        }
+    },
+    "flex-layout.row#gba-oeste-local-11-image-wrapper": {
+        "title": "Imagen Local 11",
+        "props": {
+            "blockClass": ["local-image-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "image#gba-oeste-local-11-image"
+        ]
+    },
+    "image#gba-oeste-local-11-image": {
+        "props": {
+        "blockClass": ["local-image"],
+        "src": "assets/imgs/natural-life-sucursal.jpg",
+        "title": "Consultorios"
+        }
+    },
+    "flex-layout.row#gba-oeste-local-11-content-wrapper": {
+        "title": "Info Local 11",
+        "props": {
+            "blockClass": ["local-content-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+            "rich-text#gba-oeste-local-11-title",
+            "rich-text#gba-oeste-local-11-address",
+            "rich-text#gba-oeste-local-11-info",
+            "flex-layout.row#gba-oeste-local-11-phone",
+            "flex-layout.row#gba-oeste-local-11-services"
+        ]
+    },
+    "rich-text#gba-oeste-local-11-title": {
+        "title": "Titulo",
+        "props": {
+            "blockClass": ["local-title"],
+            "text": "ITUZAINGÓ Centro",
+            "width": "grow"
+        }
+    },
+    "rich-text#gba-oeste-local-11-address": {
+        "title": "Dirección",
+        "props": {
+            "blockClass": ["local-address"],
+            "text": "Las Heras 145",
+            "width": "grow"
+        }
+    },
+    "rich-text#gba-oeste-local-11-info": {
+        "title": "Información adicional",
+        "props": {
+            "blockClass": ["local-info"],
+            "text": "Abierta de lunes a sábados de 8:30 a 20:30 hs.",
+            "width": "grow"
+        }
+    },
+    "flex-layout.row#gba-oeste-local-11-phone": {
+        "title": "Teléfonos",
+        "props": {
+          "colSizing": "auto",
+          "blockClass": "local-phone",
+          "preserveLayoutOnMobile": true
+        },
+    
+        "children": [
+            "toggle-layout#gba-oeste-local-11-telephone",
+            "toggle-layout#gba-oeste-local-11-whatsapp"
+        ]
+    },
+    "toggle-layout#gba-oeste-local-11-telephone": {
+        "children": [
+            "link#gba-oeste-local-11-telephone"
+          ]
+    },
+    "toggle-layout#gba-oeste-local-11-whatsapp": {
+        "children": [
+            "link#gba-oeste-local-11-whatsapp"
+          ]
+    },
+    "link#gba-oeste-local-11-telephone": {
+        "title": "Teléfono de linea",
+        "props": {
+        "label": "0810-999-6288",
+        "href": "tel:0810-999-6288",
+        "target": "_blank",
+        "blockClass": ["local-telephone"]
+        }
+    },
+    "link#gba-oeste-local-11-whatsapp": {
+        "title": "Whatsapp",
+        "props": {
+        "label": "11 5984 5785",
+        "href": "https://wa.me/1159845785",
+        "target": "_blank",
+        "blockClass": ["local-whatsapp"]
+        }
+    },
+    "flex-layout.row#gba-oeste-local-11-services": {
+        "title": "Servicios",
+        "props": {
+        "colSizing": "auto",
+        "blockClass": "local-services",
+        "preserveLayoutOnMobile": true
+        },
+
+        "children": [
+            "image#gba-oeste-local-11-service-1",
+            "image#gba-oeste-local-11-service-2",
+            "image#gba-oeste-local-11-service-3",
+            "image#gba-oeste-local-11-service-4",
+            "image#gba-oeste-local-11-service-5",
+            "image#gba-oeste-local-11-service-6",
+            "image#gba-oeste-local-11-service-7",
+            "image#gba-oeste-local-11-service-8",
+            "image#gba-oeste-local-11-service-9",
+            "image#gba-oeste-local-11-service-10"
+        ]
+    },
+
+    "image#gba-oeste-local-11-service-1": {
+        "title": "Servicio 01",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-consultorio.svg",
+        "title": "Consultorios"
+        }
+    },
+    "image#gba-oeste-local-11-service-2": {
+        "title": "Servicio 02",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-envios.svg",
+        "title": "Envios"
+        }
+    },
+    "image#gba-oeste-local-11-service-3": {
+        "title": "Servicio 03",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-estacionamiento.svg",
+        "title": "Estacionamiento"
+        }
+    },
+    "image#gba-oeste-local-11-service-4": {
+        "title": "Servicio 04",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-peluqueria.svg",
+        "title": "Peluqueria"
+        }
+    },
+    "image#gba-oeste-local-11-service-5": {
+        "title": "Servicio 05",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-mascotas.svg",
+        "title": "Mascotas"
+        }
+    },
+
+    "image#gba-oeste-local-11-service-6": {
+        "title": "Servicio 06",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-11-service-7": {
+        "title": "Servicio 07",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-11-service-8": {
+        "title": "Servicio 08",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-11-service-9": {
+        "title": "Servicio 09",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-11-service-10": {
+        "title": "Servicio 10",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    /* GBA - ZONA OESTE - LOCAL 12 */
+    "flex-layout.row#gba-oeste-local-12-wrapper": {
+        "props": {
+            "title": "Local 12",
+            "blockClass": ["stores-title-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "disposition-layout#gba-oeste-local-12-wrapper"
+        ]
+    },
+    "disposition-layout#gba-oeste-local-12-wrapper": {
+        "title": "Local 12",
+        "children": [
+            "flex-layout.row#gba-oeste-local-12-image-wrapper",
+            "flex-layout.row#gba-oeste-local-12-content-wrapper"
+        ],
+        "props": {
+            "disposition": [
+            {
+                "order": 1
+            },
+            {
+                "order": 2
+            }
+            ]
+        }
+    },
+    "flex-layout.row#gba-oeste-local-12-image-wrapper": {
+        "title": "Imagen Local 12",
+        "props": {
+            "blockClass": ["local-image-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "image#gba-oeste-local-12-image"
+        ]
+    },
+    "image#gba-oeste-local-12-image": {
+        "props": {
+        "blockClass": ["local-image"],
+        "src": "assets/imgs/natural-life-sucursal.jpg",
+        "title": "Consultorios"
+        }
+    },
+    "flex-layout.row#gba-oeste-local-12-content-wrapper": {
+        "title": "Info Local 12",
+        "props": {
+            "blockClass": ["local-content-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+            "rich-text#gba-oeste-local-12-title",
+            "rich-text#gba-oeste-local-12-address",
+            "rich-text#gba-oeste-local-12-info",
+            "flex-layout.row#gba-oeste-local-12-phone",
+            "flex-layout.row#gba-oeste-local-12-services"
+        ]
+    },
+    "rich-text#gba-oeste-local-12-title": {
+        "title": "Titulo",
+        "props": {
+            "blockClass": ["local-title"],
+            "text": "ITUZAINGÓ Centro",
+            "width": "grow"
+        }
+    },
+    "rich-text#gba-oeste-local-12-address": {
+        "title": "Dirección",
+        "props": {
+            "blockClass": ["local-address"],
+            "text": "Las Heras 145",
+            "width": "grow"
+        }
+    },
+    "rich-text#gba-oeste-local-12-info": {
+        "title": "Información adicional",
+        "props": {
+            "blockClass": ["local-info"],
+            "text": "Abierta de lunes a sábados de 8:30 a 20:30 hs.",
+            "width": "grow"
+        }
+    },
+    "flex-layout.row#gba-oeste-local-12-phone": {
+        "title": "Teléfonos",
+        "props": {
+          "colSizing": "auto",
+          "blockClass": "local-phone",
+          "preserveLayoutOnMobile": true
+        },
+    
+        "children": [
+            "toggle-layout#gba-oeste-local-12-telephone",
+            "toggle-layout#gba-oeste-local-12-whatsapp"
+        ]
+    },
+    "toggle-layout#gba-oeste-local-12-telephone": {
+        "children": [
+            "link#gba-oeste-local-12-telephone"
+          ]
+    },
+    "toggle-layout#gba-oeste-local-12-whatsapp": {
+        "children": [
+            "link#gba-oeste-local-12-whatsapp"
+          ]
+    },
+    "link#gba-oeste-local-12-telephone": {
+        "title": "Teléfono de linea",
+        "props": {
+        "label": "0810-999-6288",
+        "href": "tel:0810-999-6288",
+        "target": "_blank",
+        "blockClass": ["local-telephone"]
+        }
+    },
+    "link#gba-oeste-local-12-whatsapp": {
+        "title": "Whatsapp",
+        "props": {
+        "label": "11 5984 5785",
+        "href": "https://wa.me/1159845785",
+        "target": "_blank",
+        "blockClass": ["local-whatsapp"]
+        }
+    },
+    "flex-layout.row#gba-oeste-local-12-services": {
+        "title": "Servicios",
+        "props": {
+        "colSizing": "auto",
+        "blockClass": "local-services",
+        "preserveLayoutOnMobile": true
+        },
+
+        "children": [
+            "image#gba-oeste-local-12-service-1",
+            "image#gba-oeste-local-12-service-2",
+            "image#gba-oeste-local-12-service-3",
+            "image#gba-oeste-local-12-service-4",
+            "image#gba-oeste-local-12-service-5",
+            "image#gba-oeste-local-12-service-6",
+            "image#gba-oeste-local-12-service-7",
+            "image#gba-oeste-local-12-service-8",
+            "image#gba-oeste-local-12-service-9",
+            "image#gba-oeste-local-12-service-10"
+        ]
+    },
+
+    "image#gba-oeste-local-12-service-1": {
+        "title": "Servicio 01",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-consultorio.svg",
+        "title": "Consultorios"
+        }
+    },
+    "image#gba-oeste-local-12-service-2": {
+        "title": "Servicio 02",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-envios.svg",
+        "title": "Envios"
+        }
+    },
+    "image#gba-oeste-local-12-service-3": {
+        "title": "Servicio 03",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-estacionamiento.svg",
+        "title": "Estacionamiento"
+        }
+    },
+    "image#gba-oeste-local-12-service-4": {
+        "title": "Servicio 04",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-peluqueria.svg",
+        "title": "Peluqueria"
+        }
+    },
+    "image#gba-oeste-local-12-service-5": {
+        "title": "Servicio 05",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-mascotas.svg",
+        "title": "Mascotas"
+        }
+    },
+
+    "image#gba-oeste-local-12-service-6": {
+        "title": "Servicio 06",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-12-service-7": {
+        "title": "Servicio 07",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-12-service-8": {
+        "title": "Servicio 08",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-12-service-9": {
+        "title": "Servicio 09",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-12-service-10": {
+        "title": "Servicio 10",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    /* GBA - ZONA OESTE - LOCAL 13 */
+    "flex-layout.row#gba-oeste-local-13-wrapper": {
+        "props": {
+            "title": "Local 13",
+            "blockClass": ["stores-title-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "disposition-layout#gba-oeste-local-13-wrapper"
+        ]
+    },
+    "disposition-layout#gba-oeste-local-13-wrapper": {
+        "title": "Local 13",
+        "children": [
+            "flex-layout.row#gba-oeste-local-13-image-wrapper",
+            "flex-layout.row#gba-oeste-local-13-content-wrapper"
+        ],
+        "props": {
+            "disposition": [
+            {
+                "order": 1
+            },
+            {
+                "order": 2
+            }
+            ]
+        }
+    },
+    "flex-layout.row#gba-oeste-local-13-image-wrapper": {
+        "title": "Imagen Local 13",
+        "props": {
+            "blockClass": ["local-image-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "image#gba-oeste-local-13-image"
+        ]
+    },
+    "image#gba-oeste-local-13-image": {
+        "props": {
+        "blockClass": ["local-image"],
+        "src": "assets/imgs/natural-life-sucursal.jpg",
+        "title": "Consultorios"
+        }
+    },
+    "flex-layout.row#gba-oeste-local-13-content-wrapper": {
+        "title": "Info Local 13",
+        "props": {
+            "blockClass": ["local-content-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+            "rich-text#gba-oeste-local-13-title",
+            "rich-text#gba-oeste-local-13-address",
+            "rich-text#gba-oeste-local-13-info",
+            "flex-layout.row#gba-oeste-local-13-phone",
+            "flex-layout.row#gba-oeste-local-13-services"
+        ]
+    },
+    "rich-text#gba-oeste-local-13-title": {
+        "title": "Titulo",
+        "props": {
+            "blockClass": ["local-title"],
+            "text": "ITUZAINGÓ Centro",
+            "width": "grow"
+        }
+    },
+    "rich-text#gba-oeste-local-13-address": {
+        "title": "Dirección",
+        "props": {
+            "blockClass": ["local-address"],
+            "text": "Las Heras 145",
+            "width": "grow"
+        }
+    },
+    "rich-text#gba-oeste-local-13-info": {
+        "title": "Información adicional",
+        "props": {
+            "blockClass": ["local-info"],
+            "text": "Abierta de lunes a sábados de 8:30 a 20:30 hs.",
+            "width": "grow"
+        }
+    },
+    "flex-layout.row#gba-oeste-local-13-phone": {
+        "title": "Teléfonos",
+        "props": {
+          "colSizing": "auto",
+          "blockClass": "local-phone",
+          "preserveLayoutOnMobile": true
+        },
+    
+        "children": [
+            "toggle-layout#gba-oeste-local-13-telephone",
+            "toggle-layout#gba-oeste-local-13-whatsapp"
+        ]
+    },
+    "toggle-layout#gba-oeste-local-13-telephone": {
+        "children": [
+            "link#gba-oeste-local-13-telephone"
+          ]
+    },
+    "toggle-layout#gba-oeste-local-13-whatsapp": {
+        "children": [
+            "link#gba-oeste-local-13-whatsapp"
+          ]
+    },
+    "link#gba-oeste-local-13-telephone": {
+        "title": "Teléfono de linea",
+        "props": {
+        "label": "0810-999-6288",
+        "href": "tel:0810-999-6288",
+        "target": "_blank",
+        "blockClass": ["local-telephone"]
+        }
+    },
+    "link#gba-oeste-local-13-whatsapp": {
+        "title": "Whatsapp",
+        "props": {
+        "label": "11 5984 5785",
+        "href": "https://wa.me/1159845785",
+        "target": "_blank",
+        "blockClass": ["local-whatsapp"]
+        }
+    },
+    "flex-layout.row#gba-oeste-local-13-services": {
+        "title": "Servicios",
+        "props": {
+        "colSizing": "auto",
+        "blockClass": "local-services",
+        "preserveLayoutOnMobile": true
+        },
+
+        "children": [
+            "image#gba-oeste-local-13-service-1",
+            "image#gba-oeste-local-13-service-2",
+            "image#gba-oeste-local-13-service-3",
+            "image#gba-oeste-local-13-service-4",
+            "image#gba-oeste-local-13-service-5",
+            "image#gba-oeste-local-13-service-6",
+            "image#gba-oeste-local-13-service-7",
+            "image#gba-oeste-local-13-service-8",
+            "image#gba-oeste-local-13-service-9",
+            "image#gba-oeste-local-13-service-10"
+        ]
+    },
+
+    "image#gba-oeste-local-13-service-1": {
+        "title": "Servicio 01",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-consultorio.svg",
+        "title": "Consultorios"
+        }
+    },
+    "image#gba-oeste-local-13-service-2": {
+        "title": "Servicio 02",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-envios.svg",
+        "title": "Envios"
+        }
+    },
+    "image#gba-oeste-local-13-service-3": {
+        "title": "Servicio 03",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-estacionamiento.svg",
+        "title": "Estacionamiento"
+        }
+    },
+    "image#gba-oeste-local-13-service-4": {
+        "title": "Servicio 04",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-peluqueria.svg",
+        "title": "Peluqueria"
+        }
+    },
+    "image#gba-oeste-local-13-service-5": {
+        "title": "Servicio 05",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-mascotas.svg",
+        "title": "Mascotas"
+        }
+    },
+
+    "image#gba-oeste-local-13-service-6": {
+        "title": "Servicio 06",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-13-service-7": {
+        "title": "Servicio 07",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-13-service-8": {
+        "title": "Servicio 08",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-13-service-9": {
+        "title": "Servicio 09",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-13-service-10": {
+        "title": "Servicio 10",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    /* GBA - ZONA OESTE - LOCAL 14 */
+    "flex-layout.row#gba-oeste-local-14-wrapper": {
+        "props": {
+            "title": "Local 14",
+            "blockClass": ["stores-title-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "disposition-layout#gba-oeste-local-14-wrapper"
+        ]
+    },
+    "disposition-layout#gba-oeste-local-14-wrapper": {
+        "title": "Local 14",
+        "children": [
+            "flex-layout.row#gba-oeste-local-14-image-wrapper",
+            "flex-layout.row#gba-oeste-local-14-content-wrapper"
+        ],
+        "props": {
+            "disposition": [
+            {
+                "order": 1
+            },
+            {
+                "order": 2
+            }
+            ]
+        }
+    },
+    "flex-layout.row#gba-oeste-local-14-image-wrapper": {
+        "title": "Imagen Local 14",
+        "props": {
+            "blockClass": ["local-image-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "image#gba-oeste-local-14-image"
+        ]
+    },
+    "image#gba-oeste-local-14-image": {
+        "props": {
+        "blockClass": ["local-image"],
+        "src": "assets/imgs/natural-life-sucursal.jpg",
+        "title": "Consultorios"
+        }
+    },
+    "flex-layout.row#gba-oeste-local-14-content-wrapper": {
+        "title": "Info Local 14",
+        "props": {
+            "blockClass": ["local-content-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+            "rich-text#gba-oeste-local-14-title",
+            "rich-text#gba-oeste-local-14-address",
+            "rich-text#gba-oeste-local-14-info",
+            "flex-layout.row#gba-oeste-local-14-phone",
+            "flex-layout.row#gba-oeste-local-14-services"
+        ]
+    },
+    "rich-text#gba-oeste-local-14-title": {
+        "title": "Titulo",
+        "props": {
+            "blockClass": ["local-title"],
+            "text": "ITUZAINGÓ Centro",
+            "width": "grow"
+        }
+    },
+    "rich-text#gba-oeste-local-14-address": {
+        "title": "Dirección",
+        "props": {
+            "blockClass": ["local-address"],
+            "text": "Las Heras 145",
+            "width": "grow"
+        }
+    },
+    "rich-text#gba-oeste-local-14-info": {
+        "title": "Información adicional",
+        "props": {
+            "blockClass": ["local-info"],
+            "text": "Abierta de lunes a sábados de 8:30 a 20:30 hs.",
+            "width": "grow"
+        }
+    },
+    "flex-layout.row#gba-oeste-local-14-phone": {
+        "title": "Teléfonos",
+        "props": {
+          "colSizing": "auto",
+          "blockClass": "local-phone",
+          "preserveLayoutOnMobile": true
+        },
+    
+        "children": [
+            "toggle-layout#gba-oeste-local-14-telephone",
+            "toggle-layout#gba-oeste-local-14-whatsapp"
+        ]
+    },
+    "toggle-layout#gba-oeste-local-14-telephone": {
+        "children": [
+            "link#gba-oeste-local-14-telephone"
+          ]
+    },
+    "toggle-layout#gba-oeste-local-14-whatsapp": {
+        "children": [
+            "link#gba-oeste-local-14-whatsapp"
+          ]
+    },
+    "link#gba-oeste-local-14-telephone": {
+        "title": "Teléfono de linea",
+        "props": {
+        "label": "0810-999-6288",
+        "href": "tel:0810-999-6288",
+        "target": "_blank",
+        "blockClass": ["local-telephone"]
+        }
+    },
+    "link#gba-oeste-local-14-whatsapp": {
+        "title": "Whatsapp",
+        "props": {
+        "label": "11 5984 5785",
+        "href": "https://wa.me/1159845785",
+        "target": "_blank",
+        "blockClass": ["local-whatsapp"]
+        }
+    },
+    "flex-layout.row#gba-oeste-local-14-services": {
+        "title": "Servicios",
+        "props": {
+        "colSizing": "auto",
+        "blockClass": "local-services",
+        "preserveLayoutOnMobile": true
+        },
+
+        "children": [
+            "image#gba-oeste-local-14-service-1",
+            "image#gba-oeste-local-14-service-2",
+            "image#gba-oeste-local-14-service-3",
+            "image#gba-oeste-local-14-service-4",
+            "image#gba-oeste-local-14-service-5",
+            "image#gba-oeste-local-14-service-6",
+            "image#gba-oeste-local-14-service-7",
+            "image#gba-oeste-local-14-service-8",
+            "image#gba-oeste-local-14-service-9",
+            "image#gba-oeste-local-14-service-10"
+        ]
+    },
+
+    "image#gba-oeste-local-14-service-1": {
+        "title": "Servicio 01",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-consultorio.svg",
+        "title": "Consultorios"
+        }
+    },
+    "image#gba-oeste-local-14-service-2": {
+        "title": "Servicio 02",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-envios.svg",
+        "title": "Envios"
+        }
+    },
+    "image#gba-oeste-local-14-service-3": {
+        "title": "Servicio 03",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-estacionamiento.svg",
+        "title": "Estacionamiento"
+        }
+    },
+    "image#gba-oeste-local-14-service-4": {
+        "title": "Servicio 04",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-peluqueria.svg",
+        "title": "Peluqueria"
+        }
+    },
+    "image#gba-oeste-local-14-service-5": {
+        "title": "Servicio 05",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-mascotas.svg",
+        "title": "Mascotas"
+        }
+    },
+
+    "image#gba-oeste-local-14-service-6": {
+        "title": "Servicio 06",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-14-service-7": {
+        "title": "Servicio 07",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-14-service-8": {
+        "title": "Servicio 08",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-14-service-9": {
+        "title": "Servicio 09",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-14-service-10": {
+        "title": "Servicio 10",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+    /* GBA - ZONA OESTE - LOCAL 15 */
+    "flex-layout.row#gba-oeste-local-15-wrapper": {
+        "props": {
+            "title": "Local 15",
+            "blockClass": ["stores-title-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "disposition-layout#gba-oeste-local-15-wrapper"
+        ]
+    },
+    "disposition-layout#gba-oeste-local-15-wrapper": {
+        "title": "Local 15",
+        "children": [
+            "flex-layout.row#gba-oeste-local-15-image-wrapper",
+            "flex-layout.row#gba-oeste-local-15-content-wrapper"
+        ],
+        "props": {
+            "disposition": [
+            {
+                "order": 1
+            },
+            {
+                "order": 2
+            }
+            ]
+        }
+    },
+    "flex-layout.row#gba-oeste-local-15-image-wrapper": {
+        "title": "Imagen Local 15",
+        "props": {
+            "blockClass": ["local-image-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "image#gba-oeste-local-15-image"
+        ]
+    },
+    "image#gba-oeste-local-15-image": {
+        "props": {
+        "blockClass": ["local-image"],
+        "src": "assets/imgs/natural-life-sucursal.jpg",
+        "title": "Consultorios"
+        }
+    },
+    "flex-layout.row#gba-oeste-local-15-content-wrapper": {
+        "title": "Info Local 15",
+        "props": {
+            "blockClass": ["local-content-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+            "rich-text#gba-oeste-local-15-title",
+            "rich-text#gba-oeste-local-15-address",
+            "rich-text#gba-oeste-local-15-info",
+            "flex-layout.row#gba-oeste-local-15-phone",
+            "flex-layout.row#gba-oeste-local-15-services"
+        ]
+    },
+    "rich-text#gba-oeste-local-15-title": {
+        "title": "Titulo",
+        "props": {
+            "blockClass": ["local-title"],
+            "text": "ITUZAINGÓ Centro",
+            "width": "grow"
+        }
+    },
+    "rich-text#gba-oeste-local-15-address": {
+        "title": "Dirección",
+        "props": {
+            "blockClass": ["local-address"],
+            "text": "Las Heras 145",
+            "width": "grow"
+        }
+    },
+    "rich-text#gba-oeste-local-15-info": {
+        "title": "Información adicional",
+        "props": {
+            "blockClass": ["local-info"],
+            "text": "Abierta de lunes a sábados de 8:30 a 20:30 hs.",
+            "width": "grow"
+        }
+    },
+    "flex-layout.row#gba-oeste-local-15-phone": {
+        "title": "Teléfonos",
+        "props": {
+          "colSizing": "auto",
+          "blockClass": "local-phone",
+          "preserveLayoutOnMobile": true
+        },
+    
+        "children": [
+            "toggle-layout#gba-oeste-local-15-telephone",
+            "toggle-layout#gba-oeste-local-15-whatsapp"
+        ]
+    },
+    "toggle-layout#gba-oeste-local-15-telephone": {
+        "children": [
+            "link#gba-oeste-local-15-telephone"
+          ]
+    },
+    "toggle-layout#gba-oeste-local-15-whatsapp": {
+        "children": [
+            "link#gba-oeste-local-15-whatsapp"
+          ]
+    },
+    "link#gba-oeste-local-15-telephone": {
+        "title": "Teléfono de linea",
+        "props": {
+        "label": "0810-999-6288",
+        "href": "tel:0810-999-6288",
+        "target": "_blank",
+        "blockClass": ["local-telephone"]
+        }
+    },
+    "link#gba-oeste-local-15-whatsapp": {
+        "title": "Whatsapp",
+        "props": {
+        "label": "11 5984 5785",
+        "href": "https://wa.me/1159845785",
+        "target": "_blank",
+        "blockClass": ["local-whatsapp"]
+        }
+    },
+    "flex-layout.row#gba-oeste-local-15-services": {
+        "title": "Servicios",
+        "props": {
+        "colSizing": "auto",
+        "blockClass": "local-services",
+        "preserveLayoutOnMobile": true
+        },
+
+        "children": [
+            "image#gba-oeste-local-15-service-1",
+            "image#gba-oeste-local-15-service-2",
+            "image#gba-oeste-local-15-service-3",
+            "image#gba-oeste-local-15-service-4",
+            "image#gba-oeste-local-15-service-5",
+            "image#gba-oeste-local-15-service-6",
+            "image#gba-oeste-local-15-service-7",
+            "image#gba-oeste-local-15-service-8",
+            "image#gba-oeste-local-15-service-9",
+            "image#gba-oeste-local-15-service-10"
+        ]
+    },
+
+    "image#gba-oeste-local-15-service-1": {
+        "title": "Servicio 01",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-consultorio.svg",
+        "title": "Consultorios"
+        }
+    },
+    "image#gba-oeste-local-15-service-2": {
+        "title": "Servicio 02",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-envios.svg",
+        "title": "Envios"
+        }
+    },
+    "image#gba-oeste-local-15-service-3": {
+        "title": "Servicio 03",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-estacionamiento.svg",
+        "title": "Estacionamiento"
+        }
+    },
+    "image#gba-oeste-local-15-service-4": {
+        "title": "Servicio 04",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-peluqueria.svg",
+        "title": "Peluqueria"
+        }
+    },
+    "image#gba-oeste-local-15-service-5": {
+        "title": "Servicio 05",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-mascotas.svg",
+        "title": "Mascotas"
+        }
+    },
+
+    "image#gba-oeste-local-15-service-6": {
+        "title": "Servicio 06",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-15-service-7": {
+        "title": "Servicio 07",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-15-service-8": {
+        "title": "Servicio 08",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-15-service-9": {
+        "title": "Servicio 09",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-15-service-10": {
+        "title": "Servicio 10",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    /* GBA - ZONA OESTE - LOCAL 16 */
+    "flex-layout.row#gba-oeste-local-16-wrapper": {
+        "props": {
+            "title": "Local 16",
+            "blockClass": ["stores-title-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "disposition-layout#gba-oeste-local-16-wrapper"
+        ]
+    },
+    "disposition-layout#gba-oeste-local-16-wrapper": {
+        "title": "Local 16",
+        "children": [
+            "flex-layout.row#gba-oeste-local-16-image-wrapper",
+            "flex-layout.row#gba-oeste-local-16-content-wrapper"
+        ],
+        "props": {
+            "disposition": [
+            {
+                "order": 1
+            },
+            {
+                "order": 2
+            }
+            ]
+        }
+    },
+    "flex-layout.row#gba-oeste-local-16-image-wrapper": {
+        "title": "Imagen Local 16",
+        "props": {
+            "blockClass": ["local-image-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "image#gba-oeste-local-16-image"
+        ]
+    },
+    "image#gba-oeste-local-16-image": {
+        "props": {
+        "blockClass": ["local-image"],
+        "src": "assets/imgs/natural-life-sucursal.jpg",
+        "title": "Consultorios"
+        }
+    },
+    "flex-layout.row#gba-oeste-local-16-content-wrapper": {
+        "title": "Info Local 16",
+        "props": {
+            "blockClass": ["local-content-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+            "rich-text#gba-oeste-local-16-title",
+            "rich-text#gba-oeste-local-16-address",
+            "rich-text#gba-oeste-local-16-info",
+            "flex-layout.row#gba-oeste-local-16-phone",
+            "flex-layout.row#gba-oeste-local-16-services"
+        ]
+    },
+    "rich-text#gba-oeste-local-16-title": {
+        "title": "Titulo",
+        "props": {
+            "blockClass": ["local-title"],
+            "text": "ITUZAINGÓ Centro",
+            "width": "grow"
+        }
+    },
+    "rich-text#gba-oeste-local-16-address": {
+        "title": "Dirección",
+        "props": {
+            "blockClass": ["local-address"],
+            "text": "Las Heras 145",
+            "width": "grow"
+        }
+    },
+    "rich-text#gba-oeste-local-16-info": {
+        "title": "Información adicional",
+        "props": {
+            "blockClass": ["local-info"],
+            "text": "Abierta de lunes a sábados de 8:30 a 20:30 hs.",
+            "width": "grow"
+        }
+    },
+    "flex-layout.row#gba-oeste-local-16-phone": {
+        "title": "Teléfonos",
+        "props": {
+          "colSizing": "auto",
+          "blockClass": "local-phone",
+          "preserveLayoutOnMobile": true
+        },
+    
+        "children": [
+            "toggle-layout#gba-oeste-local-16-telephone",
+            "toggle-layout#gba-oeste-local-16-whatsapp"
+        ]
+    },
+    "toggle-layout#gba-oeste-local-16-telephone": {
+        "children": [
+            "link#gba-oeste-local-16-telephone"
+          ]
+    },
+    "toggle-layout#gba-oeste-local-16-whatsapp": {
+        "children": [
+            "link#gba-oeste-local-16-whatsapp"
+          ]
+    },
+    "link#gba-oeste-local-16-telephone": {
+        "title": "Teléfono de linea",
+        "props": {
+        "label": "0810-999-6288",
+        "href": "tel:0810-999-6288",
+        "target": "_blank",
+        "blockClass": ["local-telephone"]
+        }
+    },
+    "link#gba-oeste-local-16-whatsapp": {
+        "title": "Whatsapp",
+        "props": {
+        "label": "11 5984 5785",
+        "href": "https://wa.me/1159845785",
+        "target": "_blank",
+        "blockClass": ["local-whatsapp"]
+        }
+    },
+    "flex-layout.row#gba-oeste-local-16-services": {
+        "title": "Servicios",
+        "props": {
+        "colSizing": "auto",
+        "blockClass": "local-services",
+        "preserveLayoutOnMobile": true
+        },
+
+        "children": [
+            "image#gba-oeste-local-16-service-1",
+            "image#gba-oeste-local-16-service-2",
+            "image#gba-oeste-local-16-service-3",
+            "image#gba-oeste-local-16-service-4",
+            "image#gba-oeste-local-16-service-5",
+            "image#gba-oeste-local-16-service-6",
+            "image#gba-oeste-local-16-service-7",
+            "image#gba-oeste-local-16-service-8",
+            "image#gba-oeste-local-16-service-9",
+            "image#gba-oeste-local-16-service-10"
+        ]
+    },
+
+    "image#gba-oeste-local-16-service-1": {
+        "title": "Servicio 01",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-consultorio.svg",
+        "title": "Consultorios"
+        }
+    },
+    "image#gba-oeste-local-16-service-2": {
+        "title": "Servicio 02",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-envios.svg",
+        "title": "Envios"
+        }
+    },
+    "image#gba-oeste-local-16-service-3": {
+        "title": "Servicio 03",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-estacionamiento.svg",
+        "title": "Estacionamiento"
+        }
+    },
+    "image#gba-oeste-local-16-service-4": {
+        "title": "Servicio 04",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-peluqueria.svg",
+        "title": "Peluqueria"
+        }
+    },
+    "image#gba-oeste-local-16-service-5": {
+        "title": "Servicio 05",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-mascotas.svg",
+        "title": "Mascotas"
+        }
+    },
+
+    "image#gba-oeste-local-16-service-6": {
+        "title": "Servicio 06",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-16-service-7": {
+        "title": "Servicio 07",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-16-service-8": {
+        "title": "Servicio 08",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-16-service-9": {
+        "title": "Servicio 09",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-16-service-10": {
+        "title": "Servicio 10",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+    /* GBA - ZONA OESTE - LOCAL 17 */
+    "flex-layout.row#gba-oeste-local-17-wrapper": {
+        "props": {
+            "title": "Local 17",
+            "blockClass": ["stores-title-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "disposition-layout#gba-oeste-local-17-wrapper"
+        ]
+    },
+    "disposition-layout#gba-oeste-local-17-wrapper": {
+        "title": "Local 17",
+        "children": [
+            "flex-layout.row#gba-oeste-local-17-image-wrapper",
+            "flex-layout.row#gba-oeste-local-17-content-wrapper"
+        ],
+        "props": {
+            "disposition": [
+            {
+                "order": 1
+            },
+            {
+                "order": 2
+            }
+            ]
+        }
+    },
+    "flex-layout.row#gba-oeste-local-17-image-wrapper": {
+        "title": "Imagen Local 17",
+        "props": {
+            "blockClass": ["local-image-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "image#gba-oeste-local-17-image"
+        ]
+    },
+    "image#gba-oeste-local-17-image": {
+        "props": {
+        "blockClass": ["local-image"],
+        "src": "assets/imgs/natural-life-sucursal.jpg",
+        "title": "Consultorios"
+        }
+    },
+    "flex-layout.row#gba-oeste-local-17-content-wrapper": {
+        "title": "Info Local 17",
+        "props": {
+            "blockClass": ["local-content-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+            "rich-text#gba-oeste-local-17-title",
+            "rich-text#gba-oeste-local-17-address",
+            "rich-text#gba-oeste-local-17-info",
+            "flex-layout.row#gba-oeste-local-17-phone",
+            "flex-layout.row#gba-oeste-local-17-services"
+        ]
+    },
+    "rich-text#gba-oeste-local-17-title": {
+        "title": "Titulo",
+        "props": {
+            "blockClass": ["local-title"],
+            "text": "ITUZAINGÓ Centro",
+            "width": "grow"
+        }
+    },
+    "rich-text#gba-oeste-local-17-address": {
+        "title": "Dirección",
+        "props": {
+            "blockClass": ["local-address"],
+            "text": "Las Heras 145",
+            "width": "grow"
+        }
+    },
+    "rich-text#gba-oeste-local-17-info": {
+        "title": "Información adicional",
+        "props": {
+            "blockClass": ["local-info"],
+            "text": "Abierta de lunes a sábados de 8:30 a 20:30 hs.",
+            "width": "grow"
+        }
+    },
+    "flex-layout.row#gba-oeste-local-17-phone": {
+        "title": "Teléfonos",
+        "props": {
+          "colSizing": "auto",
+          "blockClass": "local-phone",
+          "preserveLayoutOnMobile": true
+        },
+    
+        "children": [
+            "toggle-layout#gba-oeste-local-17-telephone",
+            "toggle-layout#gba-oeste-local-17-whatsapp"
+        ]
+    },
+    "toggle-layout#gba-oeste-local-17-telephone": {
+        "children": [
+            "link#gba-oeste-local-17-telephone"
+          ]
+    },
+    "toggle-layout#gba-oeste-local-17-whatsapp": {
+        "children": [
+            "link#gba-oeste-local-17-whatsapp"
+          ]
+    },
+    "link#gba-oeste-local-17-telephone": {
+        "title": "Teléfono de linea",
+        "props": {
+        "label": "0810-999-6288",
+        "href": "tel:0810-999-6288",
+        "target": "_blank",
+        "blockClass": ["local-telephone"]
+        }
+    },
+    "link#gba-oeste-local-17-whatsapp": {
+        "title": "Whatsapp",
+        "props": {
+        "label": "11 5984 5785",
+        "href": "https://wa.me/1159845785",
+        "target": "_blank",
+        "blockClass": ["local-whatsapp"]
+        }
+    },
+    "flex-layout.row#gba-oeste-local-17-services": {
+        "title": "Servicios",
+        "props": {
+        "colSizing": "auto",
+        "blockClass": "local-services",
+        "preserveLayoutOnMobile": true
+        },
+
+        "children": [
+            "image#gba-oeste-local-17-service-1",
+            "image#gba-oeste-local-17-service-2",
+            "image#gba-oeste-local-17-service-3",
+            "image#gba-oeste-local-17-service-4",
+            "image#gba-oeste-local-17-service-5",
+            "image#gba-oeste-local-17-service-6",
+            "image#gba-oeste-local-17-service-7",
+            "image#gba-oeste-local-17-service-8",
+            "image#gba-oeste-local-17-service-9",
+            "image#gba-oeste-local-17-service-10"
+        ]
+    },
+
+    "image#gba-oeste-local-17-service-1": {
+        "title": "Servicio 01",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-consultorio.svg",
+        "title": "Consultorios"
+        }
+    },
+    "image#gba-oeste-local-17-service-2": {
+        "title": "Servicio 02",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-envios.svg",
+        "title": "Envios"
+        }
+    },
+    "image#gba-oeste-local-17-service-3": {
+        "title": "Servicio 03",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-estacionamiento.svg",
+        "title": "Estacionamiento"
+        }
+    },
+    "image#gba-oeste-local-17-service-4": {
+        "title": "Servicio 04",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-peluqueria.svg",
+        "title": "Peluqueria"
+        }
+    },
+    "image#gba-oeste-local-17-service-5": {
+        "title": "Servicio 05",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-mascotas.svg",
+        "title": "Mascotas"
+        }
+    },
+
+    "image#gba-oeste-local-17-service-6": {
+        "title": "Servicio 06",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-17-service-7": {
+        "title": "Servicio 07",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-17-service-8": {
+        "title": "Servicio 08",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-17-service-9": {
+        "title": "Servicio 09",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-17-service-10": {
+        "title": "Servicio 10",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    /* GBA - ZONA OESTE - LOCAL 18 */
+    "flex-layout.row#gba-oeste-local-18-wrapper": {
+        "props": {
+            "title": "Local 18",
+            "blockClass": ["stores-title-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "disposition-layout#gba-oeste-local-18-wrapper"
+        ]
+    },
+    "disposition-layout#gba-oeste-local-18-wrapper": {
+        "title": "Local 18",
+        "children": [
+            "flex-layout.row#gba-oeste-local-18-image-wrapper",
+            "flex-layout.row#gba-oeste-local-18-content-wrapper"
+        ],
+        "props": {
+            "disposition": [
+            {
+                "order": 1
+            },
+            {
+                "order": 2
+            }
+            ]
+        }
+    },
+    "flex-layout.row#gba-oeste-local-18-image-wrapper": {
+        "title": "Imagen Local 18",
+        "props": {
+            "blockClass": ["local-image-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "image#gba-oeste-local-18-image"
+        ]
+    },
+    "image#gba-oeste-local-18-image": {
+        "props": {
+        "blockClass": ["local-image"],
+        "src": "assets/imgs/natural-life-sucursal.jpg",
+        "title": "Consultorios"
+        }
+    },
+    "flex-layout.row#gba-oeste-local-18-content-wrapper": {
+        "title": "Info Local 18",
+        "props": {
+            "blockClass": ["local-content-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+            "rich-text#gba-oeste-local-18-title",
+            "rich-text#gba-oeste-local-18-address",
+            "rich-text#gba-oeste-local-18-info",
+            "flex-layout.row#gba-oeste-local-18-phone",
+            "flex-layout.row#gba-oeste-local-18-services"
+        ]
+    },
+    "rich-text#gba-oeste-local-18-title": {
+        "title": "Titulo",
+        "props": {
+            "blockClass": ["local-title"],
+            "text": "ITUZAINGÓ Centro",
+            "width": "grow"
+        }
+    },
+    "rich-text#gba-oeste-local-18-address": {
+        "title": "Dirección",
+        "props": {
+            "blockClass": ["local-address"],
+            "text": "Las Heras 145",
+            "width": "grow"
+        }
+    },
+    "rich-text#gba-oeste-local-18-info": {
+        "title": "Información adicional",
+        "props": {
+            "blockClass": ["local-info"],
+            "text": "Abierta de lunes a sábados de 8:30 a 20:30 hs.",
+            "width": "grow"
+        }
+    },
+    "flex-layout.row#gba-oeste-local-18-phone": {
+        "title": "Teléfonos",
+        "props": {
+          "colSizing": "auto",
+          "blockClass": "local-phone",
+          "preserveLayoutOnMobile": true
+        },
+    
+        "children": [
+            "toggle-layout#gba-oeste-local-18-telephone",
+            "toggle-layout#gba-oeste-local-18-whatsapp"
+        ]
+    },
+    "toggle-layout#gba-oeste-local-18-telephone": {
+        "children": [
+            "link#gba-oeste-local-18-telephone"
+          ]
+    },
+    "toggle-layout#gba-oeste-local-18-whatsapp": {
+        "children": [
+            "link#gba-oeste-local-18-whatsapp"
+          ]
+    },
+    "link#gba-oeste-local-18-telephone": {
+        "title": "Teléfono de linea",
+        "props": {
+        "label": "0810-999-6288",
+        "href": "tel:0810-999-6288",
+        "target": "_blank",
+        "blockClass": ["local-telephone"]
+        }
+    },
+    "link#gba-oeste-local-18-whatsapp": {
+        "title": "Whatsapp",
+        "props": {
+        "label": "11 5984 5785",
+        "href": "https://wa.me/1159845785",
+        "target": "_blank",
+        "blockClass": ["local-whatsapp"]
+        }
+    },
+    "flex-layout.row#gba-oeste-local-18-services": {
+        "title": "Servicios",
+        "props": {
+        "colSizing": "auto",
+        "blockClass": "local-services",
+        "preserveLayoutOnMobile": true
+        },
+
+        "children": [
+            "image#gba-oeste-local-18-service-1",
+            "image#gba-oeste-local-18-service-2",
+            "image#gba-oeste-local-18-service-3",
+            "image#gba-oeste-local-18-service-4",
+            "image#gba-oeste-local-18-service-5",
+            "image#gba-oeste-local-18-service-6",
+            "image#gba-oeste-local-18-service-7",
+            "image#gba-oeste-local-18-service-8",
+            "image#gba-oeste-local-18-service-9",
+            "image#gba-oeste-local-18-service-10"
+        ]
+    },
+
+    "image#gba-oeste-local-18-service-1": {
+        "title": "Servicio 01",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-consultorio.svg",
+        "title": "Consultorios"
+        }
+    },
+    "image#gba-oeste-local-18-service-2": {
+        "title": "Servicio 02",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-envios.svg",
+        "title": "Envios"
+        }
+    },
+    "image#gba-oeste-local-18-service-3": {
+        "title": "Servicio 03",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-estacionamiento.svg",
+        "title": "Estacionamiento"
+        }
+    },
+    "image#gba-oeste-local-18-service-4": {
+        "title": "Servicio 04",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-peluqueria.svg",
+        "title": "Peluqueria"
+        }
+    },
+    "image#gba-oeste-local-18-service-5": {
+        "title": "Servicio 05",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-mascotas.svg",
+        "title": "Mascotas"
+        }
+    },
+
+    "image#gba-oeste-local-18-service-6": {
+        "title": "Servicio 06",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-18-service-7": {
+        "title": "Servicio 07",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-18-service-8": {
+        "title": "Servicio 08",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-18-service-9": {
+        "title": "Servicio 09",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-18-service-10": {
+        "title": "Servicio 10",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+    /* GBA - ZONA OESTE - LOCAL 19 */
+    "flex-layout.row#gba-oeste-local-19-wrapper": {
+        "props": {
+            "title": "Local 19",
+            "blockClass": ["stores-title-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "disposition-layout#gba-oeste-local-19-wrapper"
+        ]
+    },
+    "disposition-layout#gba-oeste-local-19-wrapper": {
+        "title": "Local 19",
+        "children": [
+            "flex-layout.row#gba-oeste-local-19-image-wrapper",
+            "flex-layout.row#gba-oeste-local-19-content-wrapper"
+        ],
+        "props": {
+            "disposition": [
+            {
+                "order": 1
+            },
+            {
+                "order": 2
+            }
+            ]
+        }
+    },
+    "flex-layout.row#gba-oeste-local-19-image-wrapper": {
+        "title": "Imagen Local 19",
+        "props": {
+            "blockClass": ["local-image-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "image#gba-oeste-local-19-image"
+        ]
+    },
+    "image#gba-oeste-local-19-image": {
+        "props": {
+        "blockClass": ["local-image"],
+        "src": "assets/imgs/natural-life-sucursal.jpg",
+        "title": "Consultorios"
+        }
+    },
+    "flex-layout.row#gba-oeste-local-19-content-wrapper": {
+        "title": "Info Local 19",
+        "props": {
+            "blockClass": ["local-content-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+            "rich-text#gba-oeste-local-19-title",
+            "rich-text#gba-oeste-local-19-address",
+            "rich-text#gba-oeste-local-19-info",
+            "flex-layout.row#gba-oeste-local-19-phone",
+            "flex-layout.row#gba-oeste-local-19-services"
+        ]
+    },
+    "rich-text#gba-oeste-local-19-title": {
+        "title": "Titulo",
+        "props": {
+            "blockClass": ["local-title"],
+            "text": "ITUZAINGÓ Centro",
+            "width": "grow"
+        }
+    },
+    "rich-text#gba-oeste-local-19-address": {
+        "title": "Dirección",
+        "props": {
+            "blockClass": ["local-address"],
+            "text": "Las Heras 145",
+            "width": "grow"
+        }
+    },
+    "rich-text#gba-oeste-local-19-info": {
+        "title": "Información adicional",
+        "props": {
+            "blockClass": ["local-info"],
+            "text": "Abierta de lunes a sábados de 8:30 a 20:30 hs.",
+            "width": "grow"
+        }
+    },
+    "flex-layout.row#gba-oeste-local-19-phone": {
+        "title": "Teléfonos",
+        "props": {
+          "colSizing": "auto",
+          "blockClass": "local-phone",
+          "preserveLayoutOnMobile": true
+        },
+    
+        "children": [
+            "toggle-layout#gba-oeste-local-19-telephone",
+            "toggle-layout#gba-oeste-local-19-whatsapp"
+        ]
+    },
+    "toggle-layout#gba-oeste-local-19-telephone": {
+        "children": [
+            "link#gba-oeste-local-19-telephone"
+          ]
+    },
+    "toggle-layout#gba-oeste-local-19-whatsapp": {
+        "children": [
+            "link#gba-oeste-local-19-whatsapp"
+          ]
+    },
+    "link#gba-oeste-local-19-telephone": {
+        "title": "Teléfono de linea",
+        "props": {
+        "label": "0810-999-6288",
+        "href": "tel:0810-999-6288",
+        "target": "_blank",
+        "blockClass": ["local-telephone"]
+        }
+    },
+    "link#gba-oeste-local-19-whatsapp": {
+        "title": "Whatsapp",
+        "props": {
+        "label": "11 5984 5785",
+        "href": "https://wa.me/1159845785",
+        "target": "_blank",
+        "blockClass": ["local-whatsapp"]
+        }
+    },
+    "flex-layout.row#gba-oeste-local-19-services": {
+        "title": "Servicios",
+        "props": {
+        "colSizing": "auto",
+        "blockClass": "local-services",
+        "preserveLayoutOnMobile": true
+        },
+
+        "children": [
+            "image#gba-oeste-local-19-service-1",
+            "image#gba-oeste-local-19-service-2",
+            "image#gba-oeste-local-19-service-3",
+            "image#gba-oeste-local-19-service-4",
+            "image#gba-oeste-local-19-service-5",
+            "image#gba-oeste-local-19-service-6",
+            "image#gba-oeste-local-19-service-7",
+            "image#gba-oeste-local-19-service-8",
+            "image#gba-oeste-local-19-service-9",
+            "image#gba-oeste-local-19-service-10"
+        ]
+    },
+
+    "image#gba-oeste-local-19-service-1": {
+        "title": "Servicio 01",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-consultorio.svg",
+        "title": "Consultorios"
+        }
+    },
+    "image#gba-oeste-local-19-service-2": {
+        "title": "Servicio 02",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-envios.svg",
+        "title": "Envios"
+        }
+    },
+    "image#gba-oeste-local-19-service-3": {
+        "title": "Servicio 03",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-estacionamiento.svg",
+        "title": "Estacionamiento"
+        }
+    },
+    "image#gba-oeste-local-19-service-4": {
+        "title": "Servicio 04",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-peluqueria.svg",
+        "title": "Peluqueria"
+        }
+    },
+    "image#gba-oeste-local-19-service-5": {
+        "title": "Servicio 05",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-mascotas.svg",
+        "title": "Mascotas"
+        }
+    },
+
+    "image#gba-oeste-local-19-service-6": {
+        "title": "Servicio 06",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-19-service-7": {
+        "title": "Servicio 07",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-19-service-8": {
+        "title": "Servicio 08",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-19-service-9": {
+        "title": "Servicio 09",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-19-service-10": {
+        "title": "Servicio 10",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    /* GBA - ZONA OESTE - LOCAL 20 */
+    "flex-layout.row#gba-oeste-local-20-wrapper": {
+        "props": {
+            "title": "Local 20",
+            "blockClass": ["stores-title-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "disposition-layout#gba-oeste-local-20-wrapper"
+        ]
+    },
+    "disposition-layout#gba-oeste-local-20-wrapper": {
+        "title": "Local 20",
+        "children": [
+            "flex-layout.row#gba-oeste-local-20-image-wrapper",
+            "flex-layout.row#gba-oeste-local-20-content-wrapper"
+        ],
+        "props": {
+            "disposition": [
+            {
+                "order": 1
+            },
+            {
+                "order": 2
+            }
+            ]
+        }
+    },
+    "flex-layout.row#gba-oeste-local-20-image-wrapper": {
+        "title": "Imagen Local 20",
+        "props": {
+            "blockClass": ["local-image-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "image#gba-oeste-local-20-image"
+        ]
+    },
+    "image#gba-oeste-local-20-image": {
+        "props": {
+        "blockClass": ["local-image"],
+        "src": "assets/imgs/natural-life-sucursal.jpg",
+        "title": "Consultorios"
+        }
+    },
+    "flex-layout.row#gba-oeste-local-20-content-wrapper": {
+        "title": "Info Local 20",
+        "props": {
+            "blockClass": ["local-content-wrapper"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+            "rich-text#gba-oeste-local-20-title",
+            "rich-text#gba-oeste-local-20-address",
+            "rich-text#gba-oeste-local-20-info",
+            "flex-layout.row#gba-oeste-local-20-phone",
+            "flex-layout.row#gba-oeste-local-20-services"
+        ]
+    },
+    "rich-text#gba-oeste-local-20-title": {
+        "title": "Titulo",
+        "props": {
+            "blockClass": ["local-title"],
+            "text": "ITUZAINGÓ Centro",
+            "width": "grow"
+        }
+    },
+    "rich-text#gba-oeste-local-20-address": {
+        "title": "Dirección",
+        "props": {
+            "blockClass": ["local-address"],
+            "text": "Las Heras 145",
+            "width": "grow"
+        }
+    },
+    "rich-text#gba-oeste-local-20-info": {
+        "title": "Información adicional",
+        "props": {
+            "blockClass": ["local-info"],
+            "text": "Abierta de lunes a sábados de 8:30 a 20:30 hs.",
+            "width": "grow"
+        }
+    },
+    "flex-layout.row#gba-oeste-local-20-phone": {
+        "title": "Teléfonos",
+        "props": {
+          "colSizing": "auto",
+          "blockClass": "local-phone",
+          "preserveLayoutOnMobile": true
+        },
+    
+        "children": [
+            "toggle-layout#gba-oeste-local-20-telephone",
+            "toggle-layout#gba-oeste-local-20-whatsapp"
+        ]
+    },
+    "toggle-layout#gba-oeste-local-20-telephone": {
+        "children": [
+            "link#gba-oeste-local-20-telephone"
+          ]
+    },
+    "toggle-layout#gba-oeste-local-20-whatsapp": {
+        "children": [
+            "link#gba-oeste-local-20-whatsapp"
+          ]
+    },
+    "link#gba-oeste-local-20-telephone": {
+        "title": "Teléfono de linea",
+        "props": {
+        "label": "0810-999-6288",
+        "href": "tel:0810-999-6288",
+        "target": "_blank",
+        "blockClass": ["local-telephone"]
+        }
+    },
+    "link#gba-oeste-local-20-whatsapp": {
+        "title": "Whatsapp",
+        "props": {
+        "label": "11 5984 5785",
+        "href": "https://wa.me/1159845785",
+        "target": "_blank",
+        "blockClass": ["local-whatsapp"]
+        }
+    },
+    "flex-layout.row#gba-oeste-local-20-services": {
+        "title": "Servicios",
+        "props": {
+        "colSizing": "auto",
+        "blockClass": "local-services",
+        "preserveLayoutOnMobile": true
+        },
+
+        "children": [
+            "image#gba-oeste-local-20-service-1",
+            "image#gba-oeste-local-20-service-2",
+            "image#gba-oeste-local-20-service-3",
+            "image#gba-oeste-local-20-service-4",
+            "image#gba-oeste-local-20-service-5",
+            "image#gba-oeste-local-20-service-6",
+            "image#gba-oeste-local-20-service-7",
+            "image#gba-oeste-local-20-service-8",
+            "image#gba-oeste-local-20-service-9",
+            "image#gba-oeste-local-20-service-10"
+        ]
+    },
+
+    "image#gba-oeste-local-20-service-1": {
+        "title": "Servicio 01",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-consultorio.svg",
+        "title": "Consultorios"
+        }
+    },
+    "image#gba-oeste-local-20-service-2": {
+        "title": "Servicio 02",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-envios.svg",
+        "title": "Envios"
+        }
+    },
+    "image#gba-oeste-local-20-service-3": {
+        "title": "Servicio 03",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-estacionamiento.svg",
+        "title": "Estacionamiento"
+        }
+    },
+    "image#gba-oeste-local-20-service-4": {
+        "title": "Servicio 04",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-peluqueria.svg",
+        "title": "Peluqueria"
+        }
+    },
+    "image#gba-oeste-local-20-service-5": {
+        "title": "Servicio 05",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "assets/svgs/natural-life-icon-local-mascotas.svg",
+        "title": "Mascotas"
+        }
+    },
+
+    "image#gba-oeste-local-20-service-6": {
+        "title": "Servicio 06",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-20-service-7": {
+        "title": "Servicio 07",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-20-service-8": {
+        "title": "Servicio 08",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-20-service-9": {
+        "title": "Servicio 09",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    },
+
+    "image#gba-oeste-local-20-service-10": {
+        "title": "Servicio 10",
+        "props": {
+        "blockClass": ["local-services"],
+        "src": "",
+        "title": ""
+        }
+    }
+}

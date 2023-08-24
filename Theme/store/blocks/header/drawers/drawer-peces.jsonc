@@ -1,0 +1,191 @@
+{
+  "drawer#peces": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#peces"],
+    "children": ["menu#peces"]
+  },
+
+  "drawer-trigger#peces": {
+    "children": ["rich-text#peces"]
+  },
+
+  "rich-text#peces": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "peces"
+    }
+  },
+
+  "menu#peces": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+
+    "children": [
+      "drawer#peces-alimento",
+      "drawer#peces-peces-pecera-acuarios-alimento",
+      "drawer#peces-salud",
+      "menu-item#peces-see-all"
+    ]
+  },
+
+  "drawer#peces-peces-pecera-acuarios-alimento": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#peces-peces-pecera-acuarios-alimento"],
+    "children": ["menu#peces-peces-pecera-acuarios-alimento"]
+  },
+ 
+  "drawer-trigger#peces-peces-pecera-acuarios-alimento": {
+    "children": ["rich-text#peces-peces-pecera-acuarios-alimento"]
+  },
+
+  "rich-text#peces-peces-pecera-acuarios-alimento": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "peces - pecera - acuarios - accesorios"
+    }
+  },
+
+  "menu#peces-peces-pecera-acuarios-alimento": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#submenu-peces-pecera-acuarios-alimento",
+      "menu-item#peces-pecera-acuarios-alimento-see-all"
+    ]
+  },
+
+  "drawer#peces-alimento": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#peces-alimento"],
+    "children": ["menu#peces-alimento"]
+  },
+
+  "drawer-trigger#peces-alimento": {
+    "children": ["rich-text#peces-alimento"]
+  },
+
+  "rich-text#peces-alimento": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "Alimento"
+    }
+  },
+
+  "menu#peces-alimento": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+
+    "children": [
+      "vtex.menu@2.x:menu#submenu-peces-alimento",
+      "menu-item#alimento-see-all"
+    ]
+  },
+
+  "drawer#peces-salud": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#peces-salud"],
+    "children": ["menu#peces-salud"]
+  },
+ 
+  "drawer-trigger#peces-salud": {
+    "children": ["rich-text#peces-salud"]
+  },
+
+  "rich-text#peces-salud": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "salud"
+    }
+  },
+
+  "menu#peces-salud": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#submenu-peces-salud",
+      "menu-item#salud-see-all"
+    ]
+  },
+
+  //Ver Todo
+  "menu-item#peces-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "peces-see-all",
+      "type": "custom",
+      "itemProps": {
+        //"categoryId": 1,
+        "href": "/peces",
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Ver todo peces",
+        "text": "Ver todo peces"
+      }
+    }
+  },
+
+  "menu-item#peces-pecera-acuarios-alimento-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "peces-pecera-acuarios-alimento-see-all",
+      "type": "custom",
+      "itemProps": {
+        "href": "/peces/peces-pecera-acuarios-alimento",
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Ver todo peces - pecera-acuarios - accesorios",
+        "text": "ver todo peces - pecera-acuarios - accesorios"
+      }
+    }
+  },
+
+  "menu-item#alimento-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "alimento-see-all",
+      "type": "custom",
+      "itemProps": {
+        "href": "/peces/alimento",
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Ver todo alimento",
+        "text": "ver todo alimento"
+      }
+    }
+  },
+
+  "menu-item#salud-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "salud-see-all",
+      "type": "custom",
+      "itemProps": {
+        "href": "/peces/salud",
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Ver todo salud",
+        "text": "ver todo salud"
+      }
+    }
+  }
+}

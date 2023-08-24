@@ -1,0 +1,191 @@
+{
+  "drawer#aves": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#aves"],
+    "children": ["menu#aves"]
+  },
+
+  "drawer-trigger#aves": {
+    "children": ["rich-text#aves"]
+  },
+
+  "rich-text#aves": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "aves"
+    }
+  },
+
+  "menu#aves": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+
+    "children": [
+      "drawer#aves-accesorios",
+      "drawer#aves-alimento",
+      "drawer#aves-juguetes",
+      "menu-item#aves-see-all"
+    ]
+  },
+
+  "drawer#aves-accesorios": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#aves-accesorios"],
+    "children": ["menu#aves-accesorios"]
+  },
+ 
+  "drawer-trigger#aves-accesorios": {
+    "children": ["rich-text#aves-accesorios"]
+  },
+
+  "rich-text#aves-accesorios": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "accesorios"
+    }
+  },
+
+  "menu#aves-accesorios": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#submenu-aves-accesorios",
+      "menu-item#accesorios-see-all"
+    ]
+  },
+
+  "drawer#aves-alimento": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#aves-alimento"],
+    "children": ["menu#aves-alimento"]
+  },
+
+  "drawer-trigger#aves-alimento": {
+    "children": ["rich-text#aves-alimento"]
+  },
+
+  "rich-text#aves-alimento": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "Alimento"
+    }
+  },
+
+  "menu#aves-alimento": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+
+    "children": [
+      "vtex.menu@2.x:menu#submenu-aves-alimento",
+      "menu-item#alimento-see-all"
+    ]
+  },
+
+  "drawer#aves-juguetes": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#aves-juguetes"],
+    "children": ["menu#aves-juguetes"]
+  },
+ 
+  "drawer-trigger#aves-juguetes": {
+    "children": ["rich-text#aves-juguetes"]
+  },
+
+  "rich-text#aves-juguetes": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "juguetes"
+    }
+  },
+
+  "menu#aves-juguetes": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#submenu-otros-juguetes",
+      "menu-item#juguetes-see-all"
+    ]
+  },
+
+  //Ver Todo
+  "menu-item#aves-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "aves-see-all",
+      "type": "custom",
+      "itemProps": {
+        //"categoryId": 1,
+        "href": "/aves",
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Ver todo aves",
+        "text": "Ver todo aves"
+      }
+    }
+  },
+
+  "menu-item#accesorios-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "accesorios-see-all",
+      "type": "custom",
+      "itemProps": {
+        "href": "/aves/accesorios",
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Ver todo accesorios",
+        "text": "ver todo accesorios"
+      }
+    }
+  },
+
+  "menu-item#alimento-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "alimento-see-all",
+      "type": "custom",
+      "itemProps": {
+        "href": "/aves/alimento",
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Ver todo alimento",
+        "text": "ver todo alimento"
+      }
+    }
+  },
+
+  "menu-item#juguetes-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "juguetes-see-all",
+      "type": "custom",
+      "itemProps": {
+        "href": "/aves/juguetes",
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Ver todo juguetes",
+        "text": "ver todo juguetes"
+      }
+    }
+  }
+}

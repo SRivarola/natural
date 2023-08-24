@@ -1,0 +1,302 @@
+/* JFS SUMMARY PRODUCT */
+{
+  "product-summary.shelf#shelf-product": {
+    "props": {
+      "blockClass": "shelf-product"
+    },
+
+    "children": [
+      "flex-layout.row#shelf-product-top",
+      "flex-layout.row#shelf-product-bottom",
+      "condition-layout.product#regular-o-medicado-shelf"
+    ]
+  },
+
+  "product-summary.shelf#shelf-product1": {
+    "props": {
+      "blockClass": "shelf-product"
+    },
+
+    "children": [
+      "flex-layout.row#shelf-product-top1",
+      "flex-layout.row#shelf-product-bottom1"
+      // "condition-layout.product#regular-o-medicado-shelf"
+    ]
+  },
+
+  "flex-layout.row#shelf-product-top": {
+    "props": {
+      "blockClass": "shelf-product-top"
+    },
+
+    "children": ["flex-layout.col#shelf-product-top"]
+  },
+
+  "flex-layout.col#shelf-product-top": {
+    "children": [
+      "flex-layout.row#badges-promo",
+      "vtex.product-highlights@2.x:product-highlights#envio-gratis",
+      "flex-layout.row#shelf-product-top-badges",
+      "product-summary-image#shelf-product",
+      "flex-layout.row#shelf-product-bottom-badges",
+      "vtex.product-highlights@2.x:product-highlights#aniversario"
+    ]
+  },
+
+  "product-summary-image#shelf-product": {
+    "props": {
+      "blockClass": "shelf-product",
+      "aspectRatio": "1:1",
+      "showBadge": false
+    }
+  },
+
+  "flex-layout.row#shelf-product-bottom": {
+    "props": {
+      "blockClass": "shelf-product-bottom"
+    },
+
+    "children": ["flex-layout.col#shelf-product-bottom"]
+  },
+
+  "flex-layout.col#shelf-product-bottom": {
+    "props": {
+      "blockClass": "product-bottom-col"
+    },
+    "children": [
+      "product-summary-name#shelf-product",
+      "natural-flex-layout#shelf-prices"
+      // "add-to-cart-button"
+    ]
+  },
+
+
+
+  //video
+
+  
+  "flex-layout.row#shelf-product-top1": {
+    "props": {
+      "blockClass": "shelf-product-top"
+    },
+
+    "children": ["flex-layout.col#shelf-product-top1"]
+  },
+
+  "flex-layout.col#shelf-product-top1": {
+    "children": [
+      // "flex-layout.row#badges-promo",
+      // "vtex.product-highlights@2.x:product-highlights#envio-gratis",
+      // "flex-layout.row#shelf-product-top-badges",
+      "product-summary-image#shelf-product",
+      "flex-layout.row#shelf-product-bottom-badges",
+      "vtex.product-highlights@2.x:product-highlights#aniversario"
+    ]
+  },
+  "flex-layout.row#shelf-product-bottom1": {
+    "props": {
+      "blockClass": "shelf-product-bottom"
+    },
+
+    "children": ["flex-layout.col#shelf-product-bottom1"]
+  },
+
+  "flex-layout.col#shelf-product-bottom1": {
+    "props": {
+      "blockClass": "product-bottom-col"
+    },
+    "children": [
+      "product-summary-name#shelf-product",
+      "natural-flex-layout#shelf-prices",
+      //"add-to-cart-button"
+      "natural-flex-layout#add-to-cart-button"
+    ]
+  },
+
+  /* ================================ Medicados =============================== */
+  "condition-layout.product#regular-o-medicado-shelf": {
+    "props": {
+      "conditions": [
+
+        /* Medicados Aves */
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "79"
+          }
+        },
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "85"
+          }
+        },
+        
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "143"
+          }
+        },
+
+        /* Medicados Gatos */
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "42"
+          }
+        },
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "61"
+          }
+        },
+        
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "62"
+          }
+        },
+
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "114"
+          }
+        },
+
+        /* Medicados Peces */
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "116"
+          }
+        },
+
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "134"
+          }
+        },
+
+        /* Medicados Perros */
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "34"
+          }
+        },
+
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "36"
+          }
+        },
+
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "35"
+          }
+        },
+
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "111"
+          }
+        }
+      ],
+      "matchType": "any",
+      "Then": "flex-layout.row#producto-medicado-sign"
+    }
+  },
+
+  "flex-layout.row#producto-medicado-sign": {
+    "children": [
+      "flex-layout.col#producto-medicado-shelf-sign"
+    ]
+  },
+
+  "flex-layout.col#producto-medicado-shelf-sign": {
+    "props":{
+      "blockClass":"producto-medicado-shelf-sign"
+    },
+    "children": [
+      "rich-text#producto-medicado-sign-text"
+    ]
+  },
+
+  "rich-text#producto-medicado-sign-text": {
+    "props": {
+      "text": "\\+ Información",
+      "textPosition": "CENTER",
+      "blockClass": "producto-medicado-sign-text"
+    }
+  },
+
+  /* ========================================================================== */
+
+  "natural-flex-layout#shelf-prices": {
+    "props": {
+      "blockClass": "shelf-prices"
+    },
+
+    "children": [
+      "product-list-price#shelf-product",
+      "product-selling-price#shelf-product",
+      "custom-prices",
+      // "flex-layout.row#shelf-product-extra-badge",
+      "product-installments#shelf-product"
+    ]
+  },
+
+  "product-summary-name#shelf-product": {
+    "props": {
+      "blockClass": "shelf-product",
+      "tag": "div"
+    }
+  },
+
+  "product-list-price#shelf-product": {
+    "props": {
+      "blockClass": "shelf-product"
+    }
+  },
+
+  "product-selling-price#shelf-product": {
+    "props": {
+      "blockClass": "shelf-product"
+    }
+  },
+
+  "product-installments#shelf-product": {
+    "props": {
+      "blockClass": "shelf-product",
+      "installmentsCriteria": "max-quantity-without-interest",
+      "message": "Hasta {installmentsNumber} cuotas {hasInterest, select, true {, {interestRate} de interés} false { sin interés}} de {installmentValue}"
+    }
+  },
+
+
+
+  "natural-flex-layout#add-to-cart-button": {
+    "props": {
+      "blockClass": "add-to-cart-button"
+    },
+
+    "children": [
+      "add-to-cart-button"
+    ]
+  },
+
+  "add-to-cart-button":  {
+    "props": {
+      "text": "AGREGAR"
+    }
+  }
+}

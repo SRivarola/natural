@@ -1,0 +1,415 @@
+{
+  "drawer#perros": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#perros"],
+    "children": ["menu#perros"]
+  },
+
+  "drawer-trigger#perros": {
+    "children": ["rich-text#perros"]
+  },
+
+  "rich-text#perros": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "perros"
+    }
+  },
+
+  "menu#perros": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+
+    "children": [
+      "drawer#perros-alimentos",
+      "drawer#perros-snacks",
+      "drawer#perros-paseos-viajes",
+      "drawer#perros-juguetes",
+      "menu-item#casas-cuchas-see-all",
+      "drawer#perros-camas-indumentarias",
+      "menu-item#comederos-bebedores-see-all",
+      "drawer#perros-salud",
+      "drawer#perros-higiene-y-belleza",
+      "menu-item#perros-see-all"
+    ]
+  },
+
+  "drawer#perros-alimentos": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#perros-alimentos"],
+    "children": ["menu#perros-alimentos"]
+  },
+ 
+  "drawer-trigger#perros-alimentos": {
+    "children": ["rich-text#perros-alimentos"]
+  },
+
+  "rich-text#perros-alimentos": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "Alimentos"
+    }
+  },
+
+  "menu#perros-alimentos": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#submenu-perros-alimentos",
+      "menu-item#alimento-see-all"
+    ]
+  },
+
+  "drawer#perros-snacks": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#perros-snacks"],
+    "children": ["menu#perros-snacks"]
+  },
+
+  "drawer-trigger#perros-snacks": {
+    "children": ["rich-text#perros-snacks"]
+  },
+
+  "rich-text#perros-snacks": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "Snakcs"
+    }
+  },
+
+  "menu#perros-snacks": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+
+    "children": [
+      "vtex.menu@2.x:menu#submenu-perros-snacks",
+      "menu-item#snacks-see-all"
+    ]
+  },
+
+  "drawer#perros-paseos-viajes": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#perros-paseos-viajes"],
+    "children": ["menu#perros-paseos-viajes"]
+  },
+ 
+  "drawer-trigger#perros-paseos-viajes": {
+    "children": ["rich-text#perros-paseos-viajes"]
+  },
+
+  "rich-text#perros-paseos-viajes": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "Paseos y viajes"
+    }
+  },
+
+  "menu#perros-paseos-viajes": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#paseo-viaje",
+      "menu-item#paseos-viajes-see-all"
+    ]
+  },
+
+  "drawer#perros-juguetes": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#perros-juguetes"],
+    "children": ["menu#perros-juguetes"]
+  },
+ 
+  "drawer-trigger#perros-juguetes": {
+    "children": ["rich-text#perros-juguetes"]
+  },
+
+  "rich-text#perros-juguetes": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "Juguetes"
+    }
+  },
+
+  "menu#perros-juguetes": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#submenu-perros-juguetes",
+      "menu-item#juguetes-see-all"
+    ]
+  },
+
+  "drawer#perros-camas-indumentarias": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#perros-camas-indumentaria"],
+    "children": ["menu#perros-camas-indumentaria"]
+  },
+ 
+  "drawer-trigger#perros-camas-indumentaria": {
+    "children": ["rich-text#perros-camas-indumentaria"]
+  },
+
+  "rich-text#perros-camas-indumentaria": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "camas e indumentaria"
+    }
+  },
+
+  "menu#perros-camas-indumentaria": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#submenu-perros-camas-indumentaria",
+      "menu-item#camas-indumentaria-see-all"
+    ]
+  },
+
+  "drawer#perros-salud": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#perros-salud"],
+    "children": ["menu#perros-salud"]
+  },
+ 
+  "drawer-trigger#perros-salud": {
+    "children": ["rich-text#perros-salud"]
+  },
+
+  "rich-text#perros-salud": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "salud"
+    }
+  },
+
+  "menu#perros-salud": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#submenu-perros-salud",
+      "menu-item#salud-see-all"
+    ]
+  },
+  
+  "drawer#perros-higiene-y-belleza": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#perros-higiene-y-belleza"],
+    "children": ["menu#perros-higiene-y-belleza"]
+  },
+ 
+  "drawer-trigger#perros-higiene-y-belleza": {
+    "children": ["rich-text#perros-higiene-y-belleza"]
+  },
+
+  "rich-text#perros-higiene-y-belleza": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "Higiene y belleza"
+    }
+  },
+
+  "menu#perros-higiene-y-belleza": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#submenu-perros-higiene-belleza",
+      "menu-item#higiene-y-belleza-see-all"
+    ]
+  },
+
+  //Ver Todo
+  "menu-item#perros-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "perros-see-all",
+      "type": "custom",
+      "itemProps": {
+        //"categoryId": 1,
+        "href": "/perros",
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Ver todo perros",
+        "text": "Ver todo perros"
+      }
+    }
+  },
+
+  "menu-item#alimento-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "alimentos-see-all",
+      "type": "custom",
+      "itemProps": {
+        "href": "/perros/alimentos",
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Ver todo alimentos",
+        "text": "ver todo alimentos"
+      }
+    }
+  },
+
+  "menu-item#paseos-viajes-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "paseos-viajes-see-all",
+      "type": "custom",
+      "itemProps": {
+        "href": "/perros/paseos-y-viaje",
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Ver todo paseos viajes",
+        "text": "ver todo paseos viajes"
+      }
+    }
+  },
+
+  "menu-item#snacks-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "snacks-see-all",
+      "type": "custom",
+      "itemProps": {
+        "href": "/perros/snacks",
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Ver todo snacks",
+        "text": "ver todo snacks"
+      }
+    }
+  },
+
+  "menu-item#juguetes-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "juguetes-see-all",
+      "type": "custom",
+      "itemProps": {
+        "href": "/perros/juguetes",
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Ver todo juguetes",
+        "text": "ver todo juguetes"
+      }
+    }
+  },
+
+  "menu-item#casas-cuchas-see-all": {
+    "props": {
+      "blockClass": ["department", "mobile-menu-item"],
+      "id": "casas-cuchas-see-all",
+      "type": "custom",
+      "itemProps": {
+        "href": "/perros/casas-y-cuchas",
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Casas y cuchas",
+        "text": "Casas y cuchas"
+      }
+    }
+  },
+
+  "menu-item#camas-indumentaria-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "perros-see-all",
+      "type": "custom",
+      "itemProps": {
+        //"categoryId": 1,
+        "href": "/perros/camas-e-indumentaria",
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Ver todo camas e indumentarias",
+        "text": "Ver todo camas e indumentarias"
+      }
+    }
+  },
+
+  "menu-item#comederos-bebedores-see-all": {
+    "props": {
+      "blockClass": ["department", "mobile-menu-item"],
+      "id": "perros-see-all",
+      "type": "custom",
+      "itemProps": {
+        //"categoryId": 1,
+        "href": "/perros/comederos-bebederos",
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "comedores y bebederos",
+        "text": "comedores y bebederos"
+      }
+    }
+  },
+
+  "menu-item#salud-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "perros-see-all",
+      "type": "custom",
+      "itemProps": {
+        //"categoryId": 1,
+        "href": "/perros/salud",
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Ver todo salud",
+        "text": "Ver todo salud"
+      }
+    }
+  },
+
+  "menu-item#higiene-y-belleza-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "perros-see-all",
+      "type": "custom",
+      "itemProps": {
+        //"categoryId": 1,
+        "href": "/perros/higiene-y-belleza",
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Ver todo higiene y belleza",
+        "text": "Ver todo higiene y belleza"
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "store.custom#cambios-y-devoluciones": {
+    "blocks": [
+      "flex-layout.row#breadcrumb",
+      "flex-layout.row#cambios-y-devoluciones"
+    ]
+  },
+
+  "flex-layout.row#cambios-y-devoluciones": {
+    "props": {
+      "blockClass": "institutional-wrapper",
+      "colSizing": "auto"
+    },
+
+    "children": [
+      "rich-text#cambios-y-devoluciones-content"
+    ]
+  },
+
+  "rich-text#cambios-y-devoluciones-content": {
+    "props": {
+      "blockClass": "institutional-content",
+      "text": "# Cambios y devoluciones",
+      "width": "grow"
+    }
+  }
+}

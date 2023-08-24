@@ -1,0 +1,22 @@
+{
+    "store.custom#chapitas": {
+        "blocks": ["flex-layout.row#breadcrumb", "flex-layout.row#chapitas"]
+    },
+  
+    "flex-layout.row#chapitas": {
+        "props": {
+            "blockClass": "institutional-wrapper",
+            "colSizing": "auto"
+        },
+  
+        "children": ["rich-text#chapitas-content"]
+    },
+  
+    "rich-text#chapitas-content": {
+        "props": {
+            "blockClass": "institutional-content",
+            "text": "# chapitas",
+            "width": "grow"
+        }
+    }
+  }

@@ -1,0 +1,81 @@
+{
+  "flex-layout.row#deals": {
+    "children": ["slider-layout"],
+    "props": {
+      "blockClass":  ["store-container", "deals"]
+    }
+  },
+  "slider-layout": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 3,
+        "mobile": 1
+      },
+      "infinite": true,
+      "showPaginationDots": "never",
+      "showNavigationArrows": "never",
+      "blockClass": "deals-carousel"
+    },
+    "children": [
+      "flex-layout.col#deals1",
+      "flex-layout.col#deals2",
+      "flex-layout.col#deals3"
+    ]
+  },
+
+  "flex-layout.col#deals1": {
+    "children": ["image#deal1", "rich-text#deal1"],
+    "props": {
+      "blockClass": "deals-col"
+    }
+  },
+  "image#deal1": {
+    "props": {
+      "src": "assets/svgs/natural-life-icons-cards.svg"
+    }
+  },
+  "rich-text#deal1": {
+    "props": {
+      "text": "[Pagá con tarjetas de<br>crédito y débito.](/formas-de-pago)",
+      "blockClass": "deals",
+      "textAlignment": "LEFT"
+    }
+  },
+  "flex-layout.col#deals2": {
+    "children": ["image#deal2", "rich-text#deal2"],
+    "props": {
+      "blockClass": "deals-col"
+    }
+  },
+  "image#deal2": {
+    "props": {
+      "src": "assets/svgs/natural-life-icon-local.svg"
+    }
+  },
+  "rich-text#deal2": {
+    "props": {
+      "text": "[Retiro gratis en cualquiera<br>de nuestras sucursales](/stores)",
+      "blockClass": "deals",
+      "textAlignment": "LEFT"
+    }
+  },
+  "flex-layout.col#deals3": {
+    "children": ["image#deal3", "rich-text#deal3"],
+    "props": {
+      "blockClass": "deals-col"
+    }
+  },
+  "image#deal3": {
+    "props": {
+      "src": "assets/svgs/natural-life-icon-truck.svg"
+    }
+  },
+  "rich-text#deal3": {
+    "props": {
+      "text": "[Envío en el día en CABA y GBA<br>Consulta términos y condiciones](/terminos-y-condiciones)",
+      "blockClass": "deals",
+      "textAlignment": "LEFT"
+    }
+  }
+}

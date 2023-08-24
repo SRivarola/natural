@@ -1,0 +1,245 @@
+{
+  "vtex.menu@2.x:menu#category-menu": {
+    "props": {
+      "blockClass": "departments",
+      "experimentalOptimizeRendering": true
+    },
+    "children": [
+      "menu-item#perros",
+      "menu-item#gatos",
+      "menu-item#peces",
+      "menu-item#aves",
+      "menu-item#peqanimales",
+      "menu-item#reptiles",
+      "menu-item#piletajardin",
+      "menu-item#promos",
+      "menu-item#kilos-gratis",
+      "menu-item#sucursales"
+    ]
+  },
+
+  "menu-item#perros": {
+    "props": {
+      "blockClass": "department",
+      "id": "perros",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Perros",
+        "type": "internal",
+        "href": "/perros"
+      },
+      "iconProps": {
+        "id": "nav-caret--down",
+        "size": 10
+      },
+      "iconPosition": "right"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#perros"]
+  },
+  "menu-item#gatos": {
+    "props": {
+      "blockClass": "department",
+      "id": "comedor",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Gatos",
+        "tagTitle": "Gatos",
+        "type": "internal",
+        "href": "/gatos",
+        "noFollow": false
+      },
+
+      "iconProps": {
+        "id": "nav-caret--down",
+        "size": 10
+      },
+      "iconPosition": "right"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#gatos"]
+  },
+
+  "menu-item#peces": {
+    "props": {
+      "blockClass": "department",
+      "id": "peces",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Peces",
+        "tagTitle": "Peces",
+        "type": "internal",
+        "href": "/peces",
+        "noFollow": false
+      },
+      "iconProps": {
+        "id": "nav-caret--down",
+        "size": 10
+      },
+      "iconPosition": "right"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#peces"]
+  },
+
+  "menu-item#aves": {
+    "props": {
+      "blockClass": "department",
+      "id": "aves",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Aves",
+        "tagTitle": "Aves",
+        "type": "internal",
+        "href": "/aves",
+        "noFollow": false
+      },
+      "iconProps": {
+        "id": "nav-caret--down",
+        "size": 10
+      },
+      "iconPosition": "right"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#aves"]
+  },
+
+  "menu-item#peqanimales": {
+    "props": {
+      "blockClass": "department",
+      "id": "peqanimales",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Peq. Animales",
+        "tagTitle": "Peq. Animales",
+        "type": "internal",
+        "href": "/pequenos-animales",
+        "noFollow": false
+      },
+      "iconProps": {
+        "id": "nav-caret--down",
+        "size": 10
+      },
+      "iconPosition": "right"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#peqanimales"]
+  },
+
+  "menu-item#reptiles": {
+    "props": {
+      "blockClass": "department",
+      "id": "reptiles",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Reptiles",
+        "tagTitle": "Reptiles",
+        "type": "internal",
+        "href": "/reptiles",
+        "noFollow": false
+      },
+      "iconProps": {
+        "id": "nav-caret--down",
+        "size": 10
+      },
+      "iconPosition": "right"
+    },
+    "blocks": ["vtex.menu@2.x:submenu#reptiles"]
+  },
+
+  "menu-item#piletajardin": {
+    "props": {
+      "blockClass": "department",
+      "id": "promos",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Pileta y jardin",
+        "tagTitle": "Pileta y jardin",
+        "type": "internal",
+        "href": "/pileta-y-jardin",
+        "noFollow": false
+      }
+    }
+  },
+
+  "menu-item#promos": {
+    "props": {
+      "blockClass": "department",
+      "id": "promos",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "¡Promos!",
+        "tagTitle": "promos",
+        "type": "internal",
+        "href": "/promo?map=productclusternames",
+        "noFollow": false
+      }
+    }
+  },
+
+  "menu-item#kilos-gratis": {
+    "props": {
+      "blockClass": "department",
+      "id": "kilos-gratis",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "¡Kilos Gratis!",
+        "tagTitle": "kilos-gratis",
+        "type": "internal",
+        "href": "/kilos?map=productclusternames",
+        "noFollow": false
+      }
+    }
+  },
+
+  "menu-item#sucursales": {
+    "props": {
+      "blockClass": "department",
+      "id": "sucursales",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Sucursales",
+        "tagTitle": "sucursales",
+        "type": "internal",
+        "href": "/stores",
+        "noFollow": false
+      }
+    }
+  },
+
+  /*Mobile*/
+
+  /* bottom LINKS (MOBILE)*/
+
+  "menu-item#my-orders": {
+    "props": {
+      "blockClass": "mis-pedidos",
+      "id": "menu-item-my-orders",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/my-orders",
+        "noFollow": true,
+        "tagTitle": "/my-orders",
+        "text": "MIS PEDIDOS"
+      }
+    }
+  }
+}

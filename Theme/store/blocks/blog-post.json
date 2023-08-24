@@ -1,0 +1,7 @@
+{
+    "store.blog-post": {
+      "blocks": [
+        "blog-post-details.wordpress-post-details"
+      ]
+    }
+  }

@@ -1,0 +1,610 @@
+{
+  "vtex.menu@2.x:submenu#perros": {
+    "children": ["flex-layout.row#perros"],
+    "props": {
+      "blockClass": "submenu"
+    }
+  },
+
+  "flex-layout.row#perros": {
+    "props": {
+      "blockClass": "categories-wrapper",
+      "colSizing": "auto",
+      "colGap": 3
+    },
+
+    "children": [
+      "vtex.menu@2.x:menu#column-perros-1",
+      "vtex.menu@2.x:menu#column-perros-2",
+      "vtex.menu@2.x:menu#column-perros-3",
+      "vtex.menu@2.x:menu#column-perros-4",
+      "vtex.menu@2.x:menu#column-perros-5"
+    ]
+  },
+
+  /* LOCALES COLUMN */
+  "vtex.menu@2.x:menu#column-perros-1": {
+    "props": {
+      "blockClass": "categories"
+    },
+    "children": [
+      "menu-item#perros-alimentos",
+      "vtex.menu@2.x:menu#submenu-perros-alimentos",
+      "menu-item#perros-snacks",
+      "vtex.menu@2.x:menu#submenu-perros-snacks"
+    ]
+  },
+  "vtex.menu@2.x:menu#submenu-perros-alimentos": {
+    "props": {
+      "blockClass": "custom-dropdown-submenu",
+      "items": [
+        {
+          "id": "seco",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/perros/alimentos/seco",
+            "noFollow": false,
+            "text": "Seco",
+            "tagTitle": "Seco"
+          }
+        },
+        {
+          "id": "humedo",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/perros/alimentos/humedo",
+            "noFollow": false,
+            "text": "Humedo",
+            "tagTitle": "Humedo"
+          }
+        },
+        {
+          "id": "medicados",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/perros/alimentos/medicados",
+            "noFollow": false,
+            "text": "Medicados",
+            "tagTitle": "Medicados"
+          }
+        }
+      ]
+    }
+  },
+
+  "menu-item#perros-alimentos": {
+    "props": {
+      "blockClass": "category",
+      "id": "alimentos",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Alimentos",
+        "tagTitle": "Alimentos",
+        "type": "internal",
+        "href": "/perros/alimentos",
+        "noFollow": false
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#submenu-perros-snacks": {
+    "props": {
+      "blockClass": "custom-dropdown-submenu",
+      "items": [
+        {
+          "id": "galletitas-secas",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/perros/snacks/galletas-secas",
+            "noFollow": false,
+            "text": "Galletas secas",
+            "tagTitle": "Galletas secas"
+          }
+        },
+        {
+          "id": "golosinas",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/perros/snacks/golosinas--semi-humedas",
+            "noFollow": false,
+            "text": "Golosinas",
+            "tagTitle": "Golosinas"
+          }
+        },
+        {
+          "id": "huesos-orejas",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/perros/snacks/huesos-y-orejas",
+            "noFollow": false,
+            "text": "Huesos y orejas",
+            "tagTitle": "Huesos y orejas"
+          }
+        },
+        {
+          "id": "sticks-dentales",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/perros/snacks/sticks-dentales",
+            "noFollow": false,
+            "text": "Sticks dentales",
+            "tagTitle": "Sticks dentales"
+          }
+        }
+      ]
+    }
+  },
+
+  "menu-item#perros-snacks": {
+    "props": {
+      "blockClass": "category",
+      "id": "perros-snacks",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Snacks",
+        "tagTitle": "Snacks",
+        "type": "internal",
+        "href": "/perros/snacks",
+        "noFollow": false
+      }
+    }
+  },
+
+  /* INTERNACIONALES COLUMN */
+  "vtex.menu@2.x:menu#column-perros-2": {
+    "props": {
+      "blockClass": "categories"
+    },
+    "children": [
+      "menu-item#paseos-viajes",
+      "vtex.menu@2.x:menu#paseo-viaje"
+    ]
+  },
+  "vtex.menu@2.x:menu#paseo-viaje": {
+    "props": {
+      "blockClass": "custom-dropdown-submenu",
+      "items": [
+        {
+          "id": "bozales",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/perros/paseos-y-viaje/bozales",
+            "noFollow": false,
+            "text": "Bozales",
+            "tagTitle": "Bozales"
+          }
+        },
+        {
+          "id": "chapitas",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/perros/paseos-y-viaje/chapitas",
+            "noFollow": false,
+            "text": "Chapitas",
+            "tagTitle": "Chapitas"
+          }
+        },
+        {
+          "id": "collares",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/perros/paseos-y-viaje/collares",
+            "noFollow": false,
+            "text": "Collares",
+            "tagTitle": "Collares"
+          }
+        },
+        {
+          "id": "correas",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/perros/paseos-y-viaje/correas",
+            "noFollow": false,
+            "text": "Correas",
+            "tagTitle": "Correas"
+          }
+        },
+        {
+          "id": "pretales",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/perros/paseos-y-viaje/pretales",
+            "noFollow": false,
+            "text": "Pretales",
+            "tagTitle": "Pretales"
+          }
+        },
+        {
+          "id": "porta-bolsas",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/perros/paseos-y-viaje/porta-bolsas",
+            "noFollow": false,
+            "text": "Porta bolsas",
+            "tagTitle": "Porta bolsas"
+          }
+        },
+        {
+          "id": "transportadoras",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/perros/paseos-y-viaje/transportadoras",
+            "noFollow": false,
+            "text": "Transportadoras",
+            "tagTitle": "Transportadoras"
+          }
+        }
+      ]
+    }
+  },
+  "menu-item#paseos-viajes": {
+    "props": {
+      "blockClass": "category",
+      "id": "paseo-viaje",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Paseo y viajes",
+        "tagTitle": "Paseo y viajes",
+        "type": "internal",
+        "href": "/perros/paseo-viaje",
+        "noFollow": false
+      }
+    }
+  },
+
+  // SELLECCIONES MENU
+  "vtex.menu@2.x:menu#column-perros-3": {
+    "props": {
+      "blockClass": "categories"
+    },
+    "children": [
+      "menu-item#juguetes",
+      "vtex.menu@2.x:menu#submenu-perros-juguetes",
+      "menu-item#casas-cuchas"
+    ]
+  },
+  "vtex.menu@2.x:menu#submenu-perros-juguetes": {
+    "props": {
+      "blockClass": "custom-dropdown-submenu",
+      "items": [
+        {
+          "id": "juguetes-sonido",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/perros/juguetes/juguetes-con-sonidos",
+            "noFollow": false,
+            "text": "Juguetes con sonido",
+            "tagTitle": "Juguetes con sonido"
+          }
+        },
+        {
+          "id": "juguetes-dentales",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/perros/juguetes/juguetes-dentales",
+            "noFollow": false,
+            "text": "Juguetes dentales",
+            "tagTitle": "Juguetes dentales"
+          }
+        },
+        {
+          "id": "peluches",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/perros/juguetes/peluches",
+            "noFollow": false,
+            "text": "Peluches",
+            "tagTitle": "Peluches"
+          }
+        },
+        {
+          "id": "sogas-pelotas",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/perros/juguetes/sogas-y-pelotas",
+            "noFollow": false,
+            "text": "Sogas y pelotas",
+            "tagTitle": "Sogas y pelotas"
+          }
+        }
+      ]
+    }
+  },
+
+  "menu-item#juguetes": {
+    "props": {
+      "blockClass": "category",
+      "id": "juguetes",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Juguetes",
+        "tagTitle": "Juguetes",
+        "type": "internal",
+        "href": "/perros/juguetes",
+        "noFollow": false
+      }
+    }
+  },
+  "menu-item#casas-cuchas": {
+    "props": {
+      "blockClass": "category",
+      "id": "casas-cuchas",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Casas y cuchas",
+        "tagTitle": "Casas y cuchas",
+        "type": "internal",
+        "href": "/perros/casas-cuchas",
+        "noFollow": false
+      }
+    }
+  },
+
+  // SELLECCIONES MENU
+  "vtex.menu@2.x:menu#column-perros-4": {
+    "props": {
+      "blockClass": "categories"
+    },
+    "children": [
+      "menu-item#camas-indumentaria",
+      "vtex.menu@2.x:menu#submenu-perros-camas-indumentaria",
+      "menu-item#comedoros-bebedores"
+    ]
+  },
+  "vtex.menu@2.x:menu#submenu-perros-camas-indumentaria": {
+    "props": {
+      "blockClass": "custom-dropdown-submenu",
+      "items": [
+        {
+          "id": "camas",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/perros/camas-e-indumentaria/camas",
+            "noFollow": false,
+            "text": "Camas",
+            "tagTitle": "Camas"
+          }
+        },
+        {
+          "id": "colchonetas",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/perros/camas-e-indumentaria/colchonetas",
+            "noFollow": false,
+            "text": "colchonetas",
+            "tagTitle": "colchonetas"
+          }
+        },
+        {
+          "id": "indumentaria",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/perros/camas-e-indumentaria/indumentaria",
+            "noFollow": false,
+            "text": "Indumentaria",
+            "tagTitle": "Indumentaria"
+          }
+        },
+        {
+          "id": "moises",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/perros/camas-e-indumentaria/moises",
+            "noFollow": false,
+            "text": "Moises",
+            "tagTitle": "Moises"
+          }
+        }
+      ]
+    }
+  },
+
+  "menu-item#camas-indumentaria": {
+    "props": {
+      "blockClass": "category",
+      "id": "cama-indumentaria",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "CAmas e indumentaria",
+        "tagTitle": "Camas e indumentaria",
+        "type": "internal",
+        "href": "//perros/camas-e-indumentaria",
+        "noFollow": false
+      }
+    }
+  },
+  "menu-item#comedoros-bebedores": {
+    "props": {
+      "blockClass": "category",
+      "id": "comedoros-bebedores",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Comedores - Bebederos",
+        "tagTitle": "Comedores - Bebederos",
+        "type": "internal",
+        "href": "/perros/comedoros-bebedores",
+        "noFollow": false
+      }
+    }
+  },
+
+  // SELLECCIONES MENU
+  "vtex.menu@2.x:menu#column-perros-5": {
+    "props": {
+      "blockClass": "categories"
+    },
+    "children": [
+      "menu-item#salud",
+      "vtex.menu@2.x:menu#submenu-perros-salud",
+      "menu-item#higiene-belleza",
+      "vtex.menu@2.x:menu#submenu-perros-higiene-belleza"
+    ]
+  },
+  "vtex.menu@2.x:menu#submenu-perros-salud": {
+    "props": {
+      "blockClass": "custom-dropdown-submenu",
+      "items": [
+        {
+          "id": "pulgas-garrapatas",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/perros/salud/pulgas-y-garrapatas",
+            "noFollow": false,
+            "text": "Pulgas y garrapatas",
+            "tagTitle": "Pulgas y garrapatas"
+          }
+        }
+      ]
+    }
+  },
+
+  "vtex.menu@2.x:menu#submenu-perros-higiene-belleza": {
+    "props": {
+      "blockClass": "custom-dropdown-submenu",
+      "items": [
+        {
+          "id": "higiene-educacion",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/perros/higiene-y-belleza/higiene-y-educacion",
+            "noFollow": false,
+            "text": "Higiene y educación",
+            "tagTitle": "Higiene y educación"
+          }
+        },
+        {
+          "id": "peluqueria",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/perros/higiene-y-belleza/peluqueria",
+            "noFollow": false,
+            "text": "Peluqeuria",
+            "tagTitle": "Peluqeuria"
+          }
+        }
+      ]
+    }
+  },
+
+  "menu-item#salud": {
+    "props": {
+      "blockClass": "category",
+      "id": "salud",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Salud",
+        "tagTitle": "Salud",
+        "type": "internal",
+        "href": "/Salud",
+        "noFollow": false
+      }
+    }
+  },
+  "menu-item#higiene-belleza": {
+    "props": {
+      "blockClass": "category",
+      "id": "higiene-belleza",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Higiene y belleza",
+        "tagTitle": "Higiene y belleza",
+        "type": "internal",
+        "href": "/perros/higiene-belleza",
+        "noFollow": false
+      }
+    }
+  }
+}

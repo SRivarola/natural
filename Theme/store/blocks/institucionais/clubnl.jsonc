@@ -1,0 +1,22 @@
+{
+    "store.custom#clubnl": {
+        "blocks": ["flex-layout.row#breadcrumb", "flex-layout.row#clubnl"]
+    },
+  
+    "flex-layout.row#clubnl": {
+        "props": {
+            "blockClass": "institutional-wrapper",
+            "colSizing": "auto"
+        },
+  
+        "children": ["rich-text#clubnl-content"]
+    },
+  
+    "rich-text#clubnl-content": {
+        "props": {
+            "blockClass": "institutional-content",
+            "text": "# clubnl",
+            "width": "grow"
+        }
+    }
+  }

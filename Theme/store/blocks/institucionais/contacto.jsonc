@@ -1,0 +1,12 @@
+{
+  "store.custom#contacto": {
+      "blocks": ["custom-script#contacto"]
+  },
+
+  "custom-script#contacto": {
+        "props": {
+            "script": "https://apps.elfsight.com/p/platform.js",
+            "div": "<div class='elfsight-app-40bebff8-d1e7-4068-b1f3-bd8ac2e465c9'></div>"
+        }
+    }
+}

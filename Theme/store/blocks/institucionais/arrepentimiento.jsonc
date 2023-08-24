@@ -1,0 +1,12 @@
+{
+    "store.custom#arrepentimiento": {
+        "blocks": ["custom-script#arrepentimiento"]
+    },
+  
+    "custom-script#arrepentimiento": {
+          "props": {
+              "script": "https://apps.elfsight.com/p/platform.js",
+              "div": "<div class='elfsight-app-14407b8d-7cc4-4b6a-95a5-de4e3f364106'></div>"
+          }
+      }
+  }

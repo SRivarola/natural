@@ -1,0 +1,22 @@
+{
+  "store.custom#plazo-de-entrega": {
+    "blocks": ["flex-layout.row#breadcrumb", "flex-layout.row#plazo-de-entrega"]
+  },
+
+  "flex-layout.row#plazo-de-entrega": {
+    "props": {
+      "blockClass": "institutional-wrapper",
+      "colSizing": "auto"
+    },
+
+    "children": ["rich-text#plazo-de-entrega-content"]
+  },
+
+  "rich-text#plazo-de-entrega-content": {
+    "props": {
+      "blockClass": "institutional-content",
+      "text": "# Plazos de entrega",
+          "width": "grow"
+    }
+  }
+}

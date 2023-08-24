@@ -1,0 +1,52 @@
+{
+  "store.not-found": {
+    "blocks": ["flex-layout.row#not-found"]
+  },
+
+  "flex-layout.row#not-found": {
+    "props": {
+      "blockClass": "not-found",
+      "preserveLayoutOnMobile": true
+    },
+
+    "children": ["flex-layout.col#not-found"]
+  },
+
+  "flex-layout.col#not-found": {
+    "props": {
+      "preventVerticalStretch": true
+    },
+
+    "children": [
+      "rich-text#not-found-title",
+      "rich-text#not-found-description",
+      "link#not-found-button"
+    ]
+  },
+
+  "rich-text#not-found-title": {
+    "props": {
+      "blockClass": "not-found-title",
+      "text": "# Página no encontrada",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "rich-text#not-found-description": {
+    "props": {
+      "blockClass": "not-found-description",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "La página a la que usted esta intentando ingresar no existe"
+    }
+  },
+
+  "link#not-found-button": {
+    "props": {
+      "blockClass": "not-found-button",
+      "href": "/",
+      "label": "VOLVER"
+    }
+  }
+}

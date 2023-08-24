@@ -1,0 +1,200 @@
+{
+  "vtex.menu@2.x:submenu#reptiles": {
+    "children": ["flex-layout.row#reptiles", "image#reptiles"],
+    "props": {
+      "blockClass": "submenu"
+    }
+  },
+
+  "flex-layout.row#reptiles": {
+    "props": {
+      "blockClass": "categories-wrapper",
+      "colSizing": "auto",
+      "colGap": 3
+    },
+
+    "children": [
+      "vtex.menu@2.x:menu#column-reptiles-1",
+      "vtex.menu@2.x:menu#column-reptiles-2",
+      "vtex.menu@2.x:menu#column-reptiles-3"
+    ]
+  },
+
+  /* BANNER MENU */
+  "image#reptiles": {
+    "props": {
+      "blockClass": "submenu-banner",
+      "src": "assets/imgs/natural-megamenu-estandar.jpg",
+      "link": true
+    }
+  },
+
+  /* LOCALES COLUMN */
+  "vtex.menu@2.x:menu#column-reptiles-1": {
+    "props": {
+      "blockClass": "categories"
+    },
+    "children": [
+      "menu-item#reptiles-accesorios-decoracion",
+      "vtex.menu@2.x:menu#submenu-reptiles-accesorios-y-decoracion"
+    ]
+  },
+  "vtex.menu@2.x:menu#submenu-reptiles-accesorios-y-decoracion": {
+    "props": {
+      "blockClass": "custom-dropdown-submenu",
+      "items": [
+        {
+          "id": "accesorios-y-decoracion",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/reptiles/accesorios-y-decoracion/accesorios-y-decoracion",
+            "noFollow": false,
+            "text": "Accesorios y decoración",
+            "tagTitle": "Accesorios y decoración"
+          }
+        }
+      ]
+    }
+  },
+
+  "menu-item#reptiles-accesorios-decoracion": {
+    "props": {
+      "blockClass": "category",
+      "id": "accesorios-decoracion",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Accesorios y decoración",
+        "tagTitle": "Accesorios y decoración",
+        "type": "internal",
+        "href": "/reptiles/accesorios-y-decoracion",
+        "noFollow": false
+      }
+    }
+  },
+
+  /* INTERNACIONALES COLUMN */
+  "vtex.menu@2.x:menu#column-reptiles-2": {
+    "props": {
+      "blockClass": "categories"
+    },
+    "children": [
+      "menu-item#reptiles-alimentos",
+      "vtex.menu@2.x:menu#submenu-reptiles-alimentos"
+    ]
+  },
+  "vtex.menu@2.x:menu#submenu-reptiles-alimentos": {
+    "props": {
+      "blockClass": "custom-dropdown-submenu",
+      "items": [
+        {
+          "id": "alimentos",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/reptiles/alimentos/alimentos",
+            "noFollow": false,
+            "text": "Alimentos",
+            "tagTitle": "Alimentos"
+          }
+        }
+      ]
+    }
+  },
+  "menu-item#reptiles-alimentos": {
+    "props": {
+      "blockClass": "category",
+      "id": "reptiles-alimentos",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Alimentos",
+        "tagTitle": "Alimentos",
+        "type": "internal",
+        "href": "/reptiles/alimentos",
+        "noFollow": false
+      }
+    }
+  },
+
+  // SELLECCIONES MENU
+  "vtex.menu@2.x:menu#column-reptiles-3": {
+    "props": {
+      "blockClass": "categories"
+    },
+    "children": [
+      "menu-item#otros-reptiles",
+      "vtex.menu@2.x:menu#submenu-otros-reptiles"
+    ]
+  },
+  "vtex.menu@2.x:menu#submenu-otros-reptiles": {
+    "props": {
+      "blockClass": "custom-dropdown-submenu",
+      "items": [
+        {
+          "id": "calefaccion",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/reptiles/calefaccion---iluminacion----terrarios/calefaccion",
+            "noFollow": false,
+            "text": "Calefacción",
+            "tagTitle": "Calefacción"
+          }
+        },
+        {
+            "id": "iluminacion",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "/reptiles/calefaccion---iluminacion----terrarios/iluminacion",
+              "noFollow": false,
+              "text": "Iluminación",
+              "tagTitle": "Iluminación"
+            }
+        },
+        {
+            "id": "terrarios",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "/reptiles/calefaccion---iluminacion----terrarios/terrarios",
+              "noFollow": false,
+              "text": "Terrarios",
+              "tagTitle": "Terrarios"
+            }
+          }
+      ]
+    }
+  },
+
+  "menu-item#otros-reptiles": {
+    "props": {
+      "blockClass": "category",
+      "id": "juguetes",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Calefacción - Iluminación - Terrarios",
+        "tagTitle": "calefacción---iluminacion---terrarios",
+        "type": "internal",
+        "href": "/reptiles/calefaccion---iluminacion----terrarios",
+        "noFollow": false
+      }
+    }
+  }
+}

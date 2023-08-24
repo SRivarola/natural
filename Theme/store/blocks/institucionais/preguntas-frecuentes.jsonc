@@ -1,0 +1,25 @@
+{
+  "store.custom#preguntas-frecuentes": {
+    "blocks": [
+      "flex-layout.row#breadcrumb",
+      "flex-layout.row#preguntas-frecuentes"
+    ]
+  },
+
+  "flex-layout.row#preguntas-frecuentes": {
+    "props": {
+      "blockClass": "institutional-wrapper",
+      "colSizing": "auto"
+    },
+
+    "children": ["rich-text#preguntas-frecuentes-content"]
+  },
+
+  "rich-text#preguntas-frecuentes-content": {
+    "props": {
+      "blockClass": "institutional-content",
+      "text": "# Preguntas frecuentes",
+      "width": "grow"
+    }
+  }
+}

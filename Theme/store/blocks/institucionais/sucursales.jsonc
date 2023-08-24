@@ -1,0 +1,833 @@
+{
+  "store.custom#sucursales": {
+      "blocks": ["flex-layout.row#sucursales"]
+  },
+
+  "flex-layout.row#sucursales": {
+      "title": "Sucursales",
+      "props": {
+          "blockClass": ["institutional-wrapper","stores-wrapper"],
+          "colSizing": "auto"
+      },
+
+      "children": [
+            "flex-layout.row#stores-title-wrapper",
+            "flex-layout.row#stores-container",
+            "flex-layout.row#stores-zones"
+        ]
+  },
+
+  "flex-layout.row#stores-title-wrapper": {
+        "title": "Información principal",
+        "props": {
+            "blockClass": ["stores-title-container"],
+            "colSizing": "auto"
+        },
+
+        "children": [
+                "rich-text#stores-title",
+                "rich-text#stores-info",
+                "responsive-layout.mobile#stores-service",
+                "responsive-layout.desktop#stores-service"
+        ]
+    },
+
+    "responsive-layout.mobile#stores-service": {
+        "children": ["image#stores-service-mobile"]
+    },
+
+    "responsive-layout.desktop#stores-service": {
+        "children": ["image#stores-service-desktop"]
+    },
+
+  "rich-text#stores-title": {
+    "title": "Titulo",
+      "props": {
+          "blockClass": ["institutional-content","stores-title"],
+          "text": "# Sucursales",
+          "width": "grow"
+      }
+  },
+
+  "rich-text#stores-info": {
+    "title": "Bajada",
+    "props": {
+        "blockClass": ["stores-info"],
+        "text": "Preservemos la salud y el bienestar de todos.<br>Atención al Cliente:<br>[0810-999-6288](tel:08109996288) (natural) o contactate con la sucursal",
+        "width": "grow"
+    }
+  },
+
+  "image#stores-service-mobile": {
+    "title": "Servicios - Imagen mobile",
+    "props": {
+      "blockClass": ["stores-info-image"],
+      "src": "assets/imgs/mobile/natural-life-sucursales-info.png",
+      "title": "Info sucursales"
+    }
+  },
+
+  "image#stores-service-desktop": {
+    "title": "Servicios - Imagen desktop",
+    "props": {
+      "blockClass": ["stores-info-image"],
+      "src": "assets/imgs/desktop/natural-life-sucursales-info.png",
+      "title": "Info sucursales"
+    }
+  },
+
+  "flex-layout.row#stores-container": {
+    "title": "Mapa",
+    "children": ["store-list"],
+    "props": {
+      "blockClass": "stores-container",
+      "preventVerticalStretch": true
+    }
+  },
+
+  "store-list": {
+    "props": {
+      "icon": "assets/imgs/natural-sucursal-icon.png",
+      "zoom": 13,
+      "sortBy": "name"
+    }
+  },
+  "flex-layout.col#title": {
+    "children": ["rich-text#title"],
+    "props": {
+      "blockClass": "title",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#title": {
+    "props": {
+      "text": "## Sucursales"
+    }
+  },
+  
+  "flex-layout.row#stores-zones": {
+    "title": "Zonas",
+    "children": [
+        "flex-layout.row#stores-zone-caba",
+        "flex-layout.row#stores-zone-gba-oeste",
+        "flex-layout.row#stores-zone-gba-norte",
+        "flex-layout.row#stores-zone-gba-sur",
+        "flex-layout.row#stores-zone-interior"
+    ],
+    "props": {
+      "blockClass": "stores-zone-wrapper",
+      "fullWidth": true,
+      "preventHorizontalStretch": true
+    }
+  },
+
+  /* GBA - ZONA OESTE */
+  "flex-layout.row#stores-zone-gba-oeste": {
+      "children": [
+        "flex-layout.col#stores-zone-gba-oeste"
+    ],
+    "props":{
+      "fullWidth": true,
+      "preventVerticalStretch": true,
+      "blockClass": "stores-zone-row"
+    }
+  },
+  "flex-layout.col#stores-zone-gba-oeste": {
+    "title": "GBA - Zona Oeste",
+    "children": [
+        "disclosure-layout#stores-zone-gba-oeste"
+    ],
+    "props": {
+      "title": "GBA - Zona Oeste",
+      "blockClass": ["stores-zone-content","stores-zone-gba-oeste"],
+      "animated": true
+    }
+  },
+
+  "disclosure-layout#stores-zone-gba-oeste": {
+    "children": [
+        "disclosure-trigger#gba-oeste-trigger-wrapper", 
+        "disclosure-content#gba-oeste-info-wrapper"
+    ]
+  },
+  "disclosure-trigger#gba-oeste-trigger-wrapper": {
+    "children": ["rich-text#trigger-title-gba-oeste"],
+    "props": {
+        "blockClass": ["stores-trigger-wrapper","stores-trigger-wrapper-gba-oeste"],
+        "animated": true
+      }
+  },
+  "disclosure-content#gba-oeste-info-wrapper": {
+    "children": [
+        "disposition-layout#gba-oeste-locales"
+    ],
+    "props": {
+        "blockClass": ["stores-info-wrapper","stores-info-info-gba-oeste"],
+        "animated": true
+      }
+  },
+  "disposition-layout#gba-oeste-locales":{
+    "title": "Locales",
+    "children":[
+        "flex-layout.row#gba-oeste-local-1-wrapper",
+        "flex-layout.row#gba-oeste-local-2-wrapper",
+        "flex-layout.row#gba-oeste-local-3-wrapper",
+        "flex-layout.row#gba-oeste-local-4-wrapper",
+        "flex-layout.row#gba-oeste-local-5-wrapper",
+        "flex-layout.row#gba-oeste-local-6-wrapper",
+        "flex-layout.row#gba-oeste-local-7-wrapper",
+        "flex-layout.row#gba-oeste-local-8-wrapper",
+        "flex-layout.row#gba-oeste-local-9-wrapper",
+        "flex-layout.row#gba-oeste-local-10-wrapper",
+        "flex-layout.row#gba-oeste-local-11-wrapper",
+        "flex-layout.row#gba-oeste-local-12-wrapper",
+        "flex-layout.row#gba-oeste-local-13-wrapper",
+        "flex-layout.row#gba-oeste-local-14-wrapper",
+        "flex-layout.row#gba-oeste-local-15-wrapper",
+        "flex-layout.row#gba-oeste-local-16-wrapper",
+        "flex-layout.row#gba-oeste-local-17-wrapper",
+        "flex-layout.row#gba-oeste-local-18-wrapper",
+        "flex-layout.row#gba-oeste-local-19-wrapper",
+        "flex-layout.row#gba-oeste-local-20-wrapper"
+    ],
+    "props": {
+        "disposition": [
+          {
+            "order": 1
+          },
+          {
+            "order": 2
+          },
+          {
+            "order": 3
+          },
+          {
+            "order": 4
+          },
+          {
+            "order": 5
+          },
+          {
+            "order": 6
+          },
+          {
+            "order": 7
+          },
+          {
+            "order": 8
+          },
+          {
+            "order": 9
+          },
+          {
+            "order": 10
+          },
+          {
+            "order": 11
+          },
+          {
+            "order": 12
+          },
+          {
+            "order": 13
+          },
+          {
+            "order": 14
+          },
+          {
+            "order": 15
+          },
+          {
+            "order": 16
+          },
+          {
+            "order": 17
+          },
+          {
+            "order": 18
+          },
+          {
+            "order": 19
+          },
+          {
+            "order": 20
+          }
+        ]
+      }
+  },
+  "rich-text#trigger-title-gba-oeste": {
+    "title": "Titulo",
+    "props": {
+      "text": "G.B.A. OESTE",
+      "blockClass": "trigger-title"
+    }
+  },
+
+  /* GBA - ZONA SUR */
+  "flex-layout.row#stores-zone-gba-sur": {
+    "children": [
+      "flex-layout.col#stores-zone-gba-sur"
+  ],
+  "props":{
+    "fullWidth": true,
+    "preventVerticalStretch": true,
+    "blockClass": "stores-zone-row"
+  }
+},
+"flex-layout.col#stores-zone-gba-sur": {
+  "title": "GBA - Zona sur",
+  "children": [
+      "disclosure-layout#stores-zone-gba-sur"
+  ],
+  "props": {
+    "title": "GBA - Zona Sur",
+    "blockClass": ["stores-zone-content","stores-zone-gba-sur"],
+    "animated": true
+  }
+},
+
+  "disclosure-layout#stores-zone-gba-sur": {
+    "children": [
+        "disclosure-trigger#gba-sur-trigger-wrapper", 
+        "disclosure-content#gba-sur-info-wrapper"
+    ]
+  },
+  "disclosure-trigger#gba-sur-trigger-wrapper": {
+    "children": ["rich-text#trigger-title-gba-sur"],
+    "props": {
+        "blockClass": ["stores-trigger-wrapper","stores-trigger-wrapper-gba-sur"],
+        "animated": true
+      }
+  },
+  "disclosure-content#gba-sur-info-wrapper": {
+    "children": [
+        "disposition-layout#gba-sur-locales"
+    ],
+    "props": {
+        "blockClass": ["stores-info-wrapper","stores-info-info-gba-sur"],
+        "animated": true
+      }
+  },
+  "disposition-layout#gba-sur-locales":{
+    "title": "Locales",
+    "children":[
+        "flex-layout.row#gba-sur-local-1-wrapper",
+        "flex-layout.row#gba-sur-local-2-wrapper",
+        "flex-layout.row#gba-sur-local-3-wrapper",
+        "flex-layout.row#gba-sur-local-4-wrapper",
+        "flex-layout.row#gba-sur-local-5-wrapper",
+        "flex-layout.row#gba-sur-local-6-wrapper",
+        "flex-layout.row#gba-sur-local-7-wrapper",
+        "flex-layout.row#gba-sur-local-8-wrapper",
+        "flex-layout.row#gba-sur-local-9-wrapper",
+        "flex-layout.row#gba-sur-local-10-wrapper",
+        "flex-layout.row#gba-sur-local-11-wrapper",
+        "flex-layout.row#gba-sur-local-12-wrapper",
+        "flex-layout.row#gba-sur-local-13-wrapper",
+        "flex-layout.row#gba-sur-local-14-wrapper",
+        "flex-layout.row#gba-sur-local-15-wrapper",
+        "flex-layout.row#gba-sur-local-16-wrapper",
+        "flex-layout.row#gba-sur-local-17-wrapper",
+        "flex-layout.row#gba-sur-local-18-wrapper",
+        "flex-layout.row#gba-sur-local-19-wrapper",
+        "flex-layout.row#gba-sur-local-20-wrapper"
+    ],
+    "props": {
+        "disposition": [
+          {
+            "order": 1
+          },
+          {
+            "order": 2
+          },
+          {
+            "order": 3
+          },
+          {
+            "order": 4
+          },
+          {
+            "order": 5
+          },
+          {
+            "order": 6
+          },
+          {
+            "order": 7
+          },
+          {
+            "order": 8
+          },
+          {
+            "order": 9
+          },
+          {
+            "order": 10
+          },
+          {
+            "order": 11
+          },
+          {
+            "order": 12
+          },
+          {
+            "order": 13
+          },
+          {
+            "order": 14
+          },
+          {
+            "order": 15
+          },
+          {
+            "order": 16
+          },
+          {
+            "order": 17
+          },
+          {
+            "order": 18
+          },
+          {
+            "order": 19
+          },
+          {
+            "order": 20
+          }
+        ]
+      }
+  },
+  "rich-text#trigger-title-gba-sur": {
+    "title": "Titulo",
+    "props": {
+      "text": "G.B.A. SUR",
+      "blockClass": "trigger-title"
+    }
+  },
+
+  /* GBA - ZONA NORTE */
+  "flex-layout.row#stores-zone-gba-norte": {
+    "children": [
+      "flex-layout.col#stores-zone-gba-norte"
+  ],
+  "props":{
+    "fullWidth": true,
+    "preventVerticalStretch": true,
+    "blockClass": "stores-zone-row"
+  }
+  },
+  "flex-layout.col#stores-zone-gba-norte": {
+  "title": "GBA - ZONA NORTE",
+  "children": [
+      "disclosure-layout#stores-zone-gba-norte"
+  ],
+  "props": {
+    "title": "GBA - ZONA NORTE",
+    "blockClass": ["stores-zone-content","stores-zone-gba-norte"],
+    "animated": true
+  }
+  },
+
+  "disclosure-layout#stores-zone-gba-norte": {
+  "children": [
+      "disclosure-trigger#gba-norte-trigger-wrapper", 
+      "disclosure-content#gba-norte-info-wrapper"
+  ]
+  },
+  "disclosure-trigger#gba-norte-trigger-wrapper": {
+  "children": ["rich-text#trigger-title-gba-norte"],
+  "props": {
+      "blockClass": ["stores-trigger-wrapper","stores-trigger-wrapper-gba-norte"],
+      "animated": true
+    }
+  },
+  "disclosure-content#gba-norte-info-wrapper": {
+  "children": [
+      "disposition-layout#gba-norte-locales"
+  ],
+  "props": {
+      "blockClass": ["stores-info-wrapper","stores-info-info-gba-norte"],
+      "animated": true
+    }
+  },
+  "disposition-layout#gba-norte-locales":{
+  "title": "Locales",
+  "children":[
+      "flex-layout.row#gba-norte-local-1-wrapper",
+      "flex-layout.row#gba-norte-local-2-wrapper",
+      "flex-layout.row#gba-norte-local-3-wrapper",
+      "flex-layout.row#gba-norte-local-4-wrapper",
+      "flex-layout.row#gba-norte-local-5-wrapper",
+      "flex-layout.row#gba-norte-local-6-wrapper",
+      "flex-layout.row#gba-norte-local-7-wrapper",
+      "flex-layout.row#gba-norte-local-8-wrapper",
+      "flex-layout.row#gba-norte-local-9-wrapper",
+      "flex-layout.row#gba-norte-local-10-wrapper",
+      "flex-layout.row#gba-norte-local-11-wrapper",
+      "flex-layout.row#gba-norte-local-12-wrapper",
+      "flex-layout.row#gba-norte-local-13-wrapper",
+      "flex-layout.row#gba-norte-local-14-wrapper",
+      "flex-layout.row#gba-norte-local-15-wrapper",
+      "flex-layout.row#gba-norte-local-16-wrapper",
+      "flex-layout.row#gba-norte-local-17-wrapper",
+      "flex-layout.row#gba-norte-local-18-wrapper",
+      "flex-layout.row#gba-norte-local-19-wrapper",
+      "flex-layout.row#gba-norte-local-20-wrapper"
+  ],
+  "props": {
+      "disposition": [
+        {
+          "order": 1
+        },
+        {
+          "order": 2
+        },
+        {
+          "order": 3
+        },
+        {
+          "order": 4
+        },
+        {
+          "order": 5
+        },
+        {
+          "order": 6
+        },
+        {
+          "order": 7
+        },
+        {
+          "order": 8
+        },
+        {
+          "order": 9
+        },
+        {
+          "order": 10
+        },
+        {
+          "order": 11
+        },
+        {
+          "order": 12
+        },
+        {
+          "order": 13
+        },
+        {
+          "order": 14
+        },
+        {
+          "order": 15
+        },
+        {
+          "order": 16
+        },
+        {
+          "order": 17
+        },
+        {
+          "order": 18
+        },
+        {
+          "order": 19
+        },
+        {
+          "order": 20
+        }
+      ]
+    }
+  },
+    "rich-text#trigger-title-gba-norte": {
+    "title": "Titulo",
+    "props": {
+      "text": "G.B.A. NORTE",
+      "blockClass": "trigger-title"
+    }
+  },
+
+  /* CABA */
+  "flex-layout.row#stores-zone-caba": {
+    "children": [
+      "flex-layout.col#stores-zone-caba"
+  ],
+  "props":{
+    "fullWidth": true,
+    "preventVerticalStretch": true,
+    "blockClass": "stores-zone-row"
+  }
+  },
+  "flex-layout.col#stores-zone-caba": {
+  "title": "CABA",
+  "children": [
+      "disclosure-layout#stores-zone-caba"
+  ],
+  "props": {
+    "title": "CABA",
+    "blockClass": ["stores-zone-content","stores-zone-caba"],
+    "animated": true
+  }
+  },
+
+  "disclosure-layout#stores-zone-caba": {
+  "children": [
+      "disclosure-trigger#caba-trigger-wrapper", 
+      "disclosure-content#caba-info-wrapper"
+  ]
+  },
+  "disclosure-trigger#caba-trigger-wrapper": {
+  "children": ["rich-text#trigger-title-caba"],
+  "props": {
+      "blockClass": ["stores-trigger-wrapper","stores-trigger-wrapper-caba"],
+      "animated": true
+    }
+  },
+  "disclosure-content#caba-info-wrapper": {
+  "children": [
+      "disposition-layout#caba-locales"
+  ],
+  "props": {
+      "blockClass": ["stores-info-wrapper","stores-info-info-caba"],
+      "animated": true
+    }
+  },
+  "disposition-layout#caba-locales":{
+  "title": "Locales",
+  "children":[
+      "flex-layout.row#caba-local-1-wrapper",
+      "flex-layout.row#caba-local-2-wrapper",
+      "flex-layout.row#caba-local-3-wrapper",
+      "flex-layout.row#caba-local-4-wrapper",
+      "flex-layout.row#caba-local-5-wrapper",
+      "flex-layout.row#caba-local-6-wrapper",
+      "flex-layout.row#caba-local-7-wrapper",
+      "flex-layout.row#caba-local-8-wrapper",
+      "flex-layout.row#caba-local-9-wrapper",
+      "flex-layout.row#caba-local-10-wrapper",
+      "flex-layout.row#caba-local-11-wrapper",
+      "flex-layout.row#caba-local-12-wrapper",
+      "flex-layout.row#caba-local-13-wrapper",
+      "flex-layout.row#caba-local-14-wrapper",
+      "flex-layout.row#caba-local-15-wrapper",
+      "flex-layout.row#caba-local-16-wrapper",
+      "flex-layout.row#caba-local-17-wrapper",
+      "flex-layout.row#caba-local-18-wrapper",
+      "flex-layout.row#caba-local-19-wrapper",
+      "flex-layout.row#caba-local-20-wrapper"
+  ],
+  "props": {
+      "disposition": [
+        {
+          "order": 1
+        },
+        {
+          "order": 2
+        },
+        {
+          "order": 3
+        },
+        {
+          "order": 4
+        },
+        {
+          "order": 5
+        },
+        {
+          "order": 6
+        },
+        {
+          "order": 7
+        },
+        {
+          "order": 8
+        },
+        {
+          "order": 9
+        },
+        {
+          "order": 10
+        },
+        {
+          "order": 11
+        },
+        {
+          "order": 12
+        },
+        {
+          "order": 13
+        },
+        {
+          "order": 14
+        },
+        {
+          "order": 15
+        },
+        {
+          "order": 16
+        },
+        {
+          "order": 17
+        },
+        {
+          "order": 18
+        },
+        {
+          "order": 19
+        },
+        {
+          "order": 20
+        }
+      ]
+    }
+  },
+    "rich-text#trigger-title-caba": {
+    "title": "Titulo",
+    "props": {
+      "text": "CABA",
+      "blockClass": "trigger-title"
+    }
+  },
+
+  /* interior */
+  "flex-layout.row#stores-zone-interior": {
+    "children": [
+      "flex-layout.col#stores-zone-interior"
+  ],
+  "props":{
+    "fullWidth": true,
+    "preventVerticalStretch": true,
+    "blockClass": "stores-zone-row"
+  }
+  },
+  "flex-layout.col#stores-zone-interior": {
+  "title": "interior",
+  "children": [
+      "disclosure-layout#stores-zone-interior"
+  ],
+  "props": {
+    "title": "interior",
+    "blockClass": ["stores-zone-content","stores-zone-interior"],
+    "animated": true
+  }
+  },
+
+  "disclosure-layout#stores-zone-interior": {
+  "children": [
+      "disclosure-trigger#interior-trigger-wrapper", 
+      "disclosure-content#interior-info-wrapper"
+  ]
+  },
+  "disclosure-trigger#interior-trigger-wrapper": {
+  "children": ["rich-text#trigger-title-interior"],
+  "props": {
+      "blockClass": ["stores-trigger-wrapper","stores-trigger-wrapper-interior"],
+      "animated": true
+    }
+  },
+  "disclosure-content#interior-info-wrapper": {
+  "children": [
+      "disposition-layout#interior-locales"
+  ],
+  "props": {
+      "blockClass": ["stores-info-wrapper","stores-info-info-interior"],
+      "animated": true
+    }
+  },
+  "disposition-layout#interior-locales":{
+  "title": "Locales",
+  "children":[
+      "flex-layout.row#interior-local-1-wrapper",
+      "flex-layout.row#interior-local-2-wrapper",
+      "flex-layout.row#interior-local-3-wrapper",
+      "flex-layout.row#interior-local-4-wrapper",
+      "flex-layout.row#interior-local-5-wrapper",
+      "flex-layout.row#interior-local-6-wrapper",
+      "flex-layout.row#interior-local-7-wrapper",
+      "flex-layout.row#interior-local-8-wrapper",
+      "flex-layout.row#interior-local-9-wrapper",
+      "flex-layout.row#interior-local-10-wrapper",
+      "flex-layout.row#interior-local-11-wrapper",
+      "flex-layout.row#interior-local-12-wrapper",
+      "flex-layout.row#interior-local-13-wrapper",
+      "flex-layout.row#interior-local-14-wrapper",
+      "flex-layout.row#interior-local-15-wrapper",
+      "flex-layout.row#interior-local-16-wrapper",
+      "flex-layout.row#interior-local-17-wrapper",
+      "flex-layout.row#interior-local-18-wrapper",
+      "flex-layout.row#interior-local-19-wrapper",
+      "flex-layout.row#interior-local-20-wrapper"
+  ],
+  "props": {
+      "disposition": [
+        {
+          "order": 1
+        },
+        {
+          "order": 2
+        },
+        {
+          "order": 3
+        },
+        {
+          "order": 4
+        },
+        {
+          "order": 5
+        },
+        {
+          "order": 6
+        },
+        {
+          "order": 7
+        },
+        {
+          "order": 8
+        },
+        {
+          "order": 9
+        },
+        {
+          "order": 10
+        },
+        {
+          "order": 11
+        },
+        {
+          "order": 12
+        },
+        {
+          "order": 13
+        },
+        {
+          "order": 14
+        },
+        {
+          "order": 15
+        },
+        {
+          "order": 16
+        },
+        {
+          "order": 17
+        },
+        {
+          "order": 18
+        },
+        {
+          "order": 19
+        },
+        {
+          "order": 20
+        }
+      ]
+    }
+  },
+    "rich-text#trigger-title-interior": {
+    "title": "Titulo",
+    "props": {
+      "text": "INTERIOR DEL PAÍS",
+      "blockClass": "trigger-title"
+    }
+  }
+}

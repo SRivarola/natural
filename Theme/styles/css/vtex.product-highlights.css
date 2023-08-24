@@ -1,0 +1,81 @@
+/* Shelf */
+
+/* .productHighlightText {
+  text-align: center !important;
+  place-self: center !important;
+} */
+.productHighlightText--shelf-product {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  border-radius: 100%;
+  font-size: 10px;
+  font-weight: 700;
+  background: #234196;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  z-index: 1;
+  width: 35px !important;
+  height: 35px;
+  padding: 5px;
+}
+
+/* =========================== Cucarda Aniversario ========================== */
+
+.productHighlightWrapper--aniversario {
+  background-image: url('https://naturallife.vteximg.com.br/arquivos/ids/166764');
+  background-size: cover; 
+  margin: 0;
+  z-index: 1;
+  position:absolute;
+  width: 80px;
+  height: 80px;
+  bottom: 0px;
+  right:0px;
+}
+
+/* ========================================================================== */
+
+.productHighlightText--free-shipping {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  border-radius: 100%;
+  font-size: 10px;
+  font-weight: 700;
+  background: #3D9503;
+  color: #fff;
+  text-transform: uppercase;
+  margin: 0;
+  position: absolute;
+  left: 7px;
+  bottom: 7px;
+  z-index: 1;
+  width: 35px;
+  height: 35px;
+  padding: 5px;
+}
+
+/* CUCARDA SALE */
+.productHighlightWrapper--shelf-product-promo {
+  padding: 0;
+  margin-bottom: 5px;
+}
+.productHighlightWrapper--shelf-product-promo .productHighlightText {
+  font-weight: 700;
+  font-size: 12px;
+  color: #fff;
+  background: #f63c3c;
+  border-radius: 50px;
+  width: auto!important;
+  padding: 4px 10px;
+  display: block;
+}

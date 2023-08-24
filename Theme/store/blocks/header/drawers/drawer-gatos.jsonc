@@ -1,0 +1,383 @@
+{
+  "drawer#gatos": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#gatos"],
+    "children": ["menu#gatos"]
+  },
+
+  "drawer-trigger#gatos": {
+    "children": ["rich-text#gatos"]
+  },
+
+  "rich-text#gatos": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "gatos"
+    }
+  },
+
+  "menu#gatos": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+
+    "children": [
+      "drawer#gatos-alimentos",
+      "drawer#gatos-accesorios",
+      "drawer#gatos-paseos-viajes",
+      "drawer#gatos-comedores-bebedores",
+      "drawer#gatos-camas-indumentaria",
+      "drawer#gatos-higiene-y-belleza",
+      "drawer#gatos-salud",
+      "menu-item#gatos-2-see-all"
+    ]
+  },
+
+  "drawer#gatos-alimentos": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#gatos-alimentos"],
+    "children": ["menu#gatos-alimentos"]
+  },
+ 
+  "drawer-trigger#gatos-alimentos": {
+    "children": ["rich-text#gatos-alimentos"]
+  },
+
+  "rich-text#gatos-alimentos": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "Alimentos"
+    }
+  },
+
+  "menu#gatos-alimentos": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#submenu-gatos-alimentos",
+      "menu-item#gatos-alimentos-see-all"
+    ]
+  },
+
+  "drawer#gatos-accesorios": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#gatos-accesorios"],
+    "children": ["menu#gatos-accesorios"]
+  },
+
+  "drawer-trigger#gatos-accesorios": {
+    "children": ["rich-text#gatos-accesorios"]
+  },
+
+  "rich-text#gatos-accesorios": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "Accesorios"
+    }
+  },
+
+  "menu#gatos-accesorios": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+
+    "children": [
+      "vtex.menu@2.x:menu#accesorios",
+      "menu-item#gatos-accesorios-see-all"
+    ]
+  },
+
+  "drawer#gatos-paseos-viajes": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#gatos-paseos-viajes"],
+    "children": ["menu#gatos-paseos-viajes"]
+  },
+ 
+  "drawer-trigger#gatos-paseos-viajes": {
+    "children": ["rich-text#gatos-paseos-viajes"]
+  },
+
+  "rich-text#gatos-paseos-viajes": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "Paseos y viajes"
+    }
+  },
+
+  "menu#gatos-paseos-viajes": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#submenu-gatos-paseos-viajes",
+      "menu-item#gatos-paseos-viajes-see-all"
+    ]
+  },
+
+  "drawer#gatos-comedores-bebedores": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#gatos-comedores-bebedores"],
+    "children": ["menu#gatos-comedores-bebedores"]
+  },
+ 
+  "drawer-trigger#gatos-comedores-bebedores": {
+    "children": ["rich-text#gatos-comedores-bebedores"]
+  },
+
+  "rich-text#gatos-comedores-bebedores": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "Comedores - Bebedores"
+    }
+  },
+
+  "menu#gatos-comedores-bebedores": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#submenu-gatos-comederos-bebedores",
+      "menu-item#gatos-comederos-bebedores-see-all"
+    ]
+  },
+
+  "drawer#gatos-camas-indumentaria": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#gatos-indumentaria"],
+    "children": ["menu#gatos-indumentaria"]
+  },
+ 
+  "drawer-trigger#gatos-indumentaria": {
+    "children": ["rich-text#gatos-indumentaria"]
+  },
+
+  "rich-text#gatos-indumentaria": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "Camas e indumentaria"
+    }
+  },
+
+  "menu#gatos-indumentaria": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#submenu-gatos-camas-indumentaria",
+      "menu-item#gatos-indumentaria-see-all"
+    ]
+  },
+
+  "drawer#gatos-higiene-y-belleza": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#gatos-higiene-y-belleza"],
+    "children": ["menu#gatos-higiene-y-belleza"]
+  },
+ 
+  "drawer-trigger#gatos-higiene-y-belleza": {
+    "children": ["rich-text#gatos-higiene-y-belleza"]
+  },
+
+  "rich-text#gatos-higiene-y-belleza": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "Higiene y belleza"
+    }
+  },
+
+  "menu#gatos-higiene-y-belleza": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#submenu-gatos-higiene-belleza",
+      "menu-item#gatos-higiene-y-belleza-see-all"
+    ]
+  },
+
+  "drawer#gatos-salud": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#gatos-salud"],
+    "children": ["menu#gatos-salud"]
+  },
+ 
+  "drawer-trigger#gatos-salud": {
+    "children": ["rich-text#gatos-salud"]
+  },
+
+  "rich-text#gatos-salud": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "salud"
+    }
+  },
+
+  "menu#gatos-salud": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#submenu-gatos-salud",
+      "menu-item#salud-see-all"
+    ]
+  },
+
+  //Ver Todo
+  "menu-item#gatos-2-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "gatos-see-all",
+      "type": "custom",
+      "itemProps": {
+        //"categoryId": 1,
+        "href": "/gatos",
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Ver todo gatos",
+        "text": "Ver todo gatos"
+      }
+    }
+  },
+
+  "menu-item#gatos-alimentos-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "alimentos-see-all",
+      "type": "custom",
+      "itemProps": {
+        "href": "/gatos/alimentos",
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Ver todo alimentos",
+        "text": "ver todo alimentos"
+      }
+    }
+  },
+
+  "menu-item#gatos-accesorios-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "accesorios-see-all",
+      "type": "custom",
+      "itemProps": {
+        "href": "/gatos/accesorios",
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Ver todo accesorios",
+        "text": "ver todo accesorios"
+      }
+    }
+  },
+
+  "menu-item#gatos-paseos-viajes-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "paseos-viajes-see-all",
+      "type": "custom",
+      "itemProps": {
+        "href": "/gatos/paseos-y-viaje",
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Ver todo paseos viajes",
+        "text": "ver todo paseos viajes"
+      }
+    }
+  },
+
+  "menu-item#gatos-comederos-bebedores-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "gatos-see-all",
+      "type": "custom",
+      "itemProps": {
+        //"categoryId": 1,
+        "href": "/gatos/comederos-bebederos",
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Ver todo comedores y bebederos",
+        "text": "Ver todo comedores y bebederos"
+      }
+    }
+  },
+
+  "menu-item#gatos-indumentaria-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "gatos-see-all",
+      "type": "custom",
+      "itemProps": {
+        //"categoryId": 1,
+        "href": "/gatos/camas-e-indumentaria",
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Ver todo cama e indumentaria",
+        "text": "Ver todo cama e indumentaria"
+      }
+    }
+  },
+
+  "menu-item#gatos-higiene-y-belleza-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "gatos-see-all",
+      "type": "custom",
+      "itemProps": {
+        //"categoryId": 1,
+        "href": "/gatos/higiene-y-belleza",
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Ver todo higiene y belleza",
+        "text": "Ver todo higiene y belleza"
+      }
+    }
+  },
+
+  "menu-item#gatos-salud-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "gatos-see-all",
+      "type": "custom",
+      "itemProps": {
+        //"categoryId": 1,
+        "href": "/gatos/salud",
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Ver todo salud",
+        "text": "Ver todo salud"
+      }
+    }
+  }
+}

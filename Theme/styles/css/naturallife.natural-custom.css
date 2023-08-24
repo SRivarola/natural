@@ -1,0 +1,140 @@
+/* PRODUTOS SIMILARES */
+
+.titleSimilar {
+  margin-bottom: 8px;
+  display: inline-flex;
+  line-height: 14px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #3c3c3c;
+}
+
+.similarLoading {
+  font-size: 12px;
+  font-weight: 500;
+  color: #3c3c3c;
+  margin-bottom: 8px;
+}
+
+.similarImageContainer {
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.similarImage {
+  display: none;
+}
+
+.similarImageSelect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  line-height: 15px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #234196;
+  text-transform: uppercase;
+  border-radius: 50px;
+}
+
+.similarImageSelect .similarImageLink {
+  background: #234196;
+}
+.similarImageSelect .similarImageLink .similarColorName {
+  color: #fff;
+}
+
+.talleAgotado{
+  opacity: .5;
+}
+
+.FlexLayoutChildren--shelf-prices {
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 50px;
+}
+
+
+.FlexLayoutChildren--add-to-cart-button {
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 50px;
+  margin-top: 5px;
+}
+
+.similarImageLink {
+  padding: 10px 18px;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #234196;
+  border-radius: 50px;
+  margin: 0 6px 6px 0;
+  font-weight: 800;
+  color: #234196;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+}
+
+.similarColorName {
+  display: flex;
+  color: #234196;
+  font-size: 14px;
+}
+
+.similarImageLink:hover {
+  background: #234196;
+}
+.similarImageLink:hover .similarColorName {
+  color: #fff;
+}
+
+/* Tabs */
+
+.activeTab {
+  background: #f8f8f8 0% 0% no-repeat padding-box !important;
+}
+
+/* talleAgotado */
+
+.talleAgotado {
+  background-color: #dedede !important;
+  border-radius: 100%;
+}
+
+.talleAgotado :global(.vtex-store-components-3-x-skuSelectorInternalBox) {
+  border: 1px solid #525252 !important;
+}
+
+.talleAgotado :global(.vtex-store-components-3-x-skuSelectorItemTextValue) {
+  color: #525252 !important;
+}
+
+.talleAgotado:hover :global(.vtex-store-components-3-x-skuSelectorInternalBox),
+.talleAgotado:hover
+  :global(.vtex-store-components-3-x-skuSelectorItemTextValue) {
+  transition: 0.2s all !important;
+  background-color: #dedede !important;
+  color: #525252 !important;
+}
+
+.BrandFlagContainer {
+  display: flex;
+}
+.BrandFlagContainer :first-child {
+  margin-left: auto;
+}
+
+/* Sacar cuotas en agotado */
+.parcelado{
+  display:none;
+}
+
+.productParcelado{
+  display:none;
+}

@@ -1,0 +1,54 @@
+/* Product */
+
+.quantitySelectorContainer--product {
+  margin: 0 8px 0 0;
+}
+
+.quantitySelectorTitle--product {
+  display: inline-flex;
+  line-height: 14px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #3c3c3c;
+}
+
+.quantitySelectorTitle--product::after {
+  content: ':';
+}
+
+.quantitySelectorStepper--product :global(.vtex-numeric-stepper__input) {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  border-top: 1px solid #234196;
+  border-bottom: 1px solid #234196;
+  border-radius: 0;
+  outline: none;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.quantitySelectorStepper--product :global(.vtex-numeric-stepper__minus-button),
+.quantitySelectorStepper--product :global(.vtex-numeric-stepper__plus-button) {
+  width: 22px !important;
+  height: 40px;
+  border: 1px solid #234196;
+  color: #3c3c3c;
+  border-radius: 50px;
+  outline: none;
+  background: transparent;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.quantitySelectorStepper--product
+  :global(.vtex-numeric-stepper__minus-button__text),
+.quantitySelectorStepper--product
+  :global(.vtex-numeric-stepper__plus-button__text) {
+  font-size: 15px;
+}
+
+/**/

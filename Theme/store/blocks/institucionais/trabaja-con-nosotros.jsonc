@@ -1,0 +1,23 @@
+{
+    "store.custom#trabaja-con-nosotros": {
+      "blocks": ["flex-layout.row#breadcrumb", "flex-layout.row#trabaja-con-nosotros"]
+    },
+  
+    "flex-layout.row#trabaja-con-nosotros": {
+      "props": {
+        "blockClass": "institutional-wrapper",
+        "colSizing": "auto"
+      },
+  
+      "children": ["rich-text#trabaja-con-nosotros"]
+    },
+  
+    "rich-text#trabaja-con-nosotros": {
+      "props": {
+        "blockClass": "institutional-content",
+        "text": "# Trabaja con nosotros",
+            "width": "grow"
+      }
+    }
+  }
+  

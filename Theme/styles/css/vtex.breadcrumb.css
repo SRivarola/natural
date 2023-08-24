@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 15px auto 24px;
+  padding: 0 15px;
+}
+
+.link,
+.term {
+  padding: 0;
+  text-transform: uppercase;
+  line-height: 12px;
+  font-size: 12px;
+  color: #BEBEBE;
+  font-weight: 700;
+}
+
+.link:hover,
+.link:focus {
+  outline: none;
+  color: #000;
+}
+
+.homeLink::after {
+  content: "Home";
+  display: block;
+}
+
+.homeIcon {
+  display: none;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.caretIcon {
+  margin: 0 8px;
+  color: #b8b8b8;
+}
+
+.homeLink {
+  display: none;
+}
+.arrow--1 .caretIcon {
+  display: none;
+}
+
+@media only screen and (max-width: 1025px) {
+  .container {
+    padding: 0 16px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .link,
+  .term {
+    white-space: pre;
+  }
+}

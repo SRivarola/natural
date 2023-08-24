@@ -1,0 +1,414 @@
+.link--top-bar {
+  font-family: "NeoSansPro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  width: fit-content;
+  margin: 7px 0;
+}
+
+.link--buy-with-cnpj {
+  font-family: "NeoSansStd";
+  font-style: normal;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 37px;
+  padding: 0 16px;
+  position: relative;
+}
+
+.link--buy-with-cnpj::after {
+  content: "";
+  display: block;
+  height: 23px;
+  width: 1px;
+  background: #ffffff;
+  position: absolute;
+  top: 9px;
+  right: 0;
+}
+
+.label--mobile-menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 12px 4px;
+  text-transform: uppercase;
+  line-height: 17px;
+  font-size: 14px;
+  font-weight: 800;
+  color: #fff;
+  text-decoration: none;
+}
+.link--mobile-menu-item {
+  text-decoration: none;
+}
+
+/* TELEFONOS HEADER */
+.label--header-info {
+  margin: 0;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 20px;
+  text-decoration: none;
+}
+.link--header-info {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+}
+.link--header-info-phone::before {
+  content: "";
+  background: url("assets/svgs/natural-life-phone.svg") right center no-repeat;
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  margin-right: 8px;
+  position: relative;
+  top: 1px;
+}
+.link--header-info-whatsapp::before {
+  content: "";
+  background: url("assets/svgs/whatsapp.svg") right center no-repeat;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  margin-right: 4px;
+  position: relative;
+  top: 3px;
+}
+.link--header-info-phone {
+  border-right: 1px solid #fff;
+  text-decoration: none;
+}
+@media(min-width: 1025px){
+  .link--header-info-phone {
+    border-right: 0;
+  } 
+  .link--header-info{
+    text-align: left;
+  }
+}
+
+/* ============================= Medicados ============================ */
+
+.label--medicado-info {
+  margin: 0;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 30px;
+  
+}
+
+.link--medicado-info {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  
+}
+
+.link--medicado-info-phone::before {
+  content: "";
+  background: url("assets/svgs/natural-life-phone.svg") right center no-repeat;
+  background-origin: content-box;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  margin-right: 8px;
+  position: relative;
+  top: 12px;
+  padding:10px;
+  border-radius:100%;
+  background-color: #00adef;
+  
+}
+.link--medicado-info-whatsapp::before {
+  content: "";
+  background: url("assets/svgs/whatsapp.svg") right center no-repeat;
+  background-origin: content-box;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  margin-right: 8px;
+  position: relative;
+  top: 12px;
+  padding:10px;
+  border-radius:100%;
+  background-color: #6eba85;
+}
+.link--medicado-info-phone {
+  border-right: 1px solid #fff;
+  text-decoration: none;
+  color: #00adef;
+}
+
+.link--medicado-info-whatsapp {
+  border-right: 1px solid #fff;
+  text-decoration: none;
+  color: #6eba85;
+}
+
+@media(min-width: 1025px){
+  .link--medicado-info-phone {
+    border-right: 0;
+  } 
+  .link--medicado-info{
+    text-align: left;
+  }
+}
+
+/* ========================================================================== */
+
+/* Not Found */
+
+.link--not-found-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 160px;
+  height: 40px;
+  margin: 0 auto;
+  text-decoration: none;
+  background: #3c3c3c;
+  transition: background 0.2s linear;
+  border-radius: 6px;
+}
+
+.link--not-found-button:hover {
+  background: #3c3c3c;
+}
+
+.link--not-found-button:active {
+  background: #3c3c3c;
+}
+
+.label--not-found-button {
+  line-height: 16px;
+  letter-spacing: 0.56px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+/**/
+
+.link--whatsapp-link {
+  display: block;
+  height: 35px;
+  width: 35px;
+  background: url(assets/svgs/whatsapp.svg) no-repeat center center !important;
+  background-size: contain;
+  position: fixed;
+  bottom: 80px;
+  right: 14px;
+}
+
+.buttonLink--inst-nav {
+  font-family: "NeoSansPro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 16px;
+  font-variant: small-caps;
+  color: #7d7d7d;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  background: none;
+  border-radius: unset;
+}
+
+.buttonLink--inst-nav:active,
+.buttonLink--inst-nav:hover {
+  background: #3c3c3c;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 16px;
+}
+
+.link--pedidos-antigos {
+  font-family: "NeoSansPro";
+  position: absolute;
+  top: 31px;
+  right: 33px;
+  color: #fff;
+  background: #3c3c3c;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 10px;
+  line-height: 42px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 1026px) {
+  .link--pedidos-antigos {
+    position: static;
+    float: right;
+  }
+}
+
+/* HOME - ENCONTRALO POR DEPORTE */
+
+.link--encontralo-link {
+  text-decoration: none !important;
+}
+
+/* MENU MOBILE*/
+.link--mobile-menu-solo-link {
+  text-decoration: none !important;
+}
+
+/* SHELF 02 */
+
+.link--see-more {
+  color: #3c3c3c;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "Nunito";
+  padding: 2px 8px;
+  text-decoration: none !important;
+  border-bottom: 1px solid #3c3c3c;
+}
+
+.link--see-more:hover {
+  color: black;
+  border-color: black;
+}
+.link--shelf-see-more-footer {
+  text-align: center;
+  text-decoration: none;
+  color: #3c3c3c;
+  border-bottom: 1px solid #3c3c3c;
+  font: normal normal bold 12px/18px Poppins;
+  max-width: 70px;
+  margin-top: 22px;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+/* BREADCRUMB (ACCOUNT) */
+
+.link--breadcrumb-home {
+  display: block;
+  text-decoration: none;
+}
+
+.label--breadcrumb-home {
+  display: block;
+  line-height: 12px;
+  font-size: 10px;
+  font-weight: 500;
+  color: #b8b8b8;
+  transition: color 0.2s linear;
+}
+
+.label--breadcrumb-home:hover {
+  color: #707070;
+}
+
+/* FOOTER (Me arrepenti) */
+
+/* .label--arrepenti {
+} */
+
+.link--arrepenti {
+  color: #fff;
+  font-size: 11px;
+  line-height: 13px;
+  font-weight: 600;
+  max-width: 160px;
+  cursor: default;
+  text-align: left;
+  text-decoration: none;
+  padding-top: 8px;
+}
+
+.link--arrepenti:hover {
+  color: white;
+}
+
+/* SUCURSALES */
+.link--local-telephone, 
+.link--local-whatsapp {
+    color: #3c3c3c;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    line-height: 16px;
+}
+
+.link--local-whatsapp::before {
+  content: "";
+  background: url("assets/svgs/natural-life-icon-local-whatsapp.svg") right center no-repeat;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+  position: relative;
+  left: -4px;
+}
+
+.link--local-telephone::before {
+  content: "";
+  background: url("assets/svgs/natural-life-icon-local-phone.svg") right center no-repeat;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+  position: relative;
+  left: 0;
+  transform: rotateY(180deg);
+}
+
+.link--local-telephone,
+.link--local-whtasapp {
+  display: flex;
+  align-items: center;
+}
+
+.link--local-whatsapp, .link--local-telephone {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.link--local-whatsapp, .link--local-telephone {
+  width: auto !important;
+}
+
+@media(min-width: 1025px){
+  .link--local-whatsapp, .link--local-telephone {
+    padding-bottom: 5px;
+  }
+}
+
+/* DETALLE SUCURSAL */
+.link--backlink {
+  text-decoration: none;
+}

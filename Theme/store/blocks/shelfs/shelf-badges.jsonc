@@ -1,0 +1,131 @@
+/* JFS PRODUCT BADGES */
+{
+  /*------
+  TOP BADGES
+  ------*/
+
+  "flex-layout.row#shelf-product-top-badges": {
+    "props": {
+      "blockClass": ["shelf-product-badges", "shelf-product-top-badges"],
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true
+    },
+
+    "children": [
+      "brand-flag"
+    ]
+  },
+
+  "vtex.product-highlights@2.x:product-highlights#envio-gratis": {
+    "props": {
+      "type": "collection",
+
+      "filter": {
+        "type": "show",
+        "highlightNames": ["Envio Gratis"]
+      }
+    },
+
+    "children": ["product-highlight-text#envio-gratis"]
+  },
+
+  "product-highlight-text#envio-gratis": {
+    "props": {
+      "blockClass": ["free-shipping"],
+      "message": "{highlightName}"
+    }
+  },
+
+  "brand-flag": {
+    "props": {
+      "width": "48px",
+      "height": "auto"
+    }
+  },
+
+  /*------
+  BOTTOM BADGES
+  ------*/
+
+  "flex-layout.row#shelf-product-bottom-badges": {
+    "props": {
+      "blockClass": ["shelf-product-badges", "shelf-product-bottom-badges"],
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true
+    },
+
+    "children": [
+      "vtex.product-highlights@2.x:product-highlights#lanzamiento",
+      "stock-flag"
+    ]
+  },
+
+  /* =========================== Cucarda Aniversario ========================== */
+
+  "vtex.product-highlights@2.x:product-highlights#aniversario": {
+    "props": {
+      "type": "collection",
+
+      "filter": {
+        "type": "show",
+        "highlightNames": ["Aniversario33"]
+      }
+    },
+
+    "children": ["product-highlight-wrapper#aniversario"]
+  },
+
+  "product-highlight-wrapper#aniversario": {
+    "props": {
+      "blockClass": "aniversario"
+    }
+  },
+
+  /* ========================================================================== */
+
+  "vtex.product-highlights@2.x:product-highlights#lanzamiento": {
+    "props": {
+      "type": "collection",
+
+      "filter": {
+        "type": "show",
+        "highlightNames": ["Nuevo"]
+      }
+    },
+
+    "children": ["product-highlight-text#lanzamiento"]
+  },
+
+  "product-highlight-text#lanzamiento": {
+    "props": {
+      "blockClass": "shelf-product",
+      "message": "{highlightName}"
+    }
+  },
+
+  "stock-flag": {
+    "props": {
+      "unavailableText": "Agotado"
+    }
+  },
+
+  /* EXTRA BADGE (SAVING) */
+
+  "flex-layout.row#shelf-product-extra-badge": {
+    "props": {
+      "blockClass": ["shelf-product-extra-badges"],
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true
+    },
+
+    "children": ["product-price-savings#product-badge"]
+  },
+
+  "product-price-savings#product-badge": {
+    "props": {
+      "blockClass": "product-badge",
+      "markers": ["discount"],
+      "message": "<discount>{savingsPercentage}OFF</discount>"
+    }
+  }
+}

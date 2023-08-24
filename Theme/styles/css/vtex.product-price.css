@@ -1,0 +1,129 @@
+/* Shelf */
+
+.savings-discount--shelf-product {
+  display: block;
+  padding: 2px 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  background: #e10713;
+}
+
+.sellingPrice--shelf-product {
+  display: inline-block;
+  line-height: 20px;
+  font-size: 20px;
+  font-weight: 900;
+  color: #234196;
+  width: auto;
+  text-align: center;
+  padding: 0px 6px;
+  margin-top: 30px;
+}
+
+.sellingPrice--shelf-product--hasListPrice {
+  margin-top: 0;
+}
+
+.listPrice--shelf-product {
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: #3C3C3C;
+  width: auto;
+  padding: 0 7px;
+  margin: 6px 0;
+}
+
+.installments--shelf-product {
+  text-align: center;
+  display: block;
+  line-height: 13px;
+  font-weight: 700;
+  color: #3C3C3C;
+  font-size: 13px;
+  padding-top: 6px;
+  width: auto;
+}
+
+.savings--product-badge {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1025px) {
+  .savings-discount--shelf-product {
+    font-size: 12px;
+  }
+  .installments--shelf-product {
+    font-size: 12px;  
+  }
+  .sellingPrice--shelf-product{
+    font-size: 17px;
+  }
+}
+
+/**/
+
+/* Product */
+.savings-discount--shelf-product {
+  display: block;
+  padding: 2px 6px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  background: #e10713;
+}
+
+.savings-discount--product-badge {
+  font-weight: bold;
+  font-size: 12px;
+  color: #fff;
+  background: #F63C3C;
+  border-radius: 50px;
+  display: inline-block;
+  padding: 3px 0;
+  width: 63px;
+  line-height: 14px;
+}
+
+.listPrice--product {
+  color: #3C3C3C;
+  font-size: 19px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.sellingPrice--product {
+  color: #234196;
+  font-size: 28px;
+  line-height: 1;
+  font-weight: 900;
+}
+
+.installments--product {
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  color: #3C3C3C;
+  margin: 8px 0px 16px;
+}
+
+.installmentsNumber--product,
+.installmentValue--product {
+  margin: 0 2px;
+}
+
+.currencyLiteral--product {
+  display: none;
+}
+
+.savings--m3-custom-price-savings {
+  color: #e9a427;
+  font-size: 13px;
+  font-weight: 600;
+  display: block;
+  padding-bottom: 5px;
+}
+
+/**/

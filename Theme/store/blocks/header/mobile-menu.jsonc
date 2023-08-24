@@ -1,0 +1,78 @@
+{
+  "drawer#mobile-menu": {
+    "props": {
+      "blockClass": ["mobile-menu", "primary-tab"]
+    },
+    "blocks": ["drawer-trigger#menu-button"],
+    "children": ["menu#mobile-menu", "flex-layout.row#drawer-bottom"]
+  },
+  "drawer-trigger#menu-button": {
+    "children": ["image#menu-button"]
+  },
+  "image#menu-button": {
+    "props": {
+      "src": "assets/svgs/natural-life-menu-mobile.svg",
+      "height": 28
+    }
+  },
+  "menu#mobile-menu": {
+    "children": [
+      "drawer#perros",
+      "drawer#gatos",
+      "drawer#peces",
+      "drawer#aves",
+      "drawer#peqanimales",
+      "drawer#reptiles",
+      "link#piletas-jardin",
+      "link#promos",
+      "link#kilos-gratis",
+      "link#sucursal"
+    ],
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "mobile-menu"
+    }
+  },
+  "flex-layout.row#drawer-bottom": {
+    "children": ["flex-layout.col#drawer-bottom-links"],
+    "props": {
+      "sticky": true,
+      "blockClass": "drawer-bottom-content"
+    }
+  },
+  "flex-layout.col#drawer-bottom-links": {
+    "children": ["login#mobile", "menu-item#my-orders"],
+    "props": {
+      "sticky": true,
+      "blockClass": "mobile-links-container"
+    }
+  },
+  "link#piletas-jardin": {
+    "props": {
+      "href": "/pileta-y-jardin",
+      "blockClass": "mobile-menu-item",
+      "label": "Piletas y Jardin"
+    }
+  },
+  "link#promos": {
+    "props": {
+      "href": "/promo?map=productclusternames",
+      "blockClass": "mobile-menu-item",
+      "label": "promos"
+    }
+  },
+  "link#kilos-gratis": {
+    "props": {
+      "href": "/161?map=productClusterIds",
+      "blockClass": "mobile-menu-item",
+      "label": "¡kilos gratis!"
+    }
+  },
+  "link#sucursal": {
+    "props": {
+      "href": "/stores",
+      "blockClass": "mobile-menu-item",
+      "label": "sucursal"
+    }
+  }
+}

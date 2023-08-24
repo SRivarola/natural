@@ -1,0 +1,248 @@
+.sliderLeftArrow {
+  display: block;
+  background: url(assets/svgs/slide-left-arrow.svg) no-repeat center center !important;
+  background-size: contain;
+}
+
+.sliderRightArrow {
+  display: block;
+  background: url(assets/svgs/slide-right-arrow.svg) no-repeat center center !important;
+  background-size: contain;
+}
+
+.caretIcon {
+  opacity: 0;
+}
+
+.paginationDotsContainer {
+  align-items: center;
+}
+.paginationDot {
+  background: #ffffff;
+  height: 8px !important;
+  width: 8px !important;
+  border: 1px solid #234196;
+}
+
+.paginationDot--isActive {
+  background: #234196;
+  border: 1px solid #234196;
+  height: 11px !important;
+  width: 11px !important;
+}
+
+/* HOME MAIN SLIDER */
+/* ---------------------------------------------------------------------------------------- */
+
+.sliderLayoutContainer--main-gallery {
+  margin-bottom: 0px;
+}
+
+.paginationDotsContainer--main-gallery {
+  bottom: 15px;
+}
+
+@media only screen and (max-width: 1025px) {
+  .paginationDotsContainer--main-gallery {
+    bottom: 20px;
+  }
+  .sliderLayoutContainer--main-gallery {
+    margin-bottom: 0px !important;
+  }
+}
+
+/* HOME TOP-GALLERY (MOBILE) */
+
+.sliderLayoutContainer--top-gallery-mobile {
+  max-width: calc(100% - 32px);
+  margin: 0 auto 50px;
+}
+
+.sliderLeftArrow--top-gallery-mobile {
+  transform: translateX(-100%) scale(0.7);
+}
+
+.sliderRightArrow--top-gallery-mobile {
+  transform: translateX(100%) scale(0.7);
+}
+
+.caretIcon--top-gallery-mobile {
+  color: #b8b8b8;
+}
+
+.paginationDotsContainer--top-gallery-mobile  {
+  bottom: -25px;
+}
+
+.paginationDot--top-gallery-mobile {
+  background: #234196;
+}
+
+.paginationDot--top-gallery-mobile--isActive {
+  border-color: #234196;
+  background: transparent;
+}
+
+
+/*HOME BRANDS SLIDE */
+
+.sliderLeftArrow--brands-carousel-slide {
+  transform: translateX(-100%) scale(0.7);
+}
+
+.sliderRightArrow--brands-carousel-slide {
+  transform: translateX(100%) scale(0.7);
+}
+
+.paginationDotsContainer--brands-carousel-slide {
+  bottom: -25px;
+}
+
+.paginationDot--brands-carousel-slide {
+  background: #fff;
+}
+
+.paginationDot--brands-carousel-slide--isActive {
+  border-color: #234196;
+  background: #234196;
+}
+
+/* SHELF SLIDER  */
+
+.sliderTrack--shelf {
+  padding: 8px 0;
+}
+
+.sliderLeftArrow--shelf {
+  transform: translateX(-100%) scale(0.7);
+  -webkit-transform: translateX(-100%) scale(0.7);
+  -moz-transform: translateX(-100%) scale(0.7);
+  -ms-transform: translateX(-100%) scale(0.7);
+  -o-transform: translateX(-100%) scale(0.7);
+}
+
+.sliderRightArrow--shelf {
+  transform: translateX(100%) scale(0.7);
+}
+
+.caretIcon--shelf {
+  color: #b8b8b8;
+}
+
+@media only screen and (max-width: 1024px){
+  .slide--shelf{
+    margin: 0 6px;
+  }
+  .slide--firstVisible {
+    margin-left: 0;
+  }
+  .slide--lastVisible {
+    margin-right: 0;
+  }
+  .sliderLayoutContainer {
+    margin-bottom: 30px;
+  }
+}
+.paginationDotsContainer--shelf {
+  bottom: -16px;
+}
+
+.paginationDot--shelf {
+  background: #fff;
+}
+
+.paginationDot--shelf--isActive {
+  border: 1px solid #234196;
+  background: #234196;
+}
+
+@media only screen and (max-width: 1025px) {
+  .sliderLeftArrow--shelf,
+  .sliderLeftArrow--brands-carousel-slide,
+  .sliderLeftArrow--top-gallery-mobile {
+    transform: translateX(-22px) scale(0.7);
+  }
+
+  .sliderRightArrow--shelf,
+  .sliderRightArrow--brands-carousel-slide,
+  .sliderRightArrow--top-gallery-mobile {
+    transform: translateX(22px) scale(0.7);
+  }
+
+  .caretIcon--shelf,
+  .caretIcon--brands-carousel-slide,
+  .caretIcon--top-gallery-mobile {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+/**/
+.sliderFrame {
+  padding: 8px 0;
+}
+
+/* BRANDS CUSTOM PAGE(ADIDAS, REEBOK) */
+
+.sliderLayoutContainer--brands-main-gallery {
+  margin-bottom: 32px;
+}
+
+.paginationDotsContainer--brands-main-gallery {
+  bottom: 50px;
+}
+
+@media only screen and (max-width: 1025px) {
+  .paginationDotsContainer--brands-main-gallery {
+    bottom: 20px;
+  }
+
+  .sliderLeftArrow--brands-main-gallery {
+    display: block;
+    background: url(assets/svgs/arrow-left-white.svg) no-repeat center center !important;
+    background-size: contain;
+    transform: translateX(calc(0% + 6px));
+  }
+
+  .sliderRightArrow--brands-main-gallery {
+    display: block;
+    background: url(assets/svgs/arrow-right-white.svg) no-repeat center center !important;
+    background-size: contain;
+    transform: translateX(calc(0% - 6px));
+  }
+}
+
+/* BRAND CATEGORY */
+.sliderLayoutContainer--advantages{
+  padding: 0 15px !important;
+  margin-bottom: 30px;
+}
+@media only screen and (min-width: 1026px) {
+  .sliderLayoutContainer--advantages{
+    width: 1200px;
+    margin: 60px auto 80px;
+    padding: 0 !important;
+  }
+  .flexRowContent--slider-brand__item:hover .link--slider-brand__text {
+    color: #234196;
+  }
+  .flexRowContent--slider-brand__item:hover .imageElement--slider-brand__img {
+    transform: scale(1.5);
+  }
+}
+
+/* DEALS */
+.sliderLayoutContainer--deals-carousel{
+  margin-bottom: 0;
+}
+@media only screen and (min-width: 1200px) {
+  .slide--deals-carousel--visible {
+      border: 1px solid #BEBEBE;
+      border-top: 0;
+      border-bottom: 0;
+  }
+  .slide--firstVisible, .slide--lastVisible {
+      border-left: 0;
+      border-right: 0;
+  }
+}

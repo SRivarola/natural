@@ -1,0 +1,382 @@
+/* JFS HOME SHELF */
+{
+  "flex-layout.row#shelf-01": {
+    "props": {
+      "blockClass": ["shelf", "shelfWithBackground", "shelf-slider"]
+    },
+    "children": ["flex-layout.col#shelf-01"]
+  },
+
+  "flex-layout.col#shelf-01": {
+    "props": {
+      "blockClass": ["shelfbg"],
+      "preventVerticalStretch": true
+    },
+
+    "children": [
+      "rich-text#shelf-01-title",
+      "list-context.product-list#shelf-products"
+    ]
+  },
+
+  "rich-text#shelf-01-title": {
+    "props": {
+      "blockClass": "shelf-title",
+      "text": "## PROMOCIONES DEL MES",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "list-context.product-list#shelf-products": {
+    "props": {
+      "collection": "137"
+      //"categoryId": "4"
+    },
+    "blocks": ["product-summary.shelf#shelf-product"],
+    "children": ["slider-layout#shelf-products-slide"]
+  },
+
+  "slider-layout#shelf-products-slide": {
+    "props": {
+      "blockClass": ["shelf", "shelf-slider"],
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "always",
+
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      }
+    }
+  },
+
+  "flex-layout.row#shelf-02": {
+    "props": {
+      "blockClass": ["shelf", "shelfWithBackground", "shelf-slider"]
+    },
+    "children": ["flex-layout.col#shelf-02"]
+  },
+
+  "flex-layout.col#shelf-02": {
+    "props": {
+      "preventVerticalStretch": true
+    },
+
+    "children": [
+      "rich-text#shelf-02-title",
+      "list-context.product-list#shelf-products-02"
+    ]
+  },
+
+  "rich-text#shelf-02-title": {
+    "props": {
+      "blockClass": ["shelf-title","shelf-title-single"],
+      "text": "## Productos más vendidos",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "list-context.product-list#shelf-products-02": {
+    "props": {
+      "collection": "137"
+      //"categoryId": "4"
+    },
+    "blocks": ["product-summary.shelf#shelf-product"],
+    "children": ["slider-layout#shelf-products-slide-02"]
+  },
+
+  "slider-layout#shelf-products-slide-02": {
+    "props": {
+      "blockClass": ["shelf", "shelf-slider"],
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "always",
+
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      }
+    }
+  },
+
+  "flex-layout.row#shelf-03": {
+    "props": {
+      "blockClass": ["shelf", "shelfWithBackground", "shelf-slider"]
+    },
+    "children": ["flex-layout.col#shelf-03"]
+  },
+
+  "flex-layout.col#shelf-03": {
+    "props": {
+      "blockClass": ["shelfbg"],
+      "preventVerticalStretch": true
+    },
+
+    "children": [
+      "rich-text#shelf-03-title",
+      "list-context.product-list#shelf-products-03"
+    ]
+  },
+
+  "rich-text#shelf-03-title": {
+    "props": {
+      "blockClass": "shelf-title",
+      "text": "## PROMOCIONES DEL MES",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "list-context.product-list#shelf-products-03": {
+    "props": {
+      "collection": "137"
+      //"categoryId": "4"
+    },
+    "blocks": ["product-summary.shelf#shelf-product"],
+    "children": ["slider-layout#shelf-products-slide-02"]
+  },
+
+  "slider-layout#shelf-products-slide-03": {
+    "props": {
+      "blockClass": ["shelf", "shelf-slider"],
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "always",
+
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      }
+    }
+  },
+
+  //prateleiras home
+  "flex-layout.row#futbol": {
+    "props": {
+      "blockClass": ["shelf", "default-active", "futbol-row", "shelf-toggle"]
+    },
+
+    "children": ["list-context.product-list#futbol", "link#product-futbol"]
+  },
+  "list-context.product-list#futbol": {
+    "props": {
+      "collection": "137"
+      //"categoryId": "1"
+    },
+    "blocks": ["product-summary.shelf#shelf-product"],
+    "children": ["slider-layout#shelf-products-slide"]
+  },
+
+  "link#product-futbol": {
+    "props": {
+      "displayMode": "anchor",
+      "buttonProps": {
+        "variante": "secondary",
+        "size": "large",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+      },
+      "href": "/futbol",
+      "label": "Ver Más",
+      "blockClass": "shelf-see-more-footer"
+    }
+  },
+
+  "flex-layout.row#running": {
+    "props": {
+      "blockClass": ["shelf", "running-row", "shelf-toggle"]
+    },
+
+    "children": ["list-context.product-list#running", "link#product-running"]
+  },
+  "list-context.product-list#running": {
+    "props": {
+      "collection": "137"
+      //"categoryId": "3"
+    },
+    "blocks": ["product-summary.shelf#shelf-product"],
+    "children": ["slider-layout#shelf-products-slide"]
+  },
+  "link#product-running": {
+    "props": {
+      "displayMode": "anchor",
+      "buttonProps": {
+        "variante": "secondary",
+        "size": "large",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+      },
+      "href": "/running",
+      "label": "Ver Más",
+      "blockClass": "shelf-see-more-footer"
+    }
+  },
+
+  "flex-layout.row#swimming": {
+    "props": {
+      "blockClass": ["shelf", "swimming-row", "shelf-toggle"]
+    },
+
+    "children": ["list-context.product-list#swimming", "link#product-swimming"]
+  },
+  "list-context.product-list#swimming": {
+    "props": {
+      "collection": "137"
+      //"categoryId": "3"
+    },
+    "blocks": ["product-summary.shelf#shelf-product"],
+    "children": ["slider-layout#shelf-products-slide"]
+  },
+  "link#product-swimming": {
+    "props": {
+      "displayMode": "anchor",
+      "buttonProps": {
+        "variante": "secondary",
+        "size": "large",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+      },
+      "href": "/swimming",
+      "label": "Ver Más",
+      "blockClass": "shelf-see-more-footer"
+    }
+  },
+
+  "flex-layout.row#training": {
+    "props": {
+      "blockClass": ["shelf", "training-row", "shelf-toggle"]
+    },
+
+    "children": ["list-context.product-list#training", "link#product-training"]
+  },
+  "list-context.product-list#training": {
+    "props": {
+      "collection": "137"
+      //"categoryId": "4"
+    },
+    "blocks": ["product-summary.shelf#shelf-product"],
+    "children": ["slider-layout#shelf-products-slide"]
+  },
+  "link#product-training": {
+    "props": {
+      "displayMode": "anchor",
+      "buttonProps": {
+        "variante": "secondary",
+        "size": "large",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+      },
+      "href": "/training",
+      "label": "Ver Más",
+      "blockClass": "shelf-see-more-footer"
+    }
+  },
+
+  "flex-layout.row#tenis": {
+    "props": {
+      "blockClass": ["shelf", "tenis-row", "shelf-toggle"]
+    },
+
+    "children": ["list-context.product-list#tenis", "link#product-tenis"]
+  },
+  "list-context.product-list#tenis": {
+    "props": {
+      "collection": "137"
+      //"categoryId": "5"
+    },
+    "blocks": ["product-summary.shelf#shelf-product"],
+    "children": ["slider-layout#shelf-products-slide"]
+  },
+  "link#product-tenis": {
+    "props": {
+      "displayMode": "anchor",
+      "buttonProps": {
+        "variante": "secondary",
+        "size": "large",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+      },
+      "href": "/tenis",
+      "label": "Ver Más",
+      "blockClass": "shelf-see-more-footer"
+    }
+  },
+
+  "flex-layout.row#hockey": {
+    "props": {
+      "blockClass": ["shelf", "hockey-row", "shelf-toggle"]
+    },
+
+    "children": ["list-context.product-list#hockey", "link#product-hockey"]
+  },
+  "list-context.product-list#hockey": {
+    "props": {
+      "collection": "137"
+      //"categoryId": "6"
+    },
+    "blocks": ["product-summary.shelf#shelf-product"],
+    "children": ["slider-layout#shelf-products-slide"]
+  },
+  "link#product-hockey": {
+    "props": {
+      "displayMode": "anchor",
+      "buttonProps": {
+        "variante": "secondary",
+        "size": "large",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER"
+      },
+      "href": "/hockey",
+      "label": "Ver Más",
+      "blockClass": "shelf-see-more-footer"
+    }
+  },
+
+  
+  "flex-layout.row#shelf-09": {
+    "props": {
+      "blockClass": ["shelf", "shelfWithBackground", "shelf-slider"]
+    },
+    "children": ["flex-layout.col#shelf-09"]
+  },
+
+  "flex-layout.col#shelf-09": {
+    "props": {
+      "preventVerticalStretch": false,
+      "width" : "65%"
+    },
+
+    "children": [
+      "list-context.product-list#shelf-products-09"
+    ]
+  },
+
+  "list-context.product-list#shelf-products-09": {
+    "props": {
+      "collection": "447"
+      //"categoryId": "4"
+    },
+    "blocks": ["product-summary.shelf#shelf-product1"],
+    "children": ["slider-layout#shelf-products-slide-09"]
+  },
+
+  "slider-layout#shelf-products-slide-09": {
+    "props": {
+      "blockClass": ["shelf", "shelf-slider"],
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "always",
+
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone":2
+      }
+    }
+  }
+}

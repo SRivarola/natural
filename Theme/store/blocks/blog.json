@@ -1,0 +1,18 @@
+{
+    "store.blog-home": {
+      "blocks": [
+        "blog-all-posts.wordpress-all-posts"
+      ]
+    },
+
+
+    "blog-latest-posts-preview.wordpress-latest-posts-preview": {
+        "props": {
+            "mediaSize": "Large",
+            "title" : "Ultimos Posts",
+            "showExcerpts":"True",
+            "showCategories": "False",
+            "numberOfPosts":1
+        }
+    }
+  }

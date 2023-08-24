@@ -1,0 +1,212 @@
+{
+  // "header": {
+  //   "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  // },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+
+  /* DESKTOP */
+
+  "header-layout.desktop": {
+    "children": [
+      "header-row#1-desktop",
+      "header-row#2-desktop",
+      "telemarketing"
+    ]
+  },
+
+  /*DESKTOP - ROW 1 */
+  "header-row#1-desktop": {
+    "children": [
+      "logo#desktop",
+      "search-bar",
+      "flex-layout.row#phone-header",
+      "login#desktop",
+      "minicart.v2",
+      "sandbox#pixel"
+    ],
+    "props": {
+      "sticky": true,
+      "blockClass": "main-header"
+    }
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Natural Life Logo",
+      "href": "/",
+      "url": "assets/svgs/natural-life-header-logo.svg",
+      "width": "230"
+    }
+  },
+  "flex-layout.row#phone-header": {
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "header-phone",
+      "preserveLayoutOnMobile": true
+    },
+
+    "children": ["link#telefono-header", "link#whatsapp-header"]
+  },
+  "link#telefono-header": {
+    "props": {
+      "label": "0810-999-6288",
+      "href": "tel:0810-999-6288",
+      "target": "_blank",
+      "blockClass": ["header-info", "header-info-phone"]
+    }
+  },
+  "link#whatsapp-header": {
+    "props": {
+      "label": "11 5984 5785",
+      "href": "https://wa.me/1159845785",
+      "target": "_blank",
+      "blockClass": ["header-info", "header-info-whatsapp"]
+    }
+  },
+  "search-bar": {
+    "blocks": ["autocomplete-result-list.v2"],
+    "props": {
+      "openAutocompleteOnFocus": true,
+      "maxWidth": "548px",
+      "placeholder": "Buscar...",
+      "displayMode": "clear-button"
+    }
+  },
+  "login#desktop": {
+    "props": {
+      "optionsTitle": "Escoja una opción para ingresar",
+      "providerPasswordButtonLabel": "INGRESAR CON E-MAIL",
+      "accessCodeTitle": "Registrate",
+      "emailAndPasswordTitle": "Ingrese con e-mail y contraseña",
+      "emailPlaceholder": "Ej: ejemplo@empleo.com.ar",
+      "passwordPlaceholder": "Contraseña",
+      "showPasswordVerificationIntoTooltip": true,
+      "hasGoogleOneTap": false,
+      "hideIconLabel": true
+    }
+  },
+
+  /*DESKTOP - ROW 2 */
+  "header-row#2-desktop": {
+    "children": ["vtex.menu@2.x:menu#category-menu"],
+    "props": {
+      "sticky": true,
+      "blockClass": "main-header-menu"
+    }
+  },
+
+  /* Mobile */
+
+  "header-layout.mobile": {
+    "children": [
+      //"flex-layout.row#top-bar-mobile",
+      "header-row#cuotas-mobile",
+      "header-row#1-mobile",
+      "header-row#2-mobile",
+      "close-menu-overlay"
+    ],
+    "props": {
+      "blockClass": "mobile-header"
+    }
+  },
+
+  "header-row#cuotas-mobile": {
+    "children": [
+      "link#telefono-header",
+      "link#whatsapp-header"
+    ],
+    "props": {
+      "blockClass": ["header-text-mobile"]
+    }
+  },
+
+  "header-row#1-mobile": {
+    "children": [
+      "drawer#mobile-menu",
+      "logo#mobile",
+      "flex-layout.row#user-items"
+    ],
+    "props": {
+      "sticky": true,
+      "blockClass": "main-header-mobile"
+    }
+  },
+
+  "flex-layout.row#user-items": {
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "user-items",
+      "preserveLayoutOnMobile": true
+    },
+
+    "children": ["image#login-mobile", "minicart.v2"]
+  },
+
+  "logo#mobile": {
+    "props": {
+      "title": "Natural Life Logo",
+      "href": "/",
+      "url": "assets/svgs/natural-life-footer-logo-mobile.svg",
+      "width": "195"
+    }
+  },
+
+  "image#login-mobile": {
+    "props": {
+      "blockClass": "login-mobile",
+      "src": "assets/svgs/natural-life-icon-user.svg",
+      "maxHeight": 20,
+      "link": {
+        "url": "/login?returnUrl=%2F",
+        "attributeTitle": "account"
+      }
+    }
+  },
+
+  "login#mobile": {
+    "props": {
+      // "logInButtonBehavior":"link",
+      "mirrorTooltipToRight": true,
+      "blockClass": "mobile",
+      "emailAndPasswordTitle": "LOG-IN",
+      "accessCodeTitle": "Receber código de acesso por e-mail",
+      "emailPraceholder": "e-mail",
+      "passwordPlaceholder": "password",
+      "showPasswordVerificationIntoTooltip": true
+    }
+  },
+
+  "header-row#2-mobile": {
+    "children": ["search-bar#mobile"],
+    "props": {
+      "sticky": true,
+      "blockClass": ["mobile-search"]
+    }
+  },
+
+  "search-bar#mobile": {
+    "blocks": ["autocomplete-result-list.v2"],
+    "props": {
+      "openAutocompleteOnFocus": true,
+      "maxWidth": "342px",
+      "placeholder": "Buscar...",
+      "displayMode": "clear-button"
+    }
+  },
+
+  "autocomplete-result-list.v2": {
+    "blocks": ["product-summary.shelf#shelf-product"],
+    "props": {
+      "__unstableProductOriginVtex": true,
+      "maxSuggestedProducts": 2
+    }
+  },
+  "sandbox#pixel": {
+    "props": {
+      "initialContent": "<script src=\"https://cdn.embluemail.com/pixeltracking/pixeltracking.js?code=2077dee47dd207a6049ef6abc1bf7734\"></script>",
+      "width": "0%",
+      "height": "0%"
+    }
+  }
+}

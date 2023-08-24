@@ -1,0 +1,25 @@
+/* Video */
+
+.videoContainer--videoEl {
+  /* text-align: center; */
+  /* height: 432px; */
+  height: 532px;
+  text-align: center;
+
+  /* background-image: url("https://lh6.googleusercontent.com/pTxzGgSk-G9Xr4MsurDqdLCJJB5znvjTP_-bcKFW9HTIqU3_XfWH2nCDCd32N-qEw0M=w2400");  */
+  /* background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 59%, rgba(192,38,38,1) 100%);; */
+  /* background-repeat: round; */
+  /* left: -4px; */
+  /* margin-left: 180px; */
+  top: 10px;
+  /* position: relative; */
+  /* overflow: hidden; */
+}
+@media only screen and (max-width: 992px) {
+  .videoContainer--videoEl {
+    text-align: start;
+    height: 220px;
+    width: 30px;
+  }
+}
+/**/

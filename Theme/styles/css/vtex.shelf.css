@@ -1,0 +1,112 @@
+.arrow{
+  outline: none;
+  padding: 0 4px;
+}
+
+.arrowLeft {
+  display: block;
+  background: url(assets/svgs/natural-life-arrow-left.svg) no-repeat center center !important;
+  background-size: contain;
+  transform: translateX(-20px) scale(0.7);
+}
+
+.arrowRight {
+  display: block;
+  background: url(assets/svgs/natural-life-arrow-right.svg) no-repeat center center !important;
+  background-size: contain;
+  transform: translateX(20px) scale(0.7);
+}
+
+/* @media only screen and (max-width: 426px){
+  .arrow{
+    display: none;
+  }
+} */
+
+.caretIcon {
+  opacity: 0;
+}
+
+.slide--m3-shelf-product{
+  padding: 14px 6px;
+}
+
+.paginationDotsContainer {
+  align-items: center;
+}
+.dot {
+  background: #ffffff;
+  border: 1px solid #234196;
+  height: 8px !important;
+  width: 8px !important;
+}
+
+.dot--isActive {
+  background: #234196;
+  border: 1px solid #234196;
+  height: 11px !important;
+  width: 11px !important;
+  position: relative;
+  top: 1px;
+}
+
+.title--m3-shelf-product {
+  margin: 0 0 2px;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: .4px;
+  color: #3c3c3c;
+}
+.title--shelf-product {
+  display: none;
+}
+
+.sliderContainer--m3-shelf-product {
+  padding: 0;
+}
+
+.relatedProducts--shelf-product :global(.vtex-slider-0-x-sliderFrame) {
+  padding: 8px 0 !important;
+  overflow: hidden;
+}
+.relatedProducts--shelf-product .slide--shelf-product {
+  overflow: visible !important;
+  padding: 0 !important;
+}
+
+.arrowRight--shelf-product,
+.arrowLeft--shelf-product {
+  outline: 0;
+}
+
+.arrowLeft--shelf-product {
+  transform: translateX(-100%) scale(0.7);
+}
+
+.arrowRight--shelf-product {
+  transform: translateX(100%) scale(0.7);
+}
+
+.title--suggestion-block {
+  display: none;
+}
+
+.shelfContentContainer--suggestion-block {
+  margin-top: 30px;
+}
+
+@media only screen and (max-width: 1025px) {
+  .arrowLeft--shelf-product {
+    transform: translateX(-80%) scale(0.7);
+  }
+  .arrowRight--shelf-product {
+    transform: translateX(80%) scale(0.7);
+  }
+}
+@media only screen and (max-width: 425px) {
+  .arrowRight--shelf-product,
+  .arrowLeft--shelf-product {
+    display: none;
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "vtex.menu@2.x:submenu#peqanimales": {
+    "children": ["flex-layout.row#peqanimales", "image#peqanimales"],
+    "props": {
+      "blockClass": "submenu"
+    }
+  },
+
+  "flex-layout.row#peqanimales": {
+    "props": {
+      "blockClass": "categories-wrapper",
+      "colSizing": "auto",
+      "colGap": 3
+    },
+
+    "children": [
+      "vtex.menu@2.x:menu#column-peqanimales-1",
+      "vtex.menu@2.x:menu#column-peqanimales-2"
+    ]
+  },
+
+  /* BANNER MENU */
+  "image#peqanimales": {
+    "props": {
+      "blockClass": "submenu-banner",
+      "src": "assets/imgs/natural-megamenu-estandar.jpg",
+      "link": true
+    }
+  },
+
+  /* LOCALES COLUMN */
+  "vtex.menu@2.x:menu#column-peqanimales-1": {
+    "props": {
+      "blockClass": "categories"
+    },
+    "children": [
+      "menu-item#peqanimales-accesorios",
+      "vtex.menu@2.x:menu#submenu-peqanimales-accesorios"
+    ]
+  },
+  "vtex.menu@2.x:menu#submenu-peqanimales-accesorios": {
+    "props": {
+      "blockClass": "custom-dropdown-submenu",
+      "items": [
+        {
+            "id": "juguetes-accesorios",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "/pequenos-animales/accesorios/collares---correas---pretales",
+              "noFollow": false,
+              "text": "Juguetes - Accesorios",
+              "tagTitle": "Juguetes - Accesorios"
+            }
+          },
+          {
+            "id": "hamster",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "/pequenos-animales/accesorios/hamstera---conejera---jaula",
+              "noFollow": false,
+              "text": "Hámstera - Conejera - Jaula",
+              "tagTitle": "Hámstera - Conejera - Jaula"
+            }
+          },
+          {
+            "id": "jugeutes-accesorios",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "/pequenos-animales/accesorios/juguetes---accesorios",
+              "noFollow": false,
+              "text": "Juguetes - Accesorios",
+              "tagTitle": "Juguetes - Accesorios"
+            }
+          }
+      ]
+    }
+  },
+
+  "menu-item#peqanimales-accesorios": {
+    "props": {
+      "blockClass": "category",
+      "id": "accesorios",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Accesorios",
+        "tagTitle": "Accesorios",
+        "type": "internal",
+        "href": "/pequenos-animales/accesorios",
+        "noFollow": false
+      }
+    }
+  },
+
+  /* INTERNACIONALES COLUMN */
+  "vtex.menu@2.x:menu#column-peqanimales-2": {
+    "props": {
+      "blockClass": "categories"
+    },
+    "children": [
+      "menu-item#peqanimales-alimento",
+      "vtex.menu@2.x:menu#submenu-peqanimales-alimento"
+    ]
+  },
+  "vtex.menu@2.x:menu#submenu-peqanimales-alimento": {
+    "props": {
+      "blockClass": "custom-dropdown-submenu",
+      "items": [
+        {
+          "id": "alimento",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/pequenos-animales/alimentos/balanceado---golosinas---semillas",
+            "noFollow": false,
+            "text": "Balanceado - Golosinas - Semillas",
+            "tagTitle": "Balanceado - Golosinas - Semillas"
+          }
+        }
+      ]
+    }
+  },
+  "menu-item#peqanimales-alimento": {
+    "props": {
+      "blockClass": "category",
+      "id": "peqanimales-alimento",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Alimentos",
+        "tagTitle": "Alimentos",
+        "type": "internal",
+        "href": "/pequenos-animales/alimentos",
+        "noFollow": false
+      }
+    }
+  }
+}

@@ -1,0 +1,741 @@
+{
+  /* --------------------- 
+        DESKTOP 
+    ---------------------*/
+
+  /* NOSOTROS */
+  "vtex.menu@2.x:menu#nosotros": {
+    "props": {
+      "orientation": "vertical"
+    },
+
+    "children": [
+      "rich-text#nosotros",
+      "menu-item#nuestras-sucursales",
+      "menu-item#quienes-somos",
+      "menu-item#trabaja",
+      "menu-item#contacto",
+      "menu-item#politicas-de-privacidad"
+    ]
+  },
+
+  "rich-text#nosotros": {
+    "props": {
+      "blockClass": "footer-title",
+      "text": "#### Nosotros"
+    }
+  },
+
+  "menu-item#nuestras-sucursales": {
+    "props": {
+      "blockClass": "footer-menu-item",
+      "id": "nuestras-sucursales",
+      "type": "custom",
+
+      "itemProps": {
+        "text": "Nuestras sucursales",
+        "tagTitle": "Nuestras sucursales",
+        "href": "/stores",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  },
+
+  "menu-item#contacto": {
+    "props": {
+      "blockClass": "footer-menu-item",
+      "id": "contacto",
+      "type": "custom",
+
+      "itemProps": {
+        "text": "Contacto",
+        "tagTitle": "Contacto",
+        "href": "/contacto",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  },
+
+  "menu-item#quienes-somos": {
+    "props": {
+      "blockClass": "footer-menu-item",
+      "id": "quienes-somos",
+      "type": "custom",
+
+      "itemProps": {
+        "text": "Quienes somos",
+        "tagTitle": "Quienes somos",
+        "href": "/quienes-somos",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  },
+
+  "menu-item#trabaja": {
+    "props": {
+      "blockClass": "footer-menu-item",
+      "id": "quienes-somos",
+      "type": "custom",
+
+      "itemProps": {
+        "text": "Trabaja con nosotros",
+        "tagTitle": "Trabaja con nosotros",
+        "href": "/trabaja-con-nosotros",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  },
+
+  /* INFORMACIÓN */
+  "vtex.menu@2.x:menu#informacion": {
+    "props": {
+      "orientation": "vertical"
+    },
+
+    "children": [
+      "rich-text#informacion",
+      "menu-item#formas-de-pago",
+      "menu-item#plazo-de-entrega",
+      "menu-item#cambios-y-devoluciones",
+      "menu-item#preguntas-frecuentes",
+      "menu-item#terminos-y-condiciones"
+    ]
+  },
+
+  "rich-text#informacion": {
+    "props": {
+      "blockClass": "footer-title",
+      "text": "#### Información"
+    }
+  },
+  "menu-item#formas-de-pago": {
+    "props": {
+      "blockClass": "footer-menu-item",
+      "id": "formas-de-pago",
+      "type": "custom",
+
+      "itemProps": {
+        "text": "Formas de pago",
+        "tagTitle": "Formas de pago",
+        "href": "/formas-de-pago",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  },
+  "menu-item#plazo-de-entrega": {
+    "props": {
+      "blockClass": "footer-menu-item",
+      "id": "plazo-de-entrega",
+      "type": "custom",
+
+      "itemProps": {
+        "text": "Delivery",
+        "tagTitle": "Delivery",
+        "href": "/plazo-de-entrega",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  },
+  "menu-item#terminos-y-condiciones": {
+    "props": {
+      "blockClass": "footer-menu-item",
+      "id": "terminos-y-condiciones",
+      "type": "custom",
+
+      "itemProps": {
+        "text": "Terminos y condiciones",
+        "tagTitle": "Terminos y condiciones",
+        "href": "/terminos-y-condiciones",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  },
+  "menu-item#preguntas-frecuentes": {
+    "props": {
+      "blockClass": "footer-menu-item",
+      "id": "chapitas",
+      "type": "custom",
+
+      "itemProps": {
+        "text": "Chapitas",
+        "tagTitle": "Chapitas",
+        "href": "/chapitas",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  },
+  "menu-item#politicas-de-privacidad": {
+    "props": {
+      "blockClass": "footer-menu-item",
+      "id": "clubnl",
+      "type": "custom",
+
+      "itemProps": {
+        "text": "ClubNL",
+        "tagTitle": "clubnl",
+        "href": "/clubnl",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  },
+  "menu-item#cambios-y-devoluciones": {
+    "props": {
+      "blockClass": "footer-menu-item",
+      "id": "servicios",
+      "type": "custom",
+
+      "itemProps": {
+        "text": "Servicios",
+        "tagTitle": "Servicios",
+        "href": "/servicios",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  },
+
+  /* CATEGORIAS */
+  "vtex.menu@2.x:menu#categorias": {
+    "props": {
+      "orientation": "vertical"
+    },
+
+    "children": [
+      "rich-text#categoria-titulo",
+      "menu-item#categoria-perros",
+      "menu-item#categoria-gatos",
+      "menu-item#categoria-peces",
+      "menu-item#categoria-aves",
+      "menu-item#categoria-peqanimales",
+      "menu-item#categoria-reptiles"
+    ]
+  },
+
+  "rich-text#categoria-titulo": {
+    "props": {
+      "blockClass": "footer-title",
+      "text": "#### Categorias"
+    }
+  },
+  "menu-item#categoria-perros": {
+    "props": {
+      "blockClass": "footer-menu-item",
+      "id": "gatos",
+      "type": "custom",
+
+      "itemProps": {
+        "text": "Perros",
+        "tagTitle": "Perros",
+        "href": "/perros",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  },
+  "menu-item#categoria-gatos": {
+    "props": {
+      "blockClass": "footer-menu-item",
+      "id": "gatos",
+      "type": "custom",
+
+      "itemProps": {
+        "text": "Gatos",
+        "tagTitle": "Gatos",
+        "href": "/gatos",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  },
+  "menu-item#categoria-peces": {
+    "props": {
+      "blockClass": "footer-menu-item",
+      "id": "peces",
+      "type": "custom",
+
+      "itemProps": {
+        "text": "Peces",
+        "tagTitle": "Peces",
+        "href": "/peces",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  },
+  "menu-item#categoria-aves": {
+    "props": {
+      "blockClass": "footer-menu-item",
+      "id": "aves",
+      "type": "custom",
+
+      "itemProps": {
+        "text": "Aves",
+        "tagTitle": "Aves",
+        "href": "/aves",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  },
+  "menu-item#categoria-peqanimales": {
+    "props": {
+      "blockClass": "footer-menu-item",
+      "id": "peqanimales",
+      "type": "custom",
+
+      "itemProps": {
+        "text": "Peq. Animales",
+        "tagTitle": "Peq. Animales",
+        "href": "/pequenos-animales",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  },
+  "menu-item#categoria-reptiles": {
+    "props": {
+      "blockClass": "footer-menu-item",
+      "id": "kilos-gratis",
+      "type": "custom",
+
+      "itemProps": {
+        "text": "Reptiles",
+        "tagTitle": "Reptiles",
+        "href": "/reptiles",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  },
+  "menu-item#categoria-deco-hogar": {
+    "props": {
+      "blockClass": "footer-menu-item",
+      "id": "sucursales",
+      "type": "custom",
+
+      "itemProps": {
+        "text": "Sucursales",
+        "tagTitle": "Sucursales",
+        "href": "/sucursales",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  },
+
+  /* CLIENTES */
+  "vtex.menu@2.x:menu#clientes": {
+    "props": {
+      "orientation": "vertical"
+    },
+
+    "children": [
+      "rich-text#clientes",
+      "menu-item#ingresar",
+      "menu-item#mi-cuenta",
+      "menu-item#me-arrepenti",
+      "link#me-arrepenti"
+    ]
+  },
+  "rich-text#clientes": {
+    "props": {
+      "blockClass": "footer-title",
+      "text": "#### Clientes"
+    }
+  },
+  "menu-item#ingresar": {
+    "props": {
+      "blockClass": "footer-menu-item",
+      "id": "ingresar",
+      "type": "custom",
+
+      "itemProps": {
+        "text": "Mi cuenta",
+        "tagTitle": "Mi cuenta",
+        "href": "/account",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  },
+  "menu-item#mi-cuenta": {
+    "props": {
+      "blockClass": "footer-menu-item",
+      "id": "mi-cuenta",
+      "type": "custom",
+
+      "itemProps": {
+        "text": "Mis ordenes",
+        "tagTitle": "Mis ordenes",
+        "href": "/account#/orders",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  },
+
+  "menu-item#me-arrepenti": {
+    "props": {
+      "blockClass": ["footer-menu-item", "footer-menu-item-arrepenti"],
+      "type": "custom",
+
+      "itemProps": {
+        "text": "ME ARREPENTÍ",
+        "type": "internal",
+        "noFollow": false,
+        "href": "/arrepentimiento"
+      }
+    }
+  },
+
+  "link#me-arrepenti": {
+    "props": {
+      "label": "*Solicitud de cancelación de compra",
+      "href": "/arrepentimiento",
+      "blockClass": "arrepenti"
+    }
+  },
+
+  /* --------------------- 
+        MOBILE 
+    ---------------------*/
+
+  "vtex.menu@2.x:menu#mobile-footer-menu": {
+    "props": {
+      "blockClass": "mobile-footer-menu",
+      "orientation": "vertical"
+    },
+
+    "children": [
+      "menu-item#mobile-nosotros",
+      "menu-item#mobile-informacion",
+      "menu-item#mobile-categorias",
+      "menu-item#mobile-clientes",
+      "menu-item#mobile-formas-de-pago",
+      "social-networks"
+    ]
+  },
+
+  /* MOBILE - NOSOTROS */
+
+  "menu-item#mobile-nosotros": {
+    "props": {
+      "blockClass": "mobile-footer-menu-item",
+      "id": "mobile-nosotros",
+
+      "itemProps": {
+        "tagTitle": "Nosotros",
+        "text": "Nosotros"
+      }
+    },
+
+    "blocks": ["vtex.menu@2.x:submenu.accordion#mobile-nosotros"]
+  },
+
+  "vtex.menu@2.x:submenu.accordion#mobile-nosotros": {
+    "props": {
+      "blockClass": "mobile-footer-submenu-wrapper"
+    },
+
+    "children": ["vtex.menu@2.x:menu#mobile-nosotros"]
+  },
+
+  "vtex.menu@2.x:menu#mobile-nosotros": {
+    "props": {
+      "blockClass": "mobile-footer-submenu",
+      "orientation": "vertical"
+    },
+
+    "children": ["menu-item#nuestras-sucursales", "menu-item#contacto", "menu-item#quienes-somos"]
+  },
+
+  /* MOBILE - INFORMACION */
+  "menu-item#mobile-informacion": {
+    "props": {
+      "blockClass": "mobile-footer-menu-item",
+      "id": "mobile-informacion",
+
+      "itemProps": {
+        "tagTitle": "Información",
+        "text": "Información"
+      }
+    },
+
+    "blocks": ["vtex.menu@2.x:submenu.accordion#mobile-informacion"]
+  },
+
+  "vtex.menu@2.x:submenu.accordion#mobile-informacion": {
+    "props": {
+      "blockClass": "mobile-footer-submenu-wrapper"
+    },
+
+    "children": ["vtex.menu@2.x:menu#mobile-informacion"]
+  },
+
+  "vtex.menu@2.x:menu#mobile-informacion": {
+    "props": {
+      "blockClass": "mobile-footer-submenu",
+      "orientation": "vertical"
+    },
+
+    "children": [
+      "menu-item#formas-de-pago",
+      "menu-item#plazo-de-entrega",
+      "menu-item#cambios-y-devoluciones",
+      "menu-item#preguntas-frecuentes",
+      "menu-item#terminos-y-condiciones",
+      "menu-item#politicas-de-privacidad"
+    ]
+  },
+
+  /* MOBILE - Categorias */
+  "menu-item#mobile-categorias": {
+    "props": {
+      "blockClass": "mobile-footer-menu-item",
+      "id": "mobile-categorias",
+
+      "itemProps": {
+        "tagTitle": "Categorias",
+        "text": "Categorias"
+      }
+    },
+
+    "blocks": ["vtex.menu@2.x:submenu.accordion#mobile-categorias"]
+  },
+
+  "vtex.menu@2.x:submenu.accordion#mobile-categorias": {
+    "props": {
+      "blockClass": "mobile-footer-submenu-wrapper"
+    },
+
+    "children": ["vtex.menu@2.x:menu#mobile-categorias"]
+  },
+
+  "vtex.menu@2.x:menu#mobile-categorias": {
+    "props": {
+      "blockClass": "mobile-footer-submenu",
+      "orientation": "vertical"
+    },
+
+    "children": [
+      "menu-item#categoria-perros",
+      "menu-item#categoria-gatos",
+      "menu-item#categoria-peces",
+      "menu-item#categoria-aves",
+      "menu-item#categoria-peqanimales",
+      "menu-item#categoria-reptiles"
+    ]
+  },
+
+  /* MOBILE - CLIENTES */
+  "menu-item#mobile-clientes": {
+    "props": {
+      "blockClass": "mobile-footer-menu-item",
+      "id": "mobile-clientes",
+
+      "itemProps": {
+        "tagTitle": "Clientes",
+        "text": "Clientes"
+      }
+    },
+
+    "blocks": ["vtex.menu@2.x:submenu.accordion#mobile-clientes"]
+  },
+
+  "vtex.menu@2.x:submenu.accordion#mobile-clientes": {
+    "props": {
+      "blockClass": "mobile-footer-submenu-wrapper"
+    },
+
+    "children": ["vtex.menu@2.x:menu#mobile-clientes"]
+  },
+
+  "vtex.menu@2.x:menu#mobile-clientes": {
+    "props": {
+      "blockClass": "mobile-footer-submenu",
+      "orientation": "vertical"
+    },
+
+    "children": [
+      "menu-item#ingresar",
+      "menu-item#mi-cuenta",
+      "menu-item#me-arrepenti",
+      "link#me-arrepenti"
+    ]
+  },
+
+  /* MOBILE - FORMAS DE PAGO */
+
+  "menu-item#mobile-formas-de-pago": {
+    "props": {
+      "blockClass": "mobile-footer-menu-item",
+      "id": "mobile-formas-de-pago",
+
+      "itemProps": {
+        "tagTitle": "Formas de pago",
+        "text": "Formas de pago"
+      }
+    },
+
+    "blocks": ["vtex.menu@2.x:submenu.accordion#mobile-formas-de-pago"]
+  },
+
+  "vtex.menu@2.x:submenu.accordion#mobile-formas-de-pago": {
+    "props": {
+      "blockClass": "mobile-footer-submenu-wrapper"
+    },
+
+    // "children": ["flex-layout.row#payments--mobile"]
+    "children": ["vtex.menu@2.x:menu#mobile-payments"]
+  },
+  "vtex.menu@2.x:menu#mobile-payments": {
+    "props": {
+      "blockClass": "mobile-footer-submenu-payments",
+      "orientation": "vertical"
+    },
+
+    "children": [
+      "menu-item#mercado-pago--mobile",
+      "menu-item#visa--mobile",
+      "menu-item#visa-debito-mobile",
+      "menu-item#mastercard--mobile",
+      "menu-item#amex--mobile"
+    ]
+  },
+
+  "menu-item#mercado-pago--mobile": {
+    "props": {
+      "blockClass": [
+        "footer-menu-item-mercado-pago--mobile",
+        "footer-menu-item--mobile"
+      ],
+      "id": "mercado-pago--mobile",
+      "type": "custom",
+
+      "itemProps": {
+        "text": "mercado pago",
+        "tagTitle": "mercado pago",
+        "href": "",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  },
+  "menu-item#visa--mobile": {
+    "props": {
+      "blockClass": [
+        "footer-menu-item-visa--mobile",
+        "footer-menu-item--mobile"
+      ],
+      "id": "visa--mobile",
+      "type": "custom",
+
+      "itemProps": {
+        "text": "visa--mobile",
+        "tagTitle": "visa--mobile",
+        "href": "",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  },
+  "menu-item#visa-debito-mobile": {
+    "props": {
+      "blockClass": [
+        "footer-menu-item-visa-debito--mobile",
+        "footer-menu-item--mobile"
+      ],
+      "id": "visa-debito--mobile",
+      "type": "custom",
+
+      "itemProps": {
+        "text": "visa-debito--mobile",
+        "tagTitle": "visa-debito--mobile",
+        "href": "",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  },
+  "menu-item#mastercard--mobile": {
+    "props": {
+      "blockClass": [
+        "footer-menu-item-mastercard--mobile",
+        "footer-menu-item--mobile"
+      ],
+      "id": "mastercard--mobile",
+      "type": "custom",
+
+      "itemProps": {
+        "text": "mastercard--mobile",
+        "tagTitle": "mastercard--mobile",
+        "href": "",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  },
+  "menu-item#amex--mobile": {
+    "props": {
+      "blockClass": [
+        "footer-menu-item-amex--mobile",
+        "footer-menu-item--mobile"
+      ],
+      "id": "amex--mobile",
+      "type": "custom",
+
+      "itemProps": {
+        "text": "amex--mobile",
+        "tagTitle": "amex--mobile",
+        "href": "",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  },
+  "menu-item#banelco--mobile": {
+    "props": {
+      "blockClass": [
+        "footer-menu-item-banelco--mobile",
+        "footer-menu-item--mobile"
+      ],
+      "id": "banelco--mobile",
+      "type": "custom",
+
+      "itemProps": {
+        "text": "banelco--mobile",
+        "tagTitle": "banelco--mobile",
+        "href": "",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  },
+  "menu-item#link--mobile": {
+    "props": {
+      "blockClass": [
+        "footer-menu-item-link--mobile",
+        "footer-menu-item--mobile"
+      ],
+      "id": "link--mobile",
+      "type": "custom",
+
+      "itemProps": {
+        "text": "link--mobile",
+        "tagTitle": "link--mobile",
+        "href": "",
+        "type": "internal",
+        "noFollow": false
+      }
+    }
+  }
+}

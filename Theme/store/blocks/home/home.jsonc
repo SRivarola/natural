@@ -1,0 +1,632 @@
+{
+  "store.home": {
+    "parent": {
+      "challenge": "challenge.trade-policy-condition"
+    },
+
+    "blocks": [
+      // "flex-layout.row#videoTest",
+      // "sandbox#chat",
+      // "flex-layout.row#shelfTest",
+      "list-context.image-list#main-gallery-home",
+      "flex-layout.row#deals",
+      "slider-layout#advantages",
+      "__fold__",
+      "flex-layout.row#shelf-01",
+      "flex-layout.row#shelf-02",
+      "flex-layout.row#brands-carousel",
+      "responsive-layout.desktop#top-gallery",
+      "flex-layout.row#bottom-banner",
+      "responsive-layout.mobile#top-gallery-mobile",
+      "flex-layout.row#shelf-03"
+    ]
+  },
+
+  /* POLICY CONDITION */
+  "challenge.trade-policy-condition": {
+    "props": {
+      "redirectPath": "/registration",
+      "defaultContentVisibility": "hidden"
+    }
+  },
+
+  /* BANNER PRINCIPAL(MAIN-GALLERY) */
+  "list-context.image-list#main-gallery-home": {
+    "props": {
+      "blockClass": "main-gallery",
+      "autoplay": true,
+      "slideTransition": 400,
+      "height": "300",
+
+      "images": [
+        {
+          "image": "assets/imgs/desktop/slider-20-off-en-shampoo-y-acondicionador.jpg",
+          "mobileImage": "assets/imgs/mobile/slider-20-off-en-shampoo-y-acondicionador.jpg",
+          "link": "/"
+        },
+
+        {
+          "image": "assets/imgs/desktop/slider-descuento-de-zootec.jpg",
+          "mobileImage": "assets/imgs/mobile/slider-descuento-de-zootec.jpg",
+          "link": "/"
+        },
+
+        {
+          "image": "assets/imgs/desktop/slider-latas-50-off-en-la-2da-unidad.jpg",
+          "mobileImage": "assets/imgs/mobile/slider-latas-50-off-en-la-2da-unidad.jpg",
+          "link": "/"
+        },
+
+        {
+          "image": "assets/imgs/desktop/slider-pro-plan-gato-1-kg-de-regalo.jpg",
+          "mobileImage": "assets/imgs/mobile/slider-pro-plan-gato-1-kg-de-regalo.jpg",
+          "link": "/"
+        }
+      ]
+    },
+
+    "children": ["slider-layout#main-gallery-slider"]
+  },
+
+  "slider-layout#main-gallery-slider": {
+    "props": {
+      "blockClass": "main-gallery",
+      "infinite": true,
+
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": true
+      },
+
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      }
+    }
+  },
+
+  /* DESKTOP TOP-GALLERY */
+  "responsive-layout.desktop#top-gallery": {
+    "children": ["flex-layout.row#top-gallery", "flex-layout.row#bottom-gallery"]
+  },
+
+  "flex-layout.row#top-gallery": {
+    "props": {
+      "blockClass": "top-gallery"
+    },
+
+    "children": ["flex-layout.col#top-gallery-content"]
+  },
+
+  "flex-layout.col#top-gallery-content": {
+    "props": {
+      "preventVerticalStretch": true,
+      "rowGap": 5
+    },
+
+    "children": ["flex-layout.row#top-gallery-row"]
+  },
+
+  "flex-layout.row#top-gallery-row": {
+    "props": {
+      "blockClass": "top-gallery-row",
+      "colSizing": "auto",
+      "colGap": 0,
+      "autoplay": {
+        "timeout": 3000,
+        "stopOnHover": true
+      }
+    },
+
+    "children": ["image#top-gallery-banner-01", "image#top-gallery-banner-02"]
+  },
+
+  "image#top-gallery-banner-01": {
+    "props": {
+      "blockClass": "top-gallery-banner",
+      "title": "Natural Life Colchonetas",
+      "src": "assets/imgs/desktop/colchonetas.jpg",
+      "link": {
+        "url": "/",
+        "attributeTitle": "Natural Life Colchonetas"
+      }
+    }
+  },
+
+  "image#top-gallery-banner-02": {
+    "props": {
+      "blockClass": "top-gallery-banner",
+      "title": "Natural Life Shampoo",
+      "src": "assets/imgs/desktop/shampoo.jpg",
+
+      "link": {
+        "url": "/",
+        "attributeTitle": "Natural Life Shampoo"
+      }
+    }
+  },
+
+  "flex-layout.row#bottom-gallery": {
+    "props": {
+      "blockClass": "top-gallery"
+    },
+
+    "children": ["flex-layout.col#bottom-gallery-content"]
+  },
+
+  "flex-layout.col#bottom-gallery-content": {
+    "props": {
+      "preventVerticalStretch": true,
+      "rowGap": 5
+    },
+
+    "children": ["flex-layout.row#bottom-gallery-row"]
+  },
+
+  "flex-layout.row#bottom-gallery-row": {
+    "props": {
+      "blockClass": "top-gallery-row",
+      "colSizing": "auto",
+      "colGap": 0
+    },
+
+    "children": ["image#bottom-gallery-banner-01", "image#bottom-gallery-banner-02"]
+  },
+
+  "image#bottom-gallery-banner-01": {
+    "props": {
+      "blockClass": "top-gallery-banner",
+      "title": "Natural Life sucursales",
+      "src": "assets/imgs/desktop/sucursales.jpg",
+      "link": {
+        "url": "/stores",
+        "attributeTitle": "Natural Life sucursales"
+      }
+    }
+  },
+
+  "image#bottom-gallery-banner-02": {
+    "props": {
+      "blockClass": "top-gallery-banner",
+      "title": "Natural Life blog",
+      "src": "assets/imgs/desktop/blog.jpg",
+
+      "link": {
+        "url": "/",
+        "attributeTitle": "Natural Life blog"
+      }
+    }
+  },
+
+  /* MOBILE TOP GALLERY */
+  "responsive-layout.mobile#top-gallery-mobile": {
+    "children": ["list-context.image-list#top-gallery-mobile"]
+  },
+
+  "list-context.image-list#top-gallery-mobile": {
+    "props": {
+      "height": "fit-content",
+
+      "images": [
+        {
+          "mobileImage": "assets/imgs/mobile/sucursales.jpg",
+          "link": {
+            "url": "/stores",
+            "attributeTitle": "Sucursales"
+          }
+        },
+        {
+          "mobileImage": "assets/imgs/mobile/blog.jpg",
+          "link": {
+            "url": "/",
+            "attributeTitle": "Blog"
+          }
+        }
+      ]
+    },
+
+    "children": ["slider-layout#top-gallery-mobile-slider"]
+  },
+
+  "slider-layout#top-gallery-mobile-slider": {
+    "props": {
+      "blockClass": "top-gallery-mobile",
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "arrowSize": 10,
+      "itemsPerPage": {
+        "tablet": 2,
+        "phone": 1
+      }
+    }
+  },
+
+  "slider-layout#top2-gallery-mobile-slider": {
+    "props": {
+      "blockClass": "top-gallery-mobile",
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "arrowSize": 10,
+      "itemsPerPage": {
+        "tablet": 1,
+        "phone": 1
+      }
+    }
+  },
+
+  /* BRANDS CAROUSEL */
+  "flex-layout.row#brands-carousel": {
+    "props": {
+      "blockClass": "brands-carousel",
+      "colSizing": "auto"
+    },
+    "children": [
+      "rich-text#brand-heading",
+      "list-context.image-list#brands-carousel-list"
+    ]
+  },
+
+  "rich-text#brand-heading": {
+    "props": {
+      "blockClass": "brands-carousel-heading",
+      "text": "## Encontralo por marca",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "list-context.image-list#brands-carousel-list": {
+    "children": ["slider-layout#brands-carousel-slide"],
+    "props": {
+      "images": [
+        {
+          "image": "assets/imgs/natural-life-pro-plan.jpg",
+          "mobileImage": "assets/imgs/natural-life-pro-plan.jpg",
+          "description": "Marca",
+          "link": {
+            "url": "/",
+            "title": "Pro Plan"
+          }
+        },
+        {
+          "image": "assets/imgs/natural-life-whole-earth.jpg",
+          "mobileImage": "assets/imgs/natural-life-whole-earth.jpg",
+          "description": "Marca",
+          "link": {
+            "url": "/",
+            "title": "Whole Earth"
+          }
+        },
+        {
+          "image": "assets/imgs/natural-life-nutrique.jpg",
+          "mobileImage": "assets/imgs/natural-life-nutrique.jpg",
+          "description": "Marca",
+          "link": {
+            "url": "/",
+            "title": "Nutarique"
+          }
+        },
+        {
+          "image": "assets/imgs/natural-life-royal-canin.jpg",
+          "mobileImage": "assets/imgs/natural-life-royal-canin.jpg",
+          "description": "Marca",
+          "link": {
+            "url": "/",
+            "title": "Royal Canin"
+          }
+        },
+        {
+          "image": "assets/imgs/natural-life-eukanuba.jpg",
+          "mobileImage": "assets/imgs/natural-life-eukanuba.jpg",
+          "description": "Marca",
+          "link": {
+            "url": "/",
+            "title": "Eukanuba"
+          }
+        },
+        {
+          "image": "assets/imgs/natural-life-vital-can.jpg",
+          "mobileImage": "assets/imgs/natural-life-vital-can.jpg",
+          "description": "Marca",
+          "link": {
+            "url": "/",
+            "title": "Vital Can"
+          }
+        },
+        {
+          "image": "assets/imgs/natural-life-iams.jpg",
+          "mobileImage": "assets/imgs/natural-life-iams.jpg",
+          "description": "Marca",
+          "link": {
+            "url": "/",
+            "title": "Iams"
+          }
+        },
+        {
+          "image": "assets/imgs/natural-life-old-prince.jpg",
+          "mobileImage": "assets/imgs/natural-life-old-prince.jpg",
+          "description": "Marca",
+          "link": {
+            "url": "/",
+            "title": "Old Prince"
+          }
+        }
+      ],
+      "height": "fit-content"
+    }
+  },
+  "slider-layout#brands-carousel-slide": {
+    "props": {
+      "blockClass": ["brands-carousel-slide"],
+      "itemsPerPage": {
+        "desktop": 8,
+        "tablet": 5,
+        "phone": 3
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "always",
+      "autoplay": {
+        "timeout": 3000
+      }
+      
+    }
+  },
+
+  "slider-layout#advantages": {
+    "props": {
+        "blockClass": "advantages",
+        "infinite": true,
+        "fullWidth": false,
+        "navigationStep": 3,
+        "showNavigationArrows": "desktopOnly",
+        "showPaginationDots": "mobileOnly",
+        "itemsPerPage": {
+            "desktop": 8,
+            "tablet": 3,
+            "phone": 3
+        }
+    },
+
+    "children": [
+      "flex-layout.row#slider-6",
+      "flex-layout.row#slider-1",
+      "flex-layout.row#slider-2",
+      "flex-layout.row#slider-3",
+      "flex-layout.row#slider-4",
+      "flex-layout.row#slider-5"
+      ]
+    },
+
+    "flex-layout.row#slider-1": {
+      "children": ["image#slider-1", "rich-text#text-slider-1"],
+      "props": {
+        "blockClass": "slider-brand__item",
+        "colSizing": "auto"
+      }
+    },
+
+    "image#slider-1": {
+      "props": {
+        "src": "assets/imgs/perros.jpg",
+        "blockClass": "slider-brand__img",
+        "link": {
+          "url": "/",
+          "title": "Marca"
+        }
+      }
+    },
+    "rich-text#text-slider-1": {
+      "props": {
+        "text": "[perros](/)",
+        "blockClass": "slider-brand__text",
+        "width": 137
+      }
+    },
+
+    "flex-layout.row#slider-2": {
+      "children": ["image#slider-2", "rich-text#text-slider-2"],
+      "props": {
+        "blockClass": "slider-brand__item",
+        "colSizing": "auto"
+      }
+    },
+
+    "image#slider-2": {
+      "props": {
+        "src": "assets/imgs/aves.jpg",
+        "blockClass": "slider-brand__img",
+        "link": {
+          "url": "/",
+          "title": "Marca"
+        }
+      }
+    },
+    "rich-text#text-slider-2": {
+      "props": {
+        "text": "[aves](/)",
+        "blockClass": "slider-brand__text",
+        "width": 137
+      }
+    },
+    
+    "flex-layout.row#slider-3": {
+      "children": ["image#slider-3", "rich-text#text-slider-3"],
+      "props": {
+        "blockClass": "slider-brand__item",
+        "colSizing": "auto"
+      }
+    },
+
+    "image#slider-3": {
+      "props": {
+        "src": "assets/imgs/peces.jpg",
+        "blockClass": "slider-brand__img",
+        "link": {
+          "url": "/",
+          "title": "Marca"
+        }
+      }
+    },
+    "rich-text#text-slider-3": {
+      "props": {
+        "text": "[peces](/)",
+        "blockClass": "slider-brand__text",
+        "width": 137
+      }
+    },
+
+    "flex-layout.row#slider-4": {
+      "children": ["image#slider-4", "rich-text#text-slider-4"],
+      "props": {
+        "blockClass": "slider-brand__item",
+        "colSizing": "auto"
+      }
+    },
+
+    "image#slider-4": {
+      "props": {
+        "src": "assets/imgs/peqanimales.jpg",
+        "blockClass": "slider-brand__img",
+        "link": {
+          "url": "/",
+          "title": "Marca"
+        }
+      }
+    },
+    "rich-text#text-slider-4": {
+      "props": {
+        "text": "[peqanimales](/)",
+        "blockClass": "slider-brand__text",
+        "width": 137
+      }
+    },
+
+    "flex-layout.row#slider-5": {
+      "children": ["image#slider-5", "rich-text#text-slider-5"],
+      "props": {
+        "blockClass": "slider-brand__item",
+        "colSizing": "auto"
+      }
+    },
+
+    "image#slider-5": {
+      "props": {
+        "src": "assets/imgs/reptiles.jpg",
+        "blockClass": "slider-brand__img",
+        "link": {
+          "url": "/reptiles",
+          "title": "Marca"
+        }
+      }
+    },
+    "rich-text#text-slider-5": {
+      "props": {
+        "text": "[reptiles](/reptiles)",
+        "blockClass": "slider-brand__text",
+        "width": 137
+      }
+    },
+
+    "flex-layout.row#slider-6": {
+      "children": ["image#slider-6", "rich-text#text-slider-6"],
+      "props": {
+        "blockClass": "slider-brand__item",
+        "colSizing": "auto"
+      }
+    },
+
+    "image#slider-6": {
+      "props": {
+        "src": "assets/imgs/gatos.jpg",
+        "blockClass": "slider-brand__img",
+        "link": {
+          "url": "/gatos",
+          "title": "Marca"
+        }
+      }
+    },
+    "rich-text#text-slider-6": {
+      "props": {
+        "text": "[gatos](/gatos)",
+        "blockClass": "slider-brand__text",
+        "width": 137
+      }
+    },
+
+
+  /* BANNER BOTTOM */
+  "flex-layout.row#bottom-banner": {
+    "children": [
+      "responsive-layout.mobile#bottom-banner",
+      "responsive-layout.mobile#bottom-banner-2"
+    ],
+    "props": {
+      "blockClass": "bottom-banner",
+      "colSizing": "auto",
+      "marginBottom": {
+        "mobile": 6,
+        "desktop": 7
+      }
+    }
+  },
+
+  "responsive-layout.mobile#bottom-banner": {
+    "children": ["image#mobile-bottom-banner"]
+  },
+
+  "image#mobile-bottom-banner": {
+    "props": {
+      "blockClass": "bottom-banner",
+      "src": "assets/imgs/mobile/colchonetas.jpg",
+      "title": "Banner bottom",
+      "link": {
+        "url": "#",
+        "attributeTitle": "Banner Bottom"
+      }
+    }
+  },
+
+  "responsive-layout.mobile#bottom-banner-2": {
+    "children": ["image#mobile-bottom-banner-2"]
+  },
+
+  "image#mobile-bottom-banner-2": {
+    "props": {
+      "blockClass": "bottom-banner",
+      "src": "assets/imgs/mobile/shampoo.jpg",
+      "title": "Banner bottom",
+      "link": {
+        "url": "#",
+        "attributeTitle": "Banner Bottom"
+      }
+    }
+  },
+  "flex-layout.row#videoTest":{
+    "children": ["video#background"],
+    //"children": ["video#background", "flex-layout.row#shelf-09"],
+    "props": {
+      "blockClass": "VideoTest"
+    }
+  },
+
+  "flex-layout.row#shelfTest":{
+    "children": ["flex-layout.row#shelf-09"],
+    "props": {
+      "blockClass": "shelfTest"
+    }
+  },
+
+  "video#background": {
+    "props": {
+      "width": "944",
+      "height": "531px",
+      "loop": false,
+      "autoPlay": true,
+      "muted": false,
+      "src": "https://www.youtube.com/embed/VkQuQOqmQMA",
+      "blockClass": "videoEl"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "flex-layout.row#newsletter": {
+    "props": {
+      "blockClass": "newsletter"
+    },
+    "children": [
+      "newsletter#footer-newsletter"
+    ]
+  },
+  "newsletter#footer-newsletter": {
+    "props": {
+      "blockClass": "footer-newsletter",
+      "label": "Registrate",
+      "placeholder": "Ingresá tu mail",
+      "submit": "ENVIAR"
+    }
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "drawer#peqanimales": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#peqanimales"],
+    "children": ["menu#peqanimales"]
+  },
+
+  "drawer-trigger#peqanimales": {
+    "children": ["rich-text#peqanimales"]
+  },
+
+  "rich-text#peqanimales": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "peqanimales"
+    }
+  },
+
+  "menu#peqanimales": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+
+    "children": [
+      "drawer#peqanimales-peqanimales-pecera-acuarios-alimento",
+      "drawer#peqanimales-alimento",
+      "menu-item#peqanimales-see-all"
+    ]
+  },
+
+  "drawer#peqanimales-peqanimales-pecera-acuarios-alimento": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#peqanimales-peqanimales-pecera-acuarios-alimento"],
+    "children": ["menu#peqanimales-peqanimales-pecera-acuarios-alimento"]
+  },
+ 
+  "drawer-trigger#peqanimales-peqanimales-pecera-acuarios-alimento": {
+    "children": ["rich-text#peqanimales-peqanimales-pecera-acuarios-alimento"]
+  },
+
+  "rich-text#peqanimales-peqanimales-pecera-acuarios-alimento": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "Collares - Correas - Pretales"
+    }
+  },
+
+  "menu#peqanimales-peqanimales-pecera-acuarios-alimento": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#submenu-peqanimales-accesorios",
+      "menu-item#peqanimales-pecera-acuarios-alimento-see-all"
+    ]
+  },
+
+  "drawer#peqanimales-alimento": {
+    "props": {
+      "blockClass": ["mobile-menu", "secondary-tab"]
+    },
+
+    "blocks": ["drawer-trigger#peqanimales-alimento"],
+    "children": ["menu#peqanimales-alimento"]
+  },
+
+  "drawer-trigger#peqanimales-alimento": {
+    "children": ["rich-text#peqanimales-alimento"]
+  },
+
+  "rich-text#peqanimales-alimento": {
+    "props": {
+      "blockClass": "mobile-menu-item",
+      "text": "Alimentos"
+    }
+  },
+
+  "menu#peqanimales-alimento": {
+    "props": {
+      "blockClass": "mobile-menu",
+      "orientation": "vertical"
+    },
+
+    "children": [
+      "vtex.menu@2.x:menu#submenu-peqanimales-alimento",
+      "menu-item#alimento-see-all"
+    ]
+  },
+
+  //Ver Todo
+  "menu-item#peqanimales-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "peqanimales-see-all",
+      "type": "custom",
+      "itemProps": {
+        //"categoryId": 1,
+        "href": "/pequenos-animales",
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Ver todo Peq. animales",
+        "text": "Ver todo Peq. animales"
+      }
+    }
+  },
+
+  "menu-item#peqanimales-pecera-acuarios-alimento-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "peqanimales-pecera-acuarios-alimento-see-all",
+      "type": "custom",
+      "itemProps": {
+        "href": "/pequenos-animales/pequenos-animales-pecera-acuarios-alimento",
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Ver todo Collares - Correas - Pretales",
+        "text": "ver todo Collares - Correas - Pretales"
+      }
+    }
+  },
+
+  "menu-item#alimento-see-all": {
+    "props": {
+      "blockClass": ["department", "see-all"],
+      "id": "alimento-see-all",
+      "type": "custom",
+      "itemProps": {
+        "href": "/pequenos-animales/alimentos",
+        "type": "internal",
+        "noFollow": true,
+        "tagTitle": "Ver todo alimentos",
+        "text": "ver todo alimentos"
+      }
+    }
+  }
+}

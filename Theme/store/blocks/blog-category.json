@@ -1,0 +1,7 @@
+{
+    "store.blog-category": {
+      "blocks": [
+        "blog-category-list.wordpress-category-list"
+      ]
+    }
+  }

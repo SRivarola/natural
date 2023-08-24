@@ -1,0 +1,226 @@
+{
+  "vtex.menu@2.x:submenu#aves": {
+    "children": ["flex-layout.row#aves", "image#aves"],
+    "props": {
+      "blockClass": "submenu"
+    }
+  },
+
+  "flex-layout.row#aves": {
+    "props": {
+      "blockClass": "categories-wrapper",
+      "colSizing": "auto",
+      "colGap": 3
+    },
+
+    "children": [
+      "vtex.menu@2.x:menu#column-aves-1",
+      "vtex.menu@2.x:menu#column-aves-2",
+      "vtex.menu@2.x:menu#column-aves-3"
+    ]
+  },
+
+  /* BANNER MENU */
+  "image#aves": {
+    "props": {
+      "blockClass": "submenu-banner",
+      "src": "assets/imgs/natural-megamenu-estandar.jpg",
+      "link": true
+    }
+  },
+
+  /* LOCALES COLUMN */
+  "vtex.menu@2.x:menu#column-aves-1": {
+    "props": {
+      "blockClass": "categories"
+    },
+    "children": [
+      "menu-item#aves-accesorios",
+      "vtex.menu@2.x:menu#submenu-aves-accesorios"
+    ]
+  },
+  "vtex.menu@2.x:menu#submenu-aves-accesorios": {
+    "props": {
+      "blockClass": "custom-dropdown-submenu",
+      "items": [
+        {
+          "id": "jaulas-y-jaulones",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/aves/accesorios/jaulas-y-jaulones",
+            "noFollow": false,
+            "text": "Jaulas y Jaulones",
+            "tagTitle": "Jaulas y Jaulones"
+          }
+        },
+        {
+            "id": "juguetes-accesorios",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "/aves/accesorios/juguetes---accesorios",
+              "noFollow": false,
+              "text": "Juguetes - Accesorios",
+              "tagTitle": "Juguetes - Accesorios"
+            }
+          }
+      ]
+    }
+  },
+
+  "menu-item#aves-accesorios": {
+    "props": {
+      "blockClass": "category",
+      "id": "accesorios",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Accesorios",
+        "tagTitle": "Accesorios",
+        "type": "internal",
+        "href": "/aves/accesorios",
+        "noFollow": false
+      }
+    }
+  },
+
+  /* INTERNACIONALES COLUMN */
+  "vtex.menu@2.x:menu#column-aves-2": {
+    "props": {
+      "blockClass": "categories"
+    },
+    "children": [
+      "menu-item#aves-alimento",
+      "vtex.menu@2.x:menu#submenu-aves-alimento"
+    ]
+  },
+  "vtex.menu@2.x:menu#submenu-aves-alimento": {
+    "props": {
+      "blockClass": "custom-dropdown-submenu",
+      "items": [
+        {
+          "id": "golosinas-y-semillas",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/aves/alimento/golosinas-y-semillas",
+            "noFollow": false,
+            "text": "Golosinas y Semillas",
+            "tagTitle": "Golosinas y Semillas"
+          }
+        }
+      ]
+    }
+  },
+  "menu-item#aves-alimento": {
+    "props": {
+      "blockClass": "category",
+      "id": "aves-alimento",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Alimento",
+        "tagTitle": "Alimento",
+        "type": "internal",
+        "href": "/aves/alimento",
+        "noFollow": false
+      }
+    }
+  },
+
+  // SELLECCIONES MENU
+  "vtex.menu@2.x:menu#column-aves-3": {
+    "props": {
+      "blockClass": "categories"
+    },
+    "children": [
+      "menu-item#juguetes",
+      "vtex.menu@2.x:menu#submenu-otros-juguetes"
+    ]
+  },
+  "vtex.menu@2.x:menu#submenu-otros-juguetes": {
+    "props": {
+      "blockClass": "custom-dropdown-submenu",
+      "items": [
+        {
+          "id": "juguetes-sonido",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "otros/juguetes/juguetes-sonido",
+            "noFollow": false,
+            "text": "Juguetes con sonido",
+            "tagTitle": "Juguetes con sonido"
+          }
+        },
+        {
+          "id": "juguetes-dentales",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "otros/juguetes/juguetes-dentales",
+            "noFollow": false,
+            "text": "Juguetes dentales",
+            "tagTitle": "Juguetes dentales"
+          }
+        },
+        {
+          "id": "peluches",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "otros/juguetes/peluches",
+            "noFollow": false,
+            "text": "Peluches",
+            "tagTitle": "Peluches"
+          }
+        },
+        {
+          "id": "sogas-pelotas",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "otros/juguetes/sogas-pelotas",
+            "noFollow": false,
+            "text": "Sogas y pelotas",
+            "tagTitle": "Sogas y pelotas"
+          }
+        }
+      ]
+    }
+  },
+
+  "menu-item#juguetes": {
+    "props": {
+      "blockClass": "category",
+      "id": "juguetes",
+      "type": "custom",
+
+      "itemProps": {
+        //"categoryId": 1,
+        "text": "Juguetes",
+        "tagTitle": "Juguetes",
+        "type": "internal",
+        "href": "/otros/juguetes",
+        "noFollow": false
+      }
+    }
+  }
+}

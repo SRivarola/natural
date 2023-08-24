@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="89" height="78" viewBox="0 0 89 78">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_1577" data-name="Rectángulo 1577" width="89" height="78" transform="translate(0.112 0.092)" fill="#191919" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Enmascarar_grupo_88" data-name="Enmascarar grupo 88" transform="translate(-0.112 -0.092)" clip-path="url(#clip-path)">
+    <g id="_003-shopping-cart-1" data-name="003-shopping-cart-1" transform="translate(3.78 3.698)">
+      <path id="Trazado_2027" data-name="Trazado 2027" d="M25.977,47.243h42.84a2.363,2.363,0,0,0,2.271-1.713l9.449-33.07a2.362,2.362,0,0,0-2.271-3.011H20.53l-1.689-7.6A2.363,2.363,0,0,0,16.535,0H2.362a2.362,2.362,0,1,0,0,4.724H14.64c.3,1.347,8.08,36.364,8.528,38.379a7.086,7.086,0,0,0,2.815,13.588H68.817a2.362,2.362,0,1,0,0-4.724H25.983a2.362,2.362,0,0,1-.006-4.724ZM75.134,14.173l-8.1,28.346H27.878l-6.3-28.346Zm0,0" transform="translate(0 0)" fill="#191919"/>
+      <path id="Trazado_2028" data-name="Trazado 2028" d="M14.648,42.243a7.086,7.086,0,1,0,7.086-7.086A7.095,7.095,0,0,0,14.648,42.243Zm7.086-2.362a2.362,2.362,0,1,1-2.362,2.362A2.365,2.365,0,0,1,21.735,39.881Zm0,0" transform="translate(8.973 21.535)" fill="#191919"/>
+      <path id="Trazado_2029" data-name="Trazado 2029" d="M35.352,42.243a7.086,7.086,0,1,0,7.086-7.086A7.095,7.095,0,0,0,35.352,42.243Zm7.086-2.362a2.362,2.362,0,1,1-2.362,2.362A2.365,2.365,0,0,1,42.438,39.881Zm0,0" transform="translate(21.655 21.535)" fill="#191919"/>
+    </g>
+  </g>
+</svg>

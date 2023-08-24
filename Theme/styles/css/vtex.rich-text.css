@@ -1,0 +1,559 @@
+.paragraph--deals {
+  font-size: 13px;
+  line-height: 16px;
+  color: #3C3C3C;
+  padding: 0 15px;
+}
+.link--deals{
+  text-decoration: none;
+  color: #3C3C3C;
+  font-weight: 700;
+}
+
+/* TOP-BAR */
+
+.paragraph--top-bar__text {
+  font-family: "Nunito";
+  font-size: 10px;
+  color: #3c3c3c;
+  margin: 0;
+}
+
+.paragraph--top-bar__text .link--top-bar__text{
+  text-decoration: none;
+  color: #3c3c3c;
+}
+
+.paragraph--header-text:last-child .link--header-text::before {
+  content: '';
+  background: url("assets/svgs/whatsapp.svg") right center no-repeat;
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  margin-right: 4px;
+  position: relative;
+  top: 3px;
+}
+
+/* ================================ Medicados =============================== */
+
+.paragraph--producto-medicado-text {
+  color: #3e75a4;
+}
+
+/* Cartel medicados - Desktop */
+.container--producto-medicado-sign-text {
+  border: 3px solid #26ae4e;
+  box-sizing: border-box;
+  margin:auto;
+  width:85%;
+  height:45px;
+  margin-bottom:10px;
+}
+
+.paragraph--producto-medicado-sign-text {
+  padding: 4px;
+  color: #26ae4e;
+  text-align:center;
+}
+
+/* ========================================================================== */
+
+@media only screen and (max-width: 1025px) {
+  .container--header-text {
+      display: block;
+  }
+  .wrapper--header-text {
+      width: 100%;
+      margin: 0;
+  }
+  .link--header-text {
+      width: 100%;
+  }
+  .paragraph--header-text {
+      width: 40%;
+      padding: 0 15px;
+  }
+  .paragraph--header-text:last-child {
+      width: 60%;
+      border-left: 1px solid #fff;
+  }
+  .paragraph--header-text:first-child {
+    width: 40%;
+  }  
+}
+
+/* HEADER */
+.wrapper--header-text{
+  margin-right: 80px;  
+}
+.paragraph--header-text, .link--header-text {
+  margin: 0;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+@media only screen and (max-width: 1025px) {
+  .paragraph--header-text, .link--header-text {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+    max-width: 100%;
+    padding: 2px 0;
+    display: inline-block;
+    width: auto;
+    text-align: center;
+  }
+  .paragraph--deals{
+    padding: 0 13px;
+  }
+}
+
+/* MENU */
+.wrapper--mobile-menu-item {
+  flex: 1;
+}
+
+.paragraph--mobile-menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 12px 4px;
+  text-transform: uppercase;
+  line-height: 17px;
+  font-size: 14px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.paragraph--mobile-menu-item::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: url("assets/svgs/arrow-right-menu-mobile.svg") right center no-repeat;
+}
+
+.paragraph--mobile-menu-item-solo {
+  margin: 0;
+  width: 100%;
+  padding: 12px 4px;
+  border: none;
+  line-height: 17px;
+  font-weight: 800;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* SHELF TITLE  */
+/* ------------------------------------------------------------------------ */
+.heading--shelf-title {
+  margin: 0;
+  line-height: 30px;
+  font-size: 20px;
+  font-family: "Nunito";
+  font-weight: 700;
+  color: #fff;
+  padding: 12px 0;
+}
+
+.wrapper--shelf-title-single .heading--shelf-title {
+  color: #3c3c3c;
+  font-weight: 900;
+  line-height: 27px;
+  letter-spacing: -.5px;
+}
+
+.paragraph--shelf-title {
+  font-family: "Nunito";
+  font-weight: 500;
+  line-height: 20px;
+  font-size: 14px;
+  letter-spacing: 0.28px;
+  color: #3c3c3c;
+  max-width: 504px;
+  margin: 0 0 20px;
+}
+
+.paragraph--shelf-text {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: .6px;
+}
+
+.container--shelf-title-related {
+  background: #234196;
+  width: 100%;
+  margin: 0 8px;
+}
+
+@media only screen and (max-width: 1025px) {
+  .vtex-rich-text-0-x-container--shelf-title::after,
+  .vtex-rich-text-0-x-container--shelf-title::before{
+    width: 25%;
+  }
+  .heading--shelf-title {
+    line-height: 20px;
+  }
+}
+
+/*SHELF custom brands(Adidas,Reebok)*/
+.heading--brands-carousel-heading {
+  color: #3c3c3c;
+  font-weight: 900;
+  line-height: 34px;
+  letter-spacing: .5px;
+  font-size: 25px;
+  margin: 0;
+}
+.container--brands-shelf-title {
+  background-color: #f9f9f9;
+}
+.heading--brands-shelf-title {
+  font-family: "Nunito";
+  font-weight: 600;
+  line-height: 28px;
+  font-size: 20px;
+  letter-spacing: 0.4px;
+  color: #3c3c3c;
+  text-align: center;
+  max-width: 504px;
+  margin: 8px 0;
+}
+
+/* --- */
+
+/* M3 BRANDS HEADING   */
+/* ------------------------------------------------------------------------------------ */
+
+.paragraph--brands-carousel-heading {
+  font-family: "Nunito";
+  font-weight: 500;
+  color: #3c3c3c;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* Footer */
+
+.heading--footer-title {
+  margin: 0 0 14px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 900;
+  color: #fff;
+}
+
+.paragraph--footer-paragraph {
+  margin: 0;
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 9px;
+  color: #fff;
+}
+
+.paragraph--footer-copyright {
+  margin-left: 14px;
+}
+
+.paragraph--pay-cash {
+  color: #fff;
+  font-weight: 700;
+  font-size: 13px;
+  margin-top: 8px;
+}
+
+/**/
+
+/* ENCONTRALO POR DEPORTE */
+
+.paragraph--encontralo-txt {
+  margin: 0;
+  text-decoration: none;
+  letter-spacing: 0.56px;
+  color: #3c3c3c;
+  font-family: "Nunito";
+  font-size: 14px;
+}
+
+/* Institutional  */
+
+.paragraph--breadcrumb {
+  margin: 0;
+  line-height: 12px;
+  font-size: 10px;
+  font-weight: 500;
+  color: #b8b8b8;
+}
+
+.container--institutional-content {
+  width: 100%;
+  max-width: 676px;
+}
+
+.heading--institutional-content {
+  margin: 0 0 24px;
+  line-height: 28px;
+  font-size: 23px;
+  font-weight: 800;
+  color: #234196;
+}
+
+.headingLevel2--institutional-content {
+  font-weight: 700;
+  font-size: 18px;
+  color: #234196;
+}
+
+.headingLevel4--institutional-content{
+  font-size: 18px;
+}
+.headingLevel5--institutional-content{
+  font-size: 18px;
+}
+.headingLevel6--institutional-content{
+  font-size: 15px;
+  font-weight: 700;
+  color: #234196;
+}
+
+.paragraph--institutional-content {
+  margin: 0 0 16px;
+  line-height: 25px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.list--institutional-content .listItem--institutional-content{
+  line-height: 25px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.link--institutional-content {
+  text-decoration: none;
+  color: #234196;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.strong--institutional-content {
+  color: #234196;
+}
+
+@media only screen and (max-width: 1025px) {
+  .container--institutional-content {
+    padding-top: 28px;
+  }
+
+  .heading--institutional-content {
+    margin: 0 0 16px;
+  }
+}
+
+/**/
+/* ACCOUNT */
+
+.container--account-title {
+  justify-content: center;
+  max-width: 1024px;
+  margin: 56px auto 24px;
+  padding-bottom: 24px;
+  border-bottom: 0.5px solid #3c3c3c80;
+}
+
+@media only screen and (max-width: 576px) {
+  .container--account-title {
+    max-width: 95%;
+  }
+}
+
+.heading--account-title {
+  margin: 0;
+  text-align: center;
+  font-family: "Nunito";
+  font-size: 23px;
+  font-weight: 400;
+  color: #272727;
+}
+
+/**/
+
+/* BREADRUMB (ACCOUNT) */
+.paragraph--breadcrumb {
+  margin: 0;
+  line-height: 12px;
+  font-size: 10px;
+  font-weight: 500;
+  color: #b8b8b8;
+}
+/* ----*/
+
+/* Not Found */
+
+.heading--not-found-title {
+  margin: 0 0 8px;
+  line-height: 22px;
+  font-size: 18px;
+  font-weight: normal;
+  color: #000000;
+}
+
+.heading--not-found-subtitle {
+  margin: 0 0 24px;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.paragraph--not-found-description {
+  margin: 0 0 60px;
+  line-height: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+}
+
+/* CATEGORY */
+.wrapper--slider-brand__text{
+  width: 100%;
+  text-align: center;
+}
+.link--slider-brand__text{
+  color: #234196;
+  text-decoration: none;
+  font-size: 13px;
+  text-transform: uppercase;
+  transition: .2s all;
+  font-weight: 800;
+}
+.paragraph--slider-brand__text {
+  margin: 15px 0 0 0;
+}
+
+/* PRODUCT INFO */
+.paragraph--product-info-title {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 19px;
+  margin: 0 0 0 10px;
+}
+
+.paragraph--product-info-text {
+  margin: 0 0 0 10px;
+  font-size: 12px;
+  line-height: 10px;
+}
+
+/* PRODUCT SPECIFICATION */
+.wrapper--specification-title {
+  width: 100%;
+}
+
+.wrapper--specification-title .heading-level-3 {
+  font-size: 20px;
+  color: #234196;
+  font-weight: 900;
+  border-bottom: 1px solid #234196;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+/* SUCURSALES */
+.container--stores-title {
+  padding: 0;
+}
+
+.container--stores-title {
+  justify-content: center;
+}
+
+.paragraph--stores-info {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: #3C3C3C;
+}
+
+.link--stores-info {
+  color: #234196;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+.wrapper--stores-info {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.wrapper--trigger-title .paragraph {
+  font-size: 20px;
+  color: #fff;
+  line-height: 27px;
+  font-weight: 700;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+.paragraph--local-title {
+  color: #234196;
+  font-weight: 900;
+  font-size: 20px;
+  margin: 0;
+  line-height: 27px;
+      padding-bottom: 5px;
+}
+
+.paragraph--local-address {
+  color: #234196;
+  font-size: 13px;
+  font-weight: 700;
+  margin: 0;
+  padding-bottom: 2px;
+}
+
+.paragraph--local-info {
+    color: #3c3c3c;
+    font-size: 13px;
+    font-weight: 700;
+    margin: 0;
+    padding-bottom: 5px;
+  }
+
+.wrapper--trigger-title {
+    width: 100%;
+}
+
+.container--trigger-title {
+  align-items: center;
+}
+
+@media(min-width: 1025px){
+  .paragraph--local-title {
+    padding: 0;
+  }
+  .paragraph--local-info {
+    padding: 3px;
+  }
+  .container--stores-info{
+    display: block;
+    width: 100%;
+  }
+  .heading--institutional-content {
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 15px;
+  }
+}

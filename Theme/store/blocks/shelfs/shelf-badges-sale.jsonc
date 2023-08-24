@@ -1,0 +1,58 @@
+{
+    "flex-layout.row#badges-promo": {
+        "props": {
+          "blockClass": ["shelf-product-promo-wrapper"],
+          "colSizing": "auto",
+          "preserveLayoutOnMobile": true
+        },
+    
+        "children": [
+          "vtex.product-highlights@2.x:product-highlights#collection"
+        ]
+      },
+    
+      "vtex.product-highlights@2.x:product-highlights#collection": {
+        "props": {
+          "type": "collection",
+          "filter": {
+            "type": "hide",
+            "highlightNames": ["Envio Gratis","Nuevo","Aniversario33"]
+          }
+        },
+        "children": ["product-highlight-wrapper"]
+      },
+      "product-highlight-wrapper": {
+        "props": {
+            "blockClass": ["shelf-product-promo"]
+        },
+        "children": ["product-highlight-text"]
+      },
+      "product-highlight-text": {
+        "props": {
+          "message": "{highlightName}"
+        }
+      },
+
+      "flex-layout.row#badges-promo-pdp": {
+        "props": {
+          "blockClass": ["shelf-product-promo-wrapper", "shelf-product-promo-wrapper-pdp"],
+          "colSizing": "auto",
+          "preserveLayoutOnMobile": true
+        },
+    
+        "children": [
+          "vtex.product-highlights@2.x:product-highlights#collection-pdp"
+        ]
+      },
+    
+      "vtex.product-highlights@2.x:product-highlights#collection-pdp": {
+        "props": {
+          "type": "collection",
+          "filter": {
+            "type": "hide",
+            "highlightNames": ["Envio Gratis","Nuevo"]
+          }
+        },
+        "children": ["product-highlight-wrapper"]
+      }
+}

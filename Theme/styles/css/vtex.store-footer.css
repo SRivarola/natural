@@ -1,0 +1,33 @@
+/* Footer */
+
+.socialNetworkLink {
+  margin: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.socialNetworkLink--instagram {
+  background-image: url("assets/svgs/natural-life-icon-instagram.svg");
+}
+
+.socialNetworkLink--facebook {
+  background-image: url("assets/svgs/natural-life-icon-facebook.svg");
+  margin: 0 5px;
+}
+
+.socialNetworkLink--youtube {
+  background-image: url("assets/svgs/natural-life-icon-youtube.svg");
+}
+
+
+.socialNetworkImage {
+  opacity: 0;
+}
+
+@media only screen and (max-width: 1025px) {
+  .socialNetworkWrapper {
+    margin-top: 18px;
+  }
+}
+
+/**/

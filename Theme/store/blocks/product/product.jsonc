@@ -1,0 +1,502 @@
+{
+  "store.product": {
+    "children": [
+      "breadcrumb#product",
+      "flex-layout.row#product-main-content",
+      "__fold__",
+      "flex-layout.row#specifications-title",
+      "flex-layout.row#specifications-group",
+      "flex-layout.row#shelf-page-product"
+    ]
+  },
+
+  "flex-layout.row#specifications-title": {
+    "props": {
+      "blockClass": "specification-content"
+    },
+    "children": ["rich-text#specifications"]
+  },
+  "rich-text#specifications": {
+    "props": {
+      "text": "### Descripción",
+      "blockClass": "specification-title"
+    }
+  },
+
+  "flex-layout.row#specifications-group": {
+    "props": {
+      "blockClass": "specification-group"
+    },
+    "children": [
+      "product-description"
+    ]
+  },
+
+  "breadcrumb#product": {
+    "props": {
+      "showOnMobile": true
+    }
+  },
+
+  "flex-layout.row#product-main-content": {
+    "props": {
+      "blockClass": "product-main-content",
+      "colSizing": "auto"
+    },
+
+    "children": [
+      "flex-layout.col#images-column",
+      "flex-layout.col#details-column"
+    ]
+  },
+
+  "flex-layout.col#images-column": {
+    "props": {
+      "width": "58%",
+      "preventVerticalStretch": true,
+      "blockClass": "image-column"
+    },
+
+    "children": [
+      "flex-layout.row#products-badges-free",
+      "product-images", 
+      "brand-flag#product-page"
+    ]
+  },
+
+  "flex-layout.row#products-badges-discount": {
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "product-details-badges"
+    },
+    "children": [
+      "product-price-savings#product-badge"
+    ]
+  },
+
+  "flex-layout.row#products-badges-free": {
+    "props": {
+      "colSizing": "auto",
+      "blockClass": "product-details-badges-free"
+    },
+    "children": [
+      "vtex.product-highlights@2.x:product-highlights#envio-gratis"
+    ]
+  },
+
+  "product-images": {
+    "props": {
+      "showPaginationDots": true,
+      "displayThumbnailsArrows": true,
+      "showNavigationArrows": true
+    }
+  },
+
+  "brand-flag#product-page": {
+    "props": {
+      "width": "80px",
+      "height": "auto"
+    }
+  },
+
+  "flex-layout.col#details-column": {
+    "props": {
+      "width": "40%",
+      "preventVerticalStretch": true
+    },
+
+    "children": [
+      "flex-layout.row#badges-promo-pdp",
+      "product-identifier.product",
+      "vtex.store-components:product-name",
+      "product-availability",
+      "flex-layout.row#products-badges-discount",
+      "flex-layout.row#product-prices",
+      "custom-price-product",
+      "product-installments#product",
+      "similar-products",
+      "sku-selector#m3",
+      "talle-agotado",
+      "condition-layout.product#regular-o-medicado",
+      "availability-subscriber",
+      "shipping-simulator",
+      "share"
+    ]
+  }, 
+
+  /* ================================ Medicados =============================== */
+
+  "condition-layout.product#regular-o-medicado": {
+    "props": {
+      "conditions": [
+
+        /* Medicados Aves */
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "79"
+          }
+        },
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "85"
+          }
+        },
+        
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "143"
+          }
+        },
+
+        /* Medicados Gatos */
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "42"
+          }
+        },
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "61"
+          }
+        },
+        
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "62"
+          }
+        },
+
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "114"
+          }
+        },
+
+        /* Medicados Peces */
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "116"
+          }
+        },
+
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "134"
+          }
+        },
+
+        /* Medicados Perros */
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "34"
+          }
+        },
+
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "36"
+          }
+        },
+
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "35"
+          }
+        },
+
+        {
+          "subject": "categoryId",
+          "arguments": {
+            "id": "111"
+          }
+        }
+      ],
+      "matchType": "any",
+      "Then": "flex-layout.row#producto-medicado",
+      "Else": "flex-layout.row#cart-button"
+    }
+  },
+
+  "flex-layout.row#producto-medicado": {
+  "props":{
+    "blockClass":"producto-medicado-layout"
+  },
+  "children": [
+    "flex-layout.col#producto-medicado"
+  ]
+  },
+
+  "flex-layout.col#producto-medicado": {
+  "children": [
+    "rich-text#producto-medicado-text",
+    "link#producto-medicado-telephone-link",
+    "link.product#producto-medicado-wpp-link"
+  ]
+  },
+
+  "rich-text#producto-medicado-text": {
+  "props": {
+    "text": "No se encuentra disponible la venta online de productos zooterápicos.\n\n**Consultá dónde comprarlos:**",
+    "blockClass": "producto-medicado-text"
+  }
+  },
+
+  "link#producto-medicado-telephone-link": {
+    "props": {
+      "label": "0810-999-6288",
+      "href": "tel:0810-999-6288",
+      "target": "_blank",
+      "blockClass": ["medicado-info", "medicado-info-phone"]
+    }
+  },
+
+  "link.product#producto-medicado-wpp-link": {
+    "props": {
+      "label": "11 5984 5785",
+      "href": "https://api.whatsapp.com/send?text=Hola!%20Quiero%20consultar%20cómo%20comprar%20el%20siguiente%20producto:%20https://www.natural-life.com.ar/{slug}/p&phone=+5491159845785",
+      "target": "_blank",
+      "blockClass": ["medicado-info", "medicado-info-whatsapp"]
+    }
+  },
+
+  /* ========================================================================== */
+  
+  "product-description#top": {
+    "props": {
+      "blockClass": "description-top",
+      "collapseContent": false
+    }
+  },
+
+  "product-availability": {
+    "props": {
+      "showAvailability": "stock",
+      "showAvailabilityMessage": "There are {quantity} available!"
+    }
+  },
+
+  "flex-layout.row#info": {
+    "props": {
+      "blockClass": "product-info"
+    },
+    "children": [
+      "flex-layout.col#info"
+    ]
+  },
+
+  "flex-layout.col#info": {
+    "props": {
+      "blockClass": "product-info"
+    },
+    "children": [
+      "flex-layout.row#envios",
+      "flex-layout.row#retiro",
+      "flex-layout.row#devolucion"
+    ]
+  },
+ 
+  "flex-layout.row#envios": {
+    "props": {
+      "blockClass": "product-info-envios",
+      "horizontalAlign": "left",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "image#envios-icono",
+      "flex-layout.col#envios-text"
+    ]
+  },
+  "flex-layout.col#envios-text": {
+    "props": {
+      "blockClass": "envios-text"
+    },
+    "children": [
+      "rich-text#envios-title",
+      "rich-text#envios-text-info"
+    ]
+  },
+  "rich-text#envios-title": {
+    "props": {
+      "text": "**ENVÍOS GRATIS**",
+      "blockClass": "product-info-title"
+    }
+  },
+  "rich-text#envios-text-info": {
+    "props": {
+      "text": "CABA",
+      "blockClass": "product-info-text"
+    }
+  },
+  "image#envios-icono": {
+    "props": {
+      "width": "30px",
+      "src": "assets/svgs/topbar-entrega.svg",
+      "blockClass": "product-info-icon"
+    }
+  },
+
+  "flex-layout.row#retiro": {
+    "props": {
+      "blockClass": "product-info-retiro",
+      "horizontalAlign": "left",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "image#retiro-icono",
+      "flex-layout.col#retiro-text"
+    ]
+  },
+  "flex-layout.col#retiro-text": {
+    "props": {
+      "blockClass": "retiro-text"
+    },
+    "children": [
+      "rich-text#retiro-title",
+      "rich-text#retiro-text-info"
+    ]
+  },
+  "rich-text#retiro-title": {
+    "props": {
+      "text": "**RETIRO GRATIS**",
+      "blockClass": "product-info-title"
+    }
+  },
+  "rich-text#retiro-text-info": {
+    "props": {
+      "text": "EN NUESTRAS TIENDAS",
+      "blockClass": "product-info-text"
+    }
+  },
+  "image#retiro-icono": {
+    "props": {
+      "width": "30px",
+      "src": "assets/svgs/topbar-retiro.svg",
+      "blockClass": "product-info-icon"
+    }
+  },
+
+  "flex-layout.row#devolucion": {
+    "props": {
+      "blockClass": "product-info-devolucion",
+      "horizontalAlign": "left",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "image#devolucion-icono",
+      "flex-layout.col#devolucion-text"
+    ]
+  },
+  "flex-layout.col#devolucion-text": {
+    "props": {
+      "blockClass": "devolucion-text"
+    },
+    "children": [
+      "rich-text#devolucion-title",
+      "rich-text#devolucion-text-info"
+    ]
+  },
+  "rich-text#devolucion-title": {
+    "props": {
+      "text": "**ENVIO**",
+      "blockClass": "product-info-title"
+    }
+  },
+  "rich-text#devolucion-text-info": {
+    "props": {
+      "text": "AL INTERIOR",
+      "blockClass": "product-info-text"
+    }
+  },
+  "image#devolucion-icono": {
+    "props": {
+      "width": "30px",
+      "src": "assets/svgs/topbar-devoluciones.svg",
+      "blockClass": "product-info-icon"
+    }
+  },
+
+  "product-price-savings#natural": {
+    "props": {
+      "blockClass": "m3-custom-price-savings",
+      "message": "Descuento de {savingsValue}"
+    }
+  },
+
+  "flex-layout.row#cart-button": {
+    "props": {
+      "blockClass": "cart-button",
+      "colSizing": "auto",
+      "preserveLayoutOnMobile": true
+    },
+
+    "children": ["product-quantity#product", "add-to-cart-button#product"]
+  },
+
+  "product-quantity#product": {
+    "props": {
+      "blockClass": "product"
+    }
+  },
+
+  "add-to-cart-button#product": {
+    "props": {
+      "customPixelEventId": "addToCart",
+      "blockCLass": "product",
+      "width": "grow"
+    }
+  },
+
+  "sku-selector#m3": {
+    "props": {
+      "showValueForVariation": "image",
+      "visibleVariations": ["Material"],
+      "displayMode": "default",
+      "initialSelection": "image",
+      "showVariationsLabels": true,
+      "maxItems": 40
+    }
+  },
+
+  "sku-selector#m4": {
+    "props": {
+      "showValueForVariation": "image",
+      "visibleVariations": ["Material"],
+      "blockClass": "info-product-selector",
+      "displayMode": "default",
+      "initialSelection": "complete",
+      "showVariationsLabels": "true",
+      "maxItems": 40
+    }
+  },
+
+  "share": {
+    "props": {
+      "social": {
+        "WhatsApp": true,
+        "Facebook": true,
+        "Pinterest": true
+      }
+    }
+  },
+
+  "shipping-simulator":{
+    "props":{
+      "pricingMode" : "grouped" 
+    }
+  }
+}

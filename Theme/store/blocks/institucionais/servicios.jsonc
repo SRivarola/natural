@@ -1,0 +1,22 @@
+{
+    "store.custom#servicios": {
+        "blocks": ["flex-layout.row#breadcrumb", "flex-layout.row#servicios"]
+    },
+  
+    "flex-layout.row#servicios": {
+        "props": {
+            "blockClass": "institutional-wrapper",
+            "colSizing": "auto"
+        },
+  
+        "children": ["rich-text#servicios-content"]
+    },
+  
+    "rich-text#servicios-content": {
+        "props": {
+            "blockClass": "institutional-content",
+            "text": "# servicios",
+            "width": "grow"
+        }
+    }
+  }
