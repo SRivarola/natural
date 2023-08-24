@@ -6,8 +6,7 @@
     "styles": "2.x",
     "store": "0.x",
     "docs": "0.x",
-    "assets": "0.x",
-    "react": "3.x"
+    "assets": "0.x"
   },
   "scripts": {
     "postreleasy": "vtex publish --verbose"
@@ -74,9 +73,7 @@
     "vtex.disposition-layout": "1.x",
     "naturallife.natural-custom": "0.x",
     "naturallife.natural-custom-search-result": "0.x",
-    "vtex.store-video": "1.x",
-    "vtex.product-context": "0.x",
-    "vtex.css-handles": "1.x"
+    "vtex.store-video": "1.x"
   },
   "peerDependencies": {
     "vtex.store-locator": "0.x",

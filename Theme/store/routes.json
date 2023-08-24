@@ -47,6 +47,15 @@
   },
   "store.blog-category":{
     "path": "/blog/category/:categoryslug_id"
+  },
+  "store.custom#marca": {
+    "path": "/marca"
+  },
+  "store.custom#dogwalker": {
+    "path": "/dogwalker"
+  },
+  "store.custom#pedigreel": {
+    "path": "/pedigreel"
   }
 
 }
